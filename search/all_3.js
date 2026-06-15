@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['calculatearea_0',['calculateArea',['../class_a_r_plane_area_calculator.html#a7f8a06871abc67b9caed03d87cc58f82',1,'ARPlaneAreaCalculator']]],
+  ['cam_1',['cam',['../class_screen_scaler.html#a8f8a46a770b556720a242fa3b4e1947c',1,'ScreenScaler']]],
+  ['canceldownload_2',['CancelDownload',['../class_q_r_network_handler.html#a1984e4485241c23db5d27f90ea6ba4aa',1,'QRNetworkHandler']]],
+  ['cancelsprite_3',['CancelSprite',['../class_add_model_manager.html#a60865a59abbe1adc055ba64babf8ec04',1,'AddModelManager']]],
+  ['center_4',['Center',['../_object_spawner_a_r_8cs.html#aaf159fca6c090cbe566a9e3ddc897c7ba4f1f6016fc9f3f2353c0cc7c67b292bd',1,'ObjectSpawnerAR.cs']]],
+  ['centerplacementy_5',['centerPlacementY',['../class_object_spawner_a_r.html#a28510201d5bf9b01385ef0a9daec5137',1,'ObjectSpawnerAR']]],
+  ['changebuttonstate_6',['ChangeButtonState',['../class_model_plane_detection_manager.html#ab90e6403809244eb3e58e7026a11f75a',1,'ModelPlaneDetectionManager']]],
+  ['changecolor_7',['ChangeColor',['../class_u_i_toggle.html#ac885ba232b45b8c9c5a2e2649b246778',1,'UIToggle']]],
+  ['changemode_8',['ChangeMode',['../class_game_manager.html#a5c8c21ceaa1857c94b243b741d33a229',1,'GameManager.ChangeMode()'],['../class_scaling_mode_controller.html#aa710a4c1dc3cbc37173a3e06b1a8bf9f',1,'ScalingModeController.ChangeMode(bool isOneToOne)']]],
+  ['changemodetonormalview_9',['ChangeModeToNormalView',['../class_scaling_mode_controller.html#ab0ac181d35d336696d008cf302ab887f',1,'ScalingModeController']]],
+  ['changemodetoonetoone_10',['ChangeModeToOneToOne',['../class_scaling_mode_controller.html#a9b8e3eb73e88c59d40a51ce11c410ea7',1,'ScalingModeController']]],
+  ['changeplanedetection_11',['changePlaneDetection',['../class_raycast_handler.html#a04641cf1f8fa39003020e87892eb562f',1,'RaycastHandler']]],
+  ['changetooneonemode_12',['ChangeToOneOneMode',['../class_pivot_setter.html#a2ba93b3c2ee0b518eeaa1694f7835b1d',1,'PivotSetter']]],
+  ['changetransforminputstate_13',['ChangeTransformInputState',['../class_patent_transformer.html#aba8c1a106ab27d8a2303e1a45ed014f3',1,'PatentTransformer']]],
+  ['checkinput_14',['CheckInput',['../class_raycast_handler.html#ae61b5965c59efd43a1b1dd3d6af4cf1f',1,'RaycastHandler']]],
+  ['clickevent_15',['clickEvent',['../class_raycast_handler.html#aaf90faa24cf10e2daeaa7cce70323eb5',1,'RaycastHandler']]],
+  ['computelocalbounds_16',['ComputeLocalBounds',['../class_bounding_box_visualizer.html#a9b4a640f2d96c7e66d7f6d925eb77279',1,'BoundingBoxVisualizer']]],
+  ['create_17',['Create',['../class_popup_builder.html#a35410b9ed427b69bc2d41079e487ee5f',1,'PopupBuilder']]],
+  ['currentcolor_18',['currentColor',['../class_log_text.html#a868bacefcfdafa5126253b36160112fd',1,'LogText']]],
+  ['currentframe_19',['currentFrame',['../class_q_r_scanner.html#a9d90eeb77042284eca18d04c91627c92',1,'QRScanner']]],
+  ['currentstatename_20',['CurrentStateName',['../class_state_machine.html#a6ac87358624e91d53e2c42c4a9a3c986',1,'StateMachine']]],
+  ['currmode_21',['currMode',['../class_game_manager.html#a9c973c401e07c35a72514585eac2af97',1,'GameManager']]]
+];

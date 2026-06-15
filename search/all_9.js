@@ -1,0 +1,14 @@
+var searchData=
+[
+  ['initialize_0',['Initialize',['../class_model_plane_detection_manager.html#a7e97139a542e92509ad921cfcf527a7b',1,'ModelPlaneDetectionManager.Initialize()'],['../class_pivot_setting_manager.html#acccf208aa8b7cbe97cf4bc9ef04d4a0b',1,'PivotSettingManager.Initialize()'],['../class_u_i_visibility_manager.html#a66757115e564efdcfa4379270128c880',1,'UIVisibilityManager.Initialize()']]],
+  ['initializelogpool_1',['InitializeLogPool',['../class_log_manager.html#a5a399684ee27c89dfd55715b75d804d0',1,'LogManager']]],
+  ['initialposition_2',['initialPosition',['../class_patent_manager.html#a77ec300d988239f22ae9ddefe4c75acf',1,'PatentManager']]],
+  ['initialrotation_3',['initialRotation',['../class_patent_manager.html#afb7c2d1fcc4f72c1d78df2325cc0b966',1,'PatentManager']]],
+  ['initialscale_4',['initialScale',['../class_patent_manager.html#ae3c9220fb7f5540c2967695de7fce6a6',1,'PatentManager']]],
+  ['instance_5',['Instance',['../class_model_plane_detection_manager.html#a78b026a92cdf72efdaf9933d1fa20110',1,'ModelPlaneDetectionManager.Instance'],['../class_model_transform_manager.html#a5fcc58b117c1c4947316238d3ac285c9',1,'ModelTransformManager.Instance'],['../class_model_view_manager.html#a7df19ac8d4557cddeb7acd07cf0c1f18',1,'ModelViewManager.Instance'],['../class_patent_manager.html#a32e0d55c3bfa88a1ba6e49830a12eb5c',1,'PatentManager.Instance'],['../class_q_r_network_handler.html#a6fcef1ceb671c940aadc1c0e61c6b8e1',1,'QRNetworkHandler.Instance'],['../class_q_r_scanner.html#aa5b8c183936f10d45ed8f3676d23e99f',1,'QRScanner.Instance'],['../class_scaling_mode_controller.html#a74aae71a573e367c1c2963a5bafb3822',1,'ScalingModeController.Instance'],['../class_state_machine.html#ae5cbc71c07f182b79e34cb653c0192a9',1,'StateMachine.Instance'],['../class_log_manager.html#a0b4874dc14a10b6ce812049c007c6f59',1,'LogManager.Instance'],['../class_popup_menu_manager.html#a691a42ad40618e38c113869f05a27176',1,'PopupMenuManager.Instance'],['../class_pivot_setting_manager.html#a61d905464ec356d66116e9a4dc2760fa',1,'PivotSettingManager.Instance']]],
+  ['instance_6',['instance',['../class_game_manager.html#a7666e8468dac197b9eb32dd32128524f',1,'GameManager.instance'],['../class_scene_manager_ar.html#a86f909e4c43cdb12c0bd8b4389cb7964',1,'SceneManagerAr.instance'],['../class_screen_scaler.html#a5e8746a9ce859027597b630b1d6acdde',1,'ScreenScaler.instance']]],
+  ['invokepatentspawned_7',['InvokePatentSpawned',['../class_patent_manager.html#a54321502ca55cc380c55a25b2db7149a',1,'PatentManager']]],
+  ['isopen_8',['isOpen',['../class_popup_menu_handler.html#aa127019735e2ddae863c20dcee630a9d',1,'PopupMenuHandler']]],
+  ['isscreenfiton_9',['isScreenFitOn',['../class_screen_scaler.html#af3e27f7c85da0e32b7e6a22aab97038f',1,'ScreenScaler']]],
+  ['isstarted_10',['isStarted',['../class_log_text.html#ae6082f1632cb02bd3d0bacb23526a2d5',1,'LogText']]]
+];

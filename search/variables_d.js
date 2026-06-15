@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['patent_0',['patent',['../class_object_spawner_a_r.html#a3fdb28c956a273062b1c847209f5269d',1,'ObjectSpawnerAR.patent'],['../class_patent_manager.html#aa31fdb92d7972456bd15890493d4b2d3',1,'PatentManager.patent']]],
+  ['patentmanager_1',['patentManager',['../class_patent_transformer.html#acb00add6fe38bc66376e5dbbbc118d82',1,'PatentTransformer']]],
+  ['patentscene_2',['patentScene',['../class_game_manager.html#a4e1f66fb7bbe1b8cbe3951ce3d6f4751',1,'GameManager']]],
+  ['pinchdeltaaction_3',['pinchDeltaAction',['../class_patent_transformer.html#adbd2baff795f1ab89f0f1830995ca601',1,'PatentTransformer']]],
+  ['pinchscalespeed_4',['pinchScaleSpeed',['../class_patent_transformer.html#a7fe41477a79d426925a6026a517eb5d5',1,'PatentTransformer']]],
+  ['pivottoggle_5',['pivotToggle',['../class_pivot_setting_manager.html#a366ca4472bbc2ba2d071cdbdf249e5d2',1,'PivotSettingManager']]],
+  ['planedetectioncontroller_6',['planeDetectionController',['../class_u_i_manager.html#a840b4c7cfdc0bd1060d7728f15e260e4',1,'UIManager']]],
+  ['planemanager_7',['planeManager',['../class_a_r_plane_area_calculator.html#a7e7ca60b33e050651d7ff5954d55338c',1,'ARPlaneAreaCalculator.planeManager'],['../class_raycast_handler.html#a08737f9c6dcf47cd9afb20b25cce500a',1,'RaycastHandler.planeManager']]],
+  ['planetoggle_8',['planeToggle',['../class_model_plane_detection_manager.html#afe09004aa752bc5ab0f4bc667f2fa845',1,'ModelPlaneDetectionManager']]],
+  ['poolsize_9',['poolSize',['../class_log_manager.html#a326fcc1a9c732d9adc1194e658fd7197',1,'LogManager']]],
+  ['popuplayer_10',['PopupLayer',['../class_popup_window.html#aa5d8d2f834667e1ed73c7f08d5a36c51',1,'PopupWindow']]],
+  ['popupmenu_11',['popupMenu',['../class_popup_menu_handler.html#adb75ef89d4a80d30136b312725fd34e6',1,'PopupMenuHandler']]],
+  ['popupmenumanager_12',['popupMenuManager',['../class_bounding_box_visualizer.html#afd41c12b6736af832c8173a58d06ebd0',1,'BoundingBoxVisualizer.popupMenuManager'],['../class_lighting_controller.html#a63b00827b6509ff6eb2b36a2216e2237',1,'LightingController.popupMenuManager'],['../class_lod_manager.html#a7b53a9812b68f5c9c310b539d2960a44',1,'LodManager.popupMenuManager']]],
+  ['positionaction_13',['positionAction',['../class_raycast_handler.html#a0822163a2cefe6b1608db54f73a0bd04',1,'RaycastHandler']]],
+  ['positiontext_14',['positionText',['../class_object_spawner_a_r.html#a9a2cfd8af76a57960294cc2b5b14beef',1,'ObjectSpawnerAR']]],
+  ['progressbarpath_15',['ProgressBarPath',['../class_q_r_network_handler.html#a86a6ae0787143b0fcaaf12e314e983ff',1,'QRNetworkHandler']]],
+  ['progresstext_16',['ProgressText',['../class_q_r_progress_bar_manager.html#aa8b879a2415b889f6788ca649f7b0e65',1,'QRProgressBarManager']]]
+];

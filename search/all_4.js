@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['deleteactivepatent_0',['DeleteActivePatent',['../class_patent_manager.html#ad129b092f1b6513de6bcc5ea6f26e2f1',1,'PatentManager']]],
+  ['deletemodeltransformbutton_1',['DeleteModelTransformButton',['../class_model_transform_manager.html#a5002fd95f751ea16684e38e5e2290daf',1,'ModelTransformManager']]],
+  ['dequeuelog_2',['DequeueLog',['../class_log_manager.html#acfaf554affaf0335416858b7bd4aac96',1,'LogManager']]],
+  ['descriptionpopup_3',['descriptionPopup',['../class_popup_menu_manager.html#ac3189da806b6cca57b17e9f0c06b723c',1,'PopupMenuManager']]],
+  ['descriptions_4',['descriptions',['../class_popup_menu_manager.html#a9bd5a0f961d37e707cea0f351c887edb',1,'PopupMenuManager']]],
+  ['disablecontrollers_5',['DisableControllers',['../class_patent_transformer.html#ab23aacc8edde933b228ee4598d9cc383',1,'PatentTransformer']]],
+  ['disabletransforminputs_6',['DisableTransformInputs',['../class_patent_transformer.html#ac9efc4bd262d186f438301f16163e5da',1,'PatentTransformer']]],
+  ['displayaddmodelpopup_7',['DisplayAddModelPopup',['../class_add_model_manager.html#ac205344c4dbfb8626a39182eea949312',1,'AddModelManager']]],
+  ['displaydeletemodelpopup_8',['DisplayDeleteModelPopup',['../class_model_transform_manager.html#a6560b6653a21a6371c3fedd8821403bc',1,'ModelTransformManager']]],
+  ['displayminiobject_9',['DisplayMiniObject',['../class_mini_model_display_manager.html#a64af2ad762b78466efb79398f8f006f8',1,'MiniModelDisplayManager']]],
+  ['displaymodeldownloadscreen_10',['DisplayModelDownloadScreen',['../class_q_r_network_handler.html#a7d51e69d03a9ce2a50c3a389e823770d',1,'QRNetworkHandler']]],
+  ['displayresettransformpopup_11',['DisplayResetTransformPopup',['../class_model_transform_manager.html#a00fa62a325070b186d003c70b15de907',1,'ModelTransformManager']]],
+  ['dontdestroyobjects_12',['DontDestroyObjects',['../class_dont_destroy_objects.html',1,'']]],
+  ['dontdestroyobjects_2ecs_13',['DontDestroyObjects.cs',['../_dont_destroy_objects_8cs.html',1,'']]],
+  ['downloadmodel_14',['DownloadModel',['../class_q_r_network_handler.html#a38ad8606240832c388f9befd15693a07',1,'QRNetworkHandler']]],
+  ['dragdeltaaction_15',['dragDeltaAction',['../class_patent_transformer.html#ad5e4cd80e8969cf764a6be06e4000f1b',1,'PatentTransformer']]],
+  ['dragrotationspeed_16',['dragRotationSpeed',['../class_patent_transformer.html#ab878d31f27e8df0b679f115110dd38dc',1,'PatentTransformer']]],
+  ['dropspeed_17',['dropSpeed',['../class_log_text.html#ab36072da78992e4ed2d947ee8a9cc405',1,'LogText']]]
+];

@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['raiseclickevent_0',['RaiseClickEvent',['../class_raycast_handler.html#a4f41116351ae8e690449da51bb38c70a',1,'RaycastHandler']]],
+  ['raycasthandler_1',['RaycastHandler',['../class_raycast_handler.html',1,'']]],
+  ['raycasthandler_2',['raycastHandler',['../class_game_manager.html#aab20c4f9bbc31538619e7860162f12cb',1,'GameManager.raycastHandler'],['../class_u_i_manager.html#afea2580fcc2b76d12ce6b9f81650f610',1,'UIManager.raycastHandler']]],
+  ['raycasthandler_2ecs_3',['RaycastHandler.cs',['../_raycast_handler_8cs.html',1,'']]],
+  ['raycastmanager_4',['raycastManager',['../class_raycast_handler.html#a9fd53a5a8fbbd42afc42cd102255b02e',1,'RaycastHandler']]],
+  ['refreshedges_5',['RefreshEdges',['../class_bounding_box_visualizer.html#a93bb7e3fabb7f252ccb5ea5bca15d4d2',1,'BoundingBoxVisualizer']]],
+  ['remainingstayduration_6',['remainingStayDuration',['../class_log_text.html#a29a7574d628e9b830ca6620f73a66aad',1,'LogText']]],
+  ['resetdisplay_7',['ResetDisplay',['../class_mini_model_display_manager.html#a7deff82884ce4cb16b5a244d9d388741',1,'MiniModelDisplayManager']]],
+  ['resetmodeltransformbutton_8',['ResetModelTransformButton',['../class_model_transform_manager.html#aff0c0f0507a52b75c34e98eaa49c91fd',1,'ModelTransformManager']]],
+  ['resetnetworkhandler_9',['ResetNetworkHandler',['../class_q_r_network_handler.html#ab634c090ef1dcbed4d35ec3ec5de90c5',1,'QRNetworkHandler']]],
+  ['resetpatentbutton_10',['ResetPatentButton',['../class_reset_patent_button.html',1,'']]],
+  ['resetpatentbutton_2ecs_11',['ResetPatentButton.cs',['../_reset_patent_button_8cs.html',1,'']]],
+  ['resetpatenttransform_12',['ResetPatentTransform',['../class_object_spawner_a_r.html#a8e20b522fe13542ae6c38bcb57799056',1,'ObjectSpawnerAR.ResetPatentTransform()'],['../class_u_i_manager.html#a4961522a2aca4c3f2ff00196d1afc3f3',1,'UIManager.ResetPatentTransform()']]],
+  ['resetpatenttransformaction_13',['resetPatentTransformAction',['../class_reset_patent_button.html#ad0e0eb619eb36b097c660843f6b1ebd0',1,'ResetPatentButton']]],
+  ['resetrotation_14',['ResetRotation',['../class_patent_transformer.html#a15313b149dc006a302dd6ef8f3904a38',1,'PatentTransformer']]],
+  ['resetscanner_15',['ResetScanner',['../class_q_r_scanner.html#a25a69ec4f6837a2380bf101b6fa00dd2',1,'QRScanner']]],
+  ['resettransform_16',['ResetTransform',['../class_reset_patent_button.html#a25cb807080ceaf74b8196356bfaf6e02',1,'ResetPatentButton']]]
+];
