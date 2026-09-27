@@ -1,0 +1,109 @@
+# Unity-generated directories
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/[Pp]rofilerCaptures/
+/[Cc]ontent[Pp]ackages/
+/.utmp/
+
+# Generated LOD assets
+/[Aa]ssets/UMS_LODs/
+/[Aa]ssets/UMS_LODs.meta
+
+# Generated documentation
+/Documentation/output/
+
+# Local captures
+/CameraCapture.png
+
+# Unity-generated project and IDE files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.DotSettings.user
+/ExportedObj/
+/.consulo/
+/.vs/
+/.idea/
+/.vscode/
+
+# Local Gradle and package-manager caches
+/.gradle/
+/[Pp]ackages/com.unity.package-manager/
+
+# Unity plugin-generated IDE files
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# Addressables build output
+/ServerData/
+/[Aa]ssets/StreamingAssets/aa*
+/[Aa]ssets/AddressableAssetsData/link.xml*
+/[Aa]ssets/Addressables_Temp*
+/[Aa]ssets/AddressableAssetsData/*/*.bin*
+
+# Visual Scripting generated data
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+
+# Test Runner generated scenes
+/[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+InitTestScene*.unity*
+
+# Unity build caches and diagnostics
+/[Bb]urstDebugInformation_DoNotShip/
+/[Pp]rofiling/
+*.log
+*.dmp
+*.heap
+*.stackdump
+*.rsp
+*.response
+sysinfo.txt
+mono_crash.*
+crashlytics-build.properties
+
+# Player builds and exported packages
+*.apk
+*.aab
+*.app
+*.unitypackage
+*.unitypackage.meta
+
+# Blender backup files
+*.blend1
+*.blend1.meta
+
+# Editor and merge-tool temporary files
+*.swp
+*.swm
+*.bak
+*.orig
+
+# Unity Collaborate and Plastic SCM local data
+/[Cc]ollab/
+/PlasticSCM/
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
