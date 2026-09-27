@@ -1,0 +1,107 @@
+name: Doxygen
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "Assets/Scripts/**"
+      - "Documentation/**"
+      - ".github/workflows/doxygen.yml"
+  pull_request:
+    paths:
+      - "Assets/Scripts/**"
+      - "Documentation/**"
+      - ".github/workflows/doxygen.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: doxygen-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build HTML documentation
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          # Documentation only needs source files; skip large LFS assets.
+          lfs: false
+
+      - name: Install Doxygen
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes doxygen
+
+      - name: Generate documentation
+        working-directory: Documentation
+        run: doxygen Doxyfile
+
+      - name: Verify generated site
+        run: test -f Documentation/output/html/index.html
+
+      - name: Upload HTML documentation
+        uses: actions/upload-artifact@v7
+        with:
+          name: doxygen-html
+          path: Documentation/output/html
+          if-no-files-found: error
+          retention-days: 14
+
+  deploy:
+    name: Deploy documentation to gh-pages
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      actions: read
+      contents: write
+
+    steps:
+      - name: Check out repository history
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          lfs: false
+
+      - name: Download generated documentation
+        uses: actions/download-artifact@v8
+        with:
+          name: doxygen-html
+          path: site
+
+      - name: Publish to gh-pages
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git fetch origin gh-pages
+          publish_dir="${RUNNER_TEMP}/gh-pages"
+          git worktree add --detach "${publish_dir}" FETCH_HEAD
+
+          find "${publish_dir}" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a "${GITHUB_WORKSPACE}/site/." "${publish_dir}/"
+          touch "${publish_dir}/.nojekyll"
+
+          cd "${publish_dir}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+
+          if git diff --cached --quiet; then
+            echo "Documentation is already up to date."
+            exit 0
+          fi
+
+          git commit -m "docs(pages): deploy ${GITHUB_SHA}"
+          git push origin HEAD:gh-pages
