@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['initialize_0',['Initialize',['../class_model_plane_detection_manager.html#a7e97139a542e92509ad921cfcf527a7b',1,'ModelPlaneDetectionManager.Initialize()'],['../class_pivot_setting_manager.html#acccf208aa8b7cbe97cf4bc9ef04d4a0b',1,'PivotSettingManager.Initialize()'],['../class_u_i_visibility_manager.html#a66757115e564efdcfa4379270128c880',1,'UIVisibilityManager.Initialize()']]],
-  ['initializelogpool_1',['InitializeLogPool',['../class_log_manager.html#a5a399684ee27c89dfd55715b75d804d0',1,'LogManager']]],
-  ['invokepatentspawned_2',['InvokePatentSpawned',['../class_patent_manager.html#a54321502ca55cc380c55a25b2db7149a',1,'PatentManager']]]
+  ['handleclick_0',['HandleClick',['../classRaycastHandler.html#a98987656c1dc72cf12a88359fb409c69',1,'RaycastHandler']]],
+  ['handlemodeldeleted_1',['HandleModelDeleted',['../classObjectInfoManager.html#a3ad746092dad2284f258ec2bc04a41f6',1,'ObjectInfoManager']]],
+  ['handlepatentdeleted_2',['HandlePatentDeleted',['../classPivotSettingManager.html#a3bf0b1ba3ef4913e0de3a547077798d4',1,'PivotSettingManager']]],
+  ['handleplanedetectionchange_3',['HandlePlaneDetectionChange',['../classUIManager.html#a7e43fe0923125e2ecf35d15a5d4e2214',1,'UIManager']]],
+  ['handlescreenfitdetectionchange_4',['HandleScreenFitDetectionChange',['../classUIManager.html#a21ef31df74a821fe6a31760f8c770a6e',1,'UIManager']]],
+  ['handlespawnposition_5',['HandleSpawnPosition',['../classPatentTransformer.html#a765720931fc1cbbfd5dd75162d4b8cc4',1,'PatentTransformer']]],
+  ['handletogglechanged_6',['HandleToggleChanged',['../classPivotSettingManager.html#a60ad8404f69c6a182db8a285b5e9a3f0',1,'PivotSettingManager']]],
+  ['handleuivisibilitychanged_7',['HandleUIVisibilityChanged',['../classDebugModeManager.html#a16b51f3e3f0f0dca5cd18a79f839eeeb',1,'DebugModeManager']]]
 ];

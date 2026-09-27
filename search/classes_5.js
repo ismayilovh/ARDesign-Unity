@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['minimodeldisplaymanager_0',['MiniModelDisplayManager',['../class_mini_model_display_manager.html',1,'']]],
-  ['miscoptionsmanager_1',['MiscOptionsManager',['../class_misc_options_manager.html',1,'']]],
-  ['modelplanedetectionmanager_2',['ModelPlaneDetectionManager',['../class_model_plane_detection_manager.html',1,'']]],
-  ['modeltransformmanager_3',['ModelTransformManager',['../class_model_transform_manager.html',1,'']]],
-  ['modelviewmanager_4',['ModelViewManager',['../class_model_view_manager.html',1,'']]]
+  ['meshentry_0',['MeshEntry',['../structObjectInfoManager_1_1MeshEntry.html',1,'ObjectInfoManager']]],
+  ['minimodeldisplaymanager_1',['MiniModelDisplayManager',['../classMiniModelDisplayManager.html',1,'']]],
+  ['miscoptionsmanager_2',['MiscOptionsManager',['../classMiscOptionsManager.html',1,'']]],
+  ['modelplanedetectionmanager_3',['ModelPlaneDetectionManager',['../classModelPlaneDetectionManager.html',1,'']]],
+  ['modeltransformmanager_4',['ModelTransformManager',['../classModelTransformManager.html',1,'']]],
+  ['modelviewmanager_5',['ModelViewManager',['../classModelViewManager.html',1,'']]]
 ];

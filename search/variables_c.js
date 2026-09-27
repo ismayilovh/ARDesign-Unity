@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['onetooneviewtoggle_0',['OneToOneViewToggle',['../class_model_view_manager.html#afb56eeadb0ee90992be2233439d0e946',1,'ModelViewManager']]],
-  ['onetooneviewuitoggle_1',['OneToOneViewUIToggle',['../class_model_view_manager.html#ad3c37d98b0f524ba87c2d0f12b52d544',1,'ModelViewManager']]],
-  ['originalcenter_2',['originalCenter',['../class_screen_scaler.html#a6de57ed7931b3e266c3eb49937a6ed01',1,'ScreenScaler']]],
-  ['originalsize_3',['originalSize',['../class_screen_scaler.html#a8582259e81d9274f1d73e19cbc1e074d',1,'ScreenScaler']]]
+  ['normalcolor_0',['normalColor',['../classLogText.html#adfb7ef0be775241e667e5cd2e0bdc381',1,'LogText']]],
+  ['normalviewtoggle_1',['NormalViewToggle',['../classModelViewManager.html#a3914a8400b8190cddb2decb1235f0381',1,'ModelViewManager']]],
+  ['normalviewuitoggle_2',['NormalViewUIToggle',['../classModelViewManager.html#aa38b57ad12f7a33ec46074be84679fe1',1,'ModelViewManager']]],
+  ['notificationstoggle_3',['notificationsToggle',['../classMiscOptionsManager.html#a7d23529b3405e2c402951a59397664d2',1,'MiscOptionsManager']]]
 ];

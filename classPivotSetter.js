@@ -1,0 +1,26 @@
+var classPivotSetter =
+[
+    [ "ApplyCalculatedPivot", "classPivotSetter.html#a614b45c3e3d178f9e565eb929191a4f0", null ],
+    [ "ApplyOriginalPivot", "classPivotSetter.html#a8f547c054dc2fecf64eb627e5a1c7292", null ],
+    [ "CacheOriginalPivotState", "classPivotSetter.html#a1357b5d2399e8d6aa39fd50704e08687", null ],
+    [ "CalculatePivotIfNeeded", "classPivotSetter.html#a2619a2ce2cdbeb67f26719559b834b6d", null ],
+    [ "ChangeToOneOneMode", "classPivotSetter.html#a2ba93b3c2ee0b518eeaa1694f7835b1d", null ],
+    [ "CreateModelRoot", "classPivotSetter.html#ab4dc57c91a8a6fd824412b9bba47d9ce", null ],
+    [ "EncapsulateBounds", "classPivotSetter.html#a0a61e7aa6b71773a12f880e6e3958cda", null ],
+    [ "GetBounds", "classPivotSetter.html#a10446c1260fc67247e5c00af3917c223", null ],
+    [ "GetSpawnBounds", "classPivotSetter.html#a639cf16e9b918517162dcfca3432021c", null ],
+    [ "Initialize", "classPivotSetter.html#a25b9f138c6617c14192a1eeac4bb5ea4", null ],
+    [ "SetPlacementOnGround", "classPivotSetter.html#a5ada433396525e9df7b47ce20088aaac", null ],
+    [ "SetUseCalculatedPivot", "classPivotSetter.html#a6380ffba4fdcc948a140ef8e78ad3b63", null ],
+    [ "SnapToYOffset", "classPivotSetter.html#a315511afac34fb1335e32d90b150307f", null ],
+    [ "calculatedLocalPosition", "classPivotSetter.html#a0b549de24cdf161d4562f208a287e37b", null ],
+    [ "contentRoot", "classPivotSetter.html#a9ef01bc45a95d52a4951cf33c4d5598a", null ],
+    [ "hasCalculatedState", "classPivotSetter.html#aafce11238ae0d4df7b10adf3558220af", null ],
+    [ "hasOriginalState", "classPivotSetter.html#a89ec277c550446db6aae5de5e98b0fa9", null ],
+    [ "originalLocalPosition", "classPivotSetter.html#a69c1d72aa79c2f48b365efc46b4c337c", null ],
+    [ "originalLocalRotation", "classPivotSetter.html#a684cc321ba174e4219ca5bc921a6b7b3", null ],
+    [ "originalLocalScale", "classPivotSetter.html#a88706c3b1cdce0a64b639a038f5c7516", null ],
+    [ "placeOnGround", "classPivotSetter.html#a7b8ce7d6053e375b54b57b93acefb325", null ],
+    [ "BoundsVersion", "classPivotSetter.html#a87245d6dd0c2a9547c5ddb7f15da9090", null ],
+    [ "UsesCalculatedPivot", "classPivotSetter.html#a13696e0dcd654df6080b3b026e2c48e0", null ]
+];

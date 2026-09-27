@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['addmodelmanager_0',['AddModelManager',['../class_add_model_manager.html',1,'']]],
-  ['arplaneareacalculator_1',['ARPlaneAreaCalculator',['../class_a_r_plane_area_calculator.html',1,'']]]
+  ['addmodelmanager_0',['AddModelManager',['../classAddModelManager.html',1,'']]],
+  ['arplaneareacalculator_1',['ARPlaneAreaCalculator',['../classARPlaneAreaCalculator.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qrcode_0',['QrCode',['../class_q_r_scanner.html#a8e571b3225925ee269d55ec56e899c73',1,'QRScanner']]]
+  ['patent_0',['Patent',['../classPatentManager.html#a54be3951a1569e3bd3e433b488c71384',1,'PatentManager']]]
 ];

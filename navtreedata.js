@@ -24,15 +24,15 @@
 */
 var NAVTREE =
 [
-  [ "3DPatent AR", "index.html", [
+  [ "3DPatentAR", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Properties", "functions_prop.html", null ],
         [ "Events", "functions_evnt.html", null ]
@@ -50,11 +50,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_a_r_plane_area_calculator_8cs.html",
-"class_patent_transformer.html#a15313b149dc006a302dd6ef8f3904a38",
-"dir_cfec7ee81d3419b9a9b6e408e3be3ca4.html"
+"ARPlaneAreaCalculator_8cs.html",
+"classModelTransformManager.html#a7a68541b4c0d509f5b12db2b3cdf1aca",
+"classQRNetworkHandler.html#acc1b05a7d1567d2497cc14143af7010a"
 ];
 
-const SYNCONMSG = 'click to disable panel synchronization';
-const SYNCOFFMSG = 'click to enable panel synchronization';
-const LISTOFALLMEMBERS = 'List of all members';
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';

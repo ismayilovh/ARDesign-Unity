@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['loadglbobject_0',['LoadGLBObject',['../class_q_r_network_handler.html#addf321775dcfe6087ed06c686257cc7f',1,'QRNetworkHandler']]],
-  ['locklocktoggle_1',['LockLockToggle',['../class_model_transform_manager.html#a76f1916748e4d0c359bbbbd521c45b10',1,'ModelTransformManager']]],
-  ['lockresetbutton_2',['LockResetButton',['../class_model_transform_manager.html#a22e1e2fc6fa38496b54e423007e633d3',1,'ModelTransformManager']]]
+  ['initialize_0',['initialize',['../classModelPlaneDetectionManager.html#a7e97139a542e92509ad921cfcf527a7b',1,'ModelPlaneDetectionManager.Initialize()'],['../classPivotSetter.html#a25b9f138c6617c14192a1eeac4bb5ea4',1,'PivotSetter.Initialize()'],['../classPivotSettingManager.html#acccf208aa8b7cbe97cf4bc9ef04d4a0b',1,'PivotSettingManager.Initialize()'],['../classUIVisibilityManager.html#a66757115e564efdcfa4379270128c880',1,'UIVisibilityManager.Initialize()']]],
+  ['initializelogpool_1',['InitializeLogPool',['../classLogManager.html#a5a399684ee27c89dfd55715b75d804d0',1,'LogManager']]],
+  ['invokepatentspawned_2',['InvokePatentSpawned',['../classPatentManager.html#a54321502ca55cc380c55a25b2db7149a',1,'PatentManager']]]
 ];

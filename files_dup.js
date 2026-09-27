@@ -1,4 +1,26 @@
 var files_dup =
 [
-    [ "ArTest", "dir_3a099727cce9118a7d79a39b93e1b261.html", "dir_3a099727cce9118a7d79a39b93e1b261" ]
+    [ "LOD", "dir_1d5aa4a6c125a4b4b201b205e7a921d5.html", "dir_1d5aa4a6c125a4b4b201b205e7a921d5" ],
+    [ "QR", "dir_d8142f00fd6b0000168348d9487eb68e.html", "dir_d8142f00fd6b0000168348d9487eb68e" ],
+    [ "UI", "dir_53ff6e473d46d4e442ba5a7ce9f895e3.html", "dir_53ff6e473d46d4e442ba5a7ce9f895e3" ],
+    [ "ARPlaneAreaCalculator.cs", "ARPlaneAreaCalculator_8cs.html", "ARPlaneAreaCalculator_8cs" ],
+    [ "BoundingBoxVisualizer.cs", "BoundingBoxVisualizer_8cs.html", "BoundingBoxVisualizer_8cs" ],
+    [ "DontDestroyObjects.cs", "DontDestroyObjects_8cs.html", "DontDestroyObjects_8cs" ],
+    [ "GameManager.cs", "GameManager_8cs.html", "GameManager_8cs" ],
+    [ "LightingController.cs", "LightingController_8cs.html", "LightingController_8cs" ],
+    [ "LodManager.cs", "LodManager_8cs.html", "LodManager_8cs" ],
+    [ "ModelPlaneDetectionManager.cs", "ModelPlaneDetectionManager_8cs.html", "ModelPlaneDetectionManager_8cs" ],
+    [ "ModelTransformManager.cs", "ModelTransformManager_8cs.html", "ModelTransformManager_8cs" ],
+    [ "ModelViewManager.cs", "ModelViewManager_8cs.html", "ModelViewManager_8cs" ],
+    [ "ObjectSpawnerAR.cs", "ObjectSpawnerAR_8cs.html", "ObjectSpawnerAR_8cs" ],
+    [ "PatentManager.cs", "PatentManager_8cs.html", "PatentManager_8cs" ],
+    [ "PatentTransformer.cs", "PatentTransformer_8cs.html", "PatentTransformer_8cs" ],
+    [ "PivotSetter.cs", "PivotSetter_8cs.html", "PivotSetter_8cs" ],
+    [ "RaycastHandler.cs", "RaycastHandler_8cs.html", "RaycastHandler_8cs" ],
+    [ "ScalingModeController.cs", "ScalingModeController_8cs.html", "ScalingModeController_8cs" ],
+    [ "SceneManagerAr.cs", "SceneManagerAr_8cs.html", "SceneManagerAr_8cs" ],
+    [ "ScreenScaler.cs", "ScreenScaler_8cs.html", "ScreenScaler_8cs" ],
+    [ "State.cs", "State_8cs.html", "State_8cs" ],
+    [ "StateMachine.cs", "StateMachine_8cs.html", "StateMachine_8cs" ],
+    [ "UIVisibilityManager.cs", "UIVisibilityManager_8cs.html", "UIVisibilityManager_8cs" ]
 ];

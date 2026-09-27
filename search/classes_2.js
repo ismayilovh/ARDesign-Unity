@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['dontdestroyobjects_0',['DontDestroyObjects',['../class_dont_destroy_objects.html',1,'']]]
+  ['debugmodemanager_0',['DebugModeManager',['../classDebugModeManager.html',1,'']]],
+  ['dontdestroyobjects_1',['DontDestroyObjects',['../classDontDestroyObjects.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['boundingboxvisualizer_0',['BoundingBoxVisualizer',['../class_bounding_box_visualizer.html',1,'']]]
+  ['boundingboxvisualizer_0',['BoundingBoxVisualizer',['../classBoundingBoxVisualizer.html',1,'']]]
 ];

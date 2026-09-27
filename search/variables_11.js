@@ -1,16 +1,15 @@
 var searchData=
 [
-  ['tapaction_0',['tapAction',['../class_raycast_handler.html#a6e14758a4802a1fe43ce16c47f9934a9',1,'RaycastHandler']]],
-  ['targetpos_1',['targetPos',['../class_log_text.html#a9524659ed64b32d093ca903279358928',1,'LogText']]],
-  ['targetrotation_2',['targetRotation',['../class_patent_transformer.html#af1a97da836ece9a7c20c451ad1a3c0c3',1,'PatentTransformer']]],
-  ['targetscale_3',['targetScale',['../class_patent_transformer.html#a32ba0f2e016e8b3169f1500b434eb245',1,'PatentTransformer']]],
-  ['text_4',['text',['../class_raycast_handler.html#ab9f73fbe8ecbd0546996ca345c048304',1,'RaycastHandler.text'],['../class_log_text.html#a776d60770db4f8d8eec4b21647c4d66e',1,'LogText.text']]],
-  ['toggle_5',['toggle',['../class_plane_detection_controller.html#afdf99493c25b5edff5e4b2c57128bfed',1,'PlaneDetectionController']]],
-  ['toggletext_6',['toggleText',['../class_plane_detection_controller.html#ae610dee195582ebf7fccd2dd8b08b523',1,'PlaneDetectionController']]],
-  ['touchcount_7',['touchCount',['../class_raycast_handler.html#af609843044dc2d332bddd91a3e2d25af',1,'RaycastHandler']]],
-  ['touched_8',['touched',['../class_raycast_handler.html#a63bd8c92c50740b3d9b1bf0f5c98c0eb',1,'RaycastHandler']]],
-  ['touchposition_9',['touchPosition',['../class_raycast_handler.html#adc2b619f270282d16b466d7ae781a3b6',1,'RaycastHandler']]],
-  ['twistdeltaaction_10',['twistDeltaAction',['../class_patent_transformer.html#ab4950b4472314b786bd5c474b25cd978',1,'PatentTransformer']]],
-  ['twistrotationspeed_11',['twistRotationSpeed',['../class_patent_transformer.html#a2d7b54c70db2340c478d13fbc953cb91',1,'PatentTransformer']]],
-  ['txt_12',['txt',['../class_screen_scaler.html#ae42b1237130d421ccb1818242c565379',1,'ScreenScaler']]]
+  ['scaleamount_0',['scaleAmount',['../classScreenScaler.html#a49c701838f9dfe4b8e4b2efc915eda21',1,'ScreenScaler']]],
+  ['scaletext_1',['scaleText',['../classObjectSpawnerAR.html#a632207d69bafb70e0e6339459e1e8328',1,'ObjectSpawnerAR']]],
+  ['scancoroutine_2',['scanCoroutine',['../classQRScanner.html#af462b985e424a4763b55696b9cb25d6b',1,'QRScanner']]],
+  ['scanintervalframes_3',['scanIntervalFrames',['../classQRScanner.html#a49675b4b33af94c0d82ee8bdd4467cb3',1,'QRScanner']]],
+  ['screenfitcontroller_4',['screenFitController',['../classUIManager.html#ad57a1e7bb8526bceb91d5b886bed0e67',1,'UIManager']]],
+  ['showdetectedplanes_5',['showDetectedPlanes',['../classRaycastHandler.html#afd4f9aa238cb4ec30f2990fc586b06f9',1,'RaycastHandler']]],
+  ['slider_6',['slider',['../classScreenScaler.html#a7dfee10e36894cfb3ea7b4d46c06f64c',1,'ScreenScaler.slider'],['../classQRProgressBarManager.html#a96e7ef7bb2d7e9f2bc06ae0c35610fc5',1,'QRProgressBarManager.Slider']]],
+  ['smoothspeed_7',['smoothSpeed',['../classPatentTransformer.html#ab36ab329560b68ddca18fe16bccafdfa',1,'PatentTransformer']]],
+  ['spawnwithinscreen_8',['spawnWithinScreen',['../classObjectSpawnerAR.html#aeb2deeb05ac974b92a0db137203d1808',1,'ObjectSpawnerAR']]],
+  ['startpoint_9',['startpoint',['../classLogManager.html#ac49c0a19fb41ca90c3a3582276741271',1,'LogManager.startPoint'],['../classLogText.html#a342084654dc5bc351c63ca59b57e7ada',1,'LogText.startPoint']]],
+  ['stayduration_10',['stayDuration',['../classLogText.html#a83a406bc9bb41bd7c5fa9d2d068a5671',1,'LogText']]],
+  ['subscribedpatentmanager_11',['subscribedpatentmanager',['../classLodManager.html#a109f41969d57f8cd08625a02e0df1326',1,'LodManager.subscribedPatentManager'],['../classObjectInfoManager.html#a657ba0e1c86527ceac4a4e905c5e6ea7',1,'ObjectInfoManager.subscribedPatentManager']]]
 ];

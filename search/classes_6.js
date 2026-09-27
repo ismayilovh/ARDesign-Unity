@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['objectspawnerar_0',['ObjectSpawnerAR',['../class_object_spawner_a_r.html',1,'']]]
+  ['objectinfomanager_0',['ObjectInfoManager',['../classObjectInfoManager.html',1,'']]],
+  ['objectspawnerar_1',['ObjectSpawnerAR',['../classObjectSpawnerAR.html',1,'']]]
 ];

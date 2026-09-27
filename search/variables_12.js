@@ -1,7 +1,21 @@
 var searchData=
 [
-  ['usemousefallback_0',['useMouseFallback',['../class_patent_transformer.html#aa0d9d73114ecf817686d0afd745a7a2e',1,'PatentTransformer']]],
-  ['usepivot_1',['usePivot',['../class_patent_transformer.html#a4c4bf649aa3195ddceebb6ec4c9d38c3',1,'PatentTransformer']]],
-  ['useplanedetection_2',['usePlaneDetection',['../class_raycast_handler.html#a7b42530e5f59ee396e7c9de7af63b283',1,'RaycastHandler']]],
-  ['userpreference_3',['userPreference',['../class_model_plane_detection_manager.html#ac7428924f691cb90dab9c94338686df6',1,'ModelPlaneDetectionManager']]]
+  ['tapaction_0',['tapAction',['../classRaycastHandler.html#a6e14758a4802a1fe43ce16c47f9934a9',1,'RaycastHandler']]],
+  ['targetframerate_1',['targetFrameRate',['../classGameManager.html#a4748bb084eb0fa84c548ec13ff1ceb4e',1,'GameManager']]],
+  ['targetpos_2',['targetPos',['../classLogText.html#a9524659ed64b32d093ca903279358928',1,'LogText']]],
+  ['targetrotation_3',['targetRotation',['../classPatentTransformer.html#af1a97da836ece9a7c20c451ad1a3c0c3',1,'PatentTransformer']]],
+  ['targetscale_4',['targetScale',['../classPatentTransformer.html#a32ba0f2e016e8b3169f1500b434eb245',1,'PatentTransformer']]],
+  ['text_5',['text',['../classRaycastHandler.html#ab9f73fbe8ecbd0546996ca345c048304',1,'RaycastHandler.text'],['../classLogText.html#a776d60770db4f8d8eec4b21647c4d66e',1,'LogText.text']]],
+  ['textbuilder_6',['textbuilder',['../classDebugModeManager.html#a1f366bfb709d1a1ba8adceb37dc4db74',1,'DebugModeManager.textBuilder'],['../classObjectInfoManager.html#a4978a6e66d6e708124c7a33266e3562a',1,'ObjectInfoManager.textBuilder']]],
+  ['toggle_7',['toggle',['../classPlaneDetectionController.html#afdf99493c25b5edff5e4b2c57128bfed',1,'PlaneDetectionController']]],
+  ['togglecallbackregistered_8',['toggleCallbackRegistered',['../classObjectInfoManager.html#ad841b4151d8ad536d6ca3a8625bb1ca5',1,'ObjectInfoManager']]],
+  ['toggletext_9',['toggleText',['../classPlaneDetectionController.html#ae610dee195582ebf7fccd2dd8b08b523',1,'PlaneDetectionController']]],
+  ['touchcount_10',['touchCount',['../classRaycastHandler.html#af609843044dc2d332bddd91a3e2d25af',1,'RaycastHandler']]],
+  ['touched_11',['touched',['../classRaycastHandler.html#a63bd8c92c50740b3d9b1bf0f5c98c0eb',1,'RaycastHandler']]],
+  ['touchposition_12',['touchPosition',['../classRaycastHandler.html#adc2b619f270282d16b466d7ae781a3b6',1,'RaycastHandler']]],
+  ['transforminputsenabled_13',['transformInputsEnabled',['../classPatentTransformer.html#a903135943ff7bfcedb4e2f16e158040b',1,'PatentTransformer']]],
+  ['trianglecount_14',['triangleCount',['../classObjectInfoManager.html#a556f6bcf7fe160dedf6b63085df80308',1,'ObjectInfoManager']]],
+  ['twistdeltaaction_15',['twistDeltaAction',['../classPatentTransformer.html#ab4950b4472314b786bd5c474b25cd978',1,'PatentTransformer']]],
+  ['twistrotationspeed_16',['twistRotationSpeed',['../classPatentTransformer.html#a2d7b54c70db2340c478d13fbc953cb91',1,'PatentTransformer']]],
+  ['txt_17',['txt',['../classScreenScaler.html#ae42b1237130d421ccb1818242c565379',1,'ScreenScaler']]]
 ];
