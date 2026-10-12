@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
@@ -24,6 +25,9 @@ public class QRScanner : MonoBehaviour
 
     private byte[] luminanceBuffer;
     private Coroutine scanCoroutine;
+    private Task<string> activeDecodeTask;
+    private int scanSessionId;
+    private int activeDecodeSessionId;
 
     /// <summary>The decoded QR code string, or <see cref="string.Empty"/> when no code has been found.</summary>
     public string QrCode { get; private set; }
@@ -70,6 +74,8 @@ public class QRScanner : MonoBehaviour
 
     private void OnDestroy()
     {
+        scanSessionId++;
+
         if (StateMachine.Instance != null)
             StateMachine.Instance.GetState(StateMachine.States.QR_SCAN_STATE).OnStateEnter -= StartScanner;
 
@@ -83,8 +89,9 @@ public class QRScanner : MonoBehaviour
     public void StartScanner()
     {
         StopScannerCoroutine();
+        scanSessionId++;
         QrCode = string.Empty;
-        scanCoroutine = StartCoroutine(ScanFrameForQRCode(scanIntervalFrames));
+        scanCoroutine = StartCoroutine(ScanFrameForQRCode(scanIntervalFrames, scanSessionId));
     }
 
     /// <summary>
@@ -92,6 +99,7 @@ public class QRScanner : MonoBehaviour
     /// </summary>
     public void StopScanner()
     {
+        scanSessionId++;
         QrCode = string.Empty;
         StopScannerCoroutine();
     }
@@ -111,43 +119,102 @@ public class QRScanner : MonoBehaviour
     /// <see cref="StateMachine.States.QR_SCAN_STATE"/>.
     /// </summary>
     /// <param name="waitframeCount">Number of frames to skip between each decode attempt.</param>
-    IEnumerator ScanFrameForQRCode(int waitframeCount)
+    IEnumerator ScanFrameForQRCode(int waitframeCount, int sessionId)
     {
-        while (string.IsNullOrEmpty(QrCode) && StateMachine.Instance.CurrentStateName == StateMachine.States.QR_SCAN_STATE)
+        while (sessionId == scanSessionId && string.IsNullOrEmpty(QrCode) &&
+               StateMachine.Instance.CurrentStateName == StateMachine.States.QR_SCAN_STATE)
         {
             for (int i = 0; i < waitframeCount; i++)
                 yield return null;
 
-            if (StateMachine.Instance.CurrentStateName != StateMachine.States.QR_SCAN_STATE)
+            if (sessionId != scanSessionId ||
+                StateMachine.Instance.CurrentStateName != StateMachine.States.QR_SCAN_STATE)
                 break;
+
+            // A stopped coroutine cannot cancel an in-progress synchronous ZXing decode.
+            // Wait for it before reusing the reader, and discard its result if it belongs
+            // to an earlier scan session.
+            if (activeDecodeTask != null)
+            {
+                Task<string> pendingTask = activeDecodeTask;
+                while (!pendingTask.IsCompleted)
+                    yield return null;
+
+                if (ReferenceEquals(activeDecodeTask, pendingTask))
+                    activeDecodeTask = null;
+
+                if (pendingTask.IsFaulted)
+                {
+                    Debug.LogWarning(pendingTask.Exception?.GetBaseException().Message);
+                }
+                else if (pendingTask.Status == TaskStatus.RanToCompletion &&
+                         activeDecodeSessionId == sessionId &&
+                         StateMachine.Instance.CurrentStateName == StateMachine.States.QR_SCAN_STATE)
+                {
+                    QrCode = pendingTask.Result;
+                }
+
+                if (!string.IsNullOrEmpty(QrCode))
+                    break;
+
+                // The completed task may have come from a previous scan session.
+                if (activeDecodeSessionId != sessionId)
+                    continue;
+            }
 
             try
             {
-                QrCode = DecodeLatestCameraImage();
+                activeDecodeSessionId = sessionId;
+                activeDecodeTask = DecodeLatestCameraImage();
             }
             catch (Exception ex) { Debug.LogWarning(ex.Message); }
+
+            if (activeDecodeTask != null)
+            {
+                Task<string> pendingTask = activeDecodeTask;
+                while (!pendingTask.IsCompleted)
+                    yield return null;
+
+                if (ReferenceEquals(activeDecodeTask, pendingTask))
+                    activeDecodeTask = null;
+
+                if (pendingTask.IsFaulted)
+                {
+                    Debug.LogWarning(pendingTask.Exception?.GetBaseException().Message);
+                }
+                else if (pendingTask.Status == TaskStatus.RanToCompletion &&
+                         sessionId == scanSessionId &&
+                         StateMachine.Instance.CurrentStateName == StateMachine.States.QR_SCAN_STATE)
+                {
+                    QrCode = pendingTask.Result;
+                }
+            }
         }
 
-        scanCoroutine = null;
-        if (!string.IsNullOrEmpty(QrCode))
+        if (sessionId == scanSessionId)
+            scanCoroutine = null;
+
+        if (sessionId == scanSessionId && !string.IsNullOrEmpty(QrCode) &&
+            StateMachine.Instance.CurrentStateName == StateMachine.States.QR_SCAN_STATE)
         {
             StateMachine.Instance.SetState(StateMachine.States.QR_SCAN_COMPLETE_STATE);
         }
     }
 
     /// <summary>
-    /// Decodes a downsampled grayscale CPU camera image. Reading the luminance
-    /// plane avoids the full-resolution GPU readback, Texture2D allocation, and
-    /// ARGB conversion previously performed on every scan attempt.
+    /// Captures a downsampled grayscale CPU camera image on the main thread,
+    /// then schedules ZXing decoding of the copied pixels on a worker. Reading
+    /// the luminance plane avoids full-resolution GPU readback, Texture2D
+    /// allocation, and ARGB conversion on every scan attempt.
     /// </summary>
-    private string DecodeLatestCameraImage()
+    private Task<string> DecodeLatestCameraImage()
     {
         if (cameraManager == null || !cameraManager.TryAcquireLatestCpuImage(out XRCpuImage image))
-            return string.Empty;
+            return Task.FromResult(string.Empty);
 
         try
         {
-            if (image.planeCount == 0) return string.Empty;
+            if (image.planeCount == 0) return Task.FromResult(string.Empty);
 
             XRCpuImage.Plane luminancePlane = image.GetPlane(0);
             int largestDimension = Mathf.Max(image.width, image.height);
@@ -156,6 +223,8 @@ public class QRScanner : MonoBehaviour
             int scanHeight = Mathf.Max(1, image.height / sampleStep);
             int requiredLength = scanWidth * scanHeight;
 
+            // Only one decode task may be active; the coroutine waits for it to finish
+            // before the next capture, so this buffer can be reused safely.
             if (luminanceBuffer == null || luminanceBuffer.Length != requiredLength)
                 luminanceBuffer = new byte[requiredLength];
 
@@ -171,16 +240,27 @@ public class QRScanner : MonoBehaviour
                 }
             }
 
-            Result result = m_BarcodeReader.Decode(
-                luminanceBuffer,
-                scanWidth,
-                scanHeight,
-                RGBLuminanceSource.BitmapFormat.Gray8);
-            return result?.Text ?? string.Empty;
+            IBarcodeReader barcodeReader = m_BarcodeReader;
+            byte[] pixelBuffer = luminanceBuffer;
+            return Task.Run(() => DecodeLuminance(barcodeReader, pixelBuffer, scanWidth, scanHeight));
         }
         finally
         {
             image.Dispose();
         }
+    }
+
+    /// <summary>
+    /// Runs ZXing against a managed buffer. This method intentionally uses no
+    /// Unity or AR Foundation APIs and is safe to execute on a worker thread.
+    /// </summary>
+    private static string DecodeLuminance(IBarcodeReader barcodeReader, byte[] luminanceBuffer, int width, int height)
+    {
+        Result result = barcodeReader.Decode(
+            luminanceBuffer,
+            width,
+            height,
+            RGBLuminanceSource.BitmapFormat.Gray8);
+        return result?.Text ?? string.Empty;
     }
 }
