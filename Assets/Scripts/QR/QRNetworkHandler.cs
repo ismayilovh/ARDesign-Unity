@@ -179,13 +179,19 @@ public class QRNetworkHandler : MonoBehaviour
                     Debug.Log("Model loaded successfully!");
                     LoadedModel = spawnParent.GetChild(childCountBeforeImport).gameObject;
 
-                    // Generate once on the loaded template. Its LOD hierarchy and
-                    // completion flag are cloned, so placement does not simplify
-                    // every mesh again on the main thread.
+                    // Prepare the inactive template before publishing it. Existing
+                    // imported LODGroups are reused; otherwise simplification runs
+                    // on a worker so it does not block the main thread.
                     if (!LoadedModel.TryGetComponent<GenerateLOD>(out _))
                         LoadedModel.AddComponent<GenerateLOD>();
 
+                    GenerateLOD lodGenerator = LoadedModel.GetComponent<GenerateLOD>();
                     LoadedModel.SetActive(false);
+
+                    await lodGenerator.GenerateAsync();
+                    if (loadGeneration != m_LoadGeneration)
+                        return false;
+
                     PatentManager.Instance.Patent = LoadedModel;
                     m_LoadedGltf = gltf;
                     keepImporter = true;
