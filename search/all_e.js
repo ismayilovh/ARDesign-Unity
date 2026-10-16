@@ -1,7 +1,7 @@
 var searchData=
 [
   ['panelroot_0',['panelroot',['../classObjectInfoManager.html#a3e7aef966331b4bb3fb6ef419ae7eb0a',1,'ObjectInfoManager.panelRoot'],['../classMiscOptionsManager.html#ab68344547f6fba9c29ba89805df1a0b7',1,'MiscOptionsManager.panelRoot']]],
-  ['patent_1',['patent',['../GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a092ade8847d7c0575bae2ecb87ffcbc4',1,'Patent:&#160;GameManager.cs'],['../classPatentManager.html#a54be3951a1569e3bd3e433b488c71384',1,'PatentManager.Patent'],['../classPatentManager.html#aa31fdb92d7972456bd15890493d4b2d3',1,'PatentManager.patent'],['../classObjectSpawnerAR.html#a3fdb28c956a273062b1c847209f5269d',1,'ObjectSpawnerAR.patent']]],
+  ['patent_1',['patent',['../GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a092ade8847d7c0575bae2ecb87ffcbc4',1,'Patent:&#160;GameManager.cs'],['../classPatentManager.html#aa31fdb92d7972456bd15890493d4b2d3',1,'PatentManager.patent'],['../classObjectSpawnerAR.html#a3fdb28c956a273062b1c847209f5269d',1,'ObjectSpawnerAR.patent'],['../classPatentManager.html#a54be3951a1569e3bd3e433b488c71384',1,'PatentManager.Patent']]],
   ['patentdeletedevent_2',['patentDeletedEvent',['../classPatentManager.html#a2d59940de6ed8c4552d7b68301d95b69',1,'PatentManager']]],
   ['patentmanager_3',['patentmanager',['../classPatentManager.html',1,'PatentManager'],['../classPatentTransformer.html#acb00add6fe38bc66376e5dbbbc118d82',1,'PatentTransformer.patentManager']]],
   ['patentmanager_2ecs_4',['PatentManager.cs',['../PatentManager_8cs.html',1,'']]],

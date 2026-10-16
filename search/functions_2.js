@@ -18,7 +18,8 @@ var searchData=
   ['closeallnotifications_15',['CloseAllNotifications',['../classLogManager.html#ad5d0adaee8cb18e93f5003815198dad4',1,'LogManager']]],
   ['closeimmediately_16',['CloseImmediately',['../classLogText.html#a48fd7b9da1d0b0d221e13334a5aea771',1,'LogText']]],
   ['computeworldbounds_17',['ComputeWorldBounds',['../classObjectInfoManager.html#a686c2f16b908e3bc9ebe269127fe9aca',1,'ObjectInfoManager']]],
-  ['counttriangles_18',['CountTriangles',['../classObjectInfoManager.html#af7d3032693b5d0d5482b1f939b60b62c',1,'ObjectInfoManager']]],
-  ['create_19',['Create',['../classPopupBuilder.html#a35410b9ed427b69bc2d41079e487ee5f',1,'PopupBuilder']]],
-  ['createmodelroot_20',['CreateModelRoot',['../classPivotSetter.html#ab4dc57c91a8a6fd824412b9bba47d9ce',1,'PivotSetter']]]
+  ['configuregeneration_18',['ConfigureGeneration',['../classGenerateLOD.html#a8156bc4700d579c86771ef59d9c5c19f',1,'GenerateLOD']]],
+  ['counttriangles_19',['CountTriangles',['../classObjectInfoManager.html#af7d3032693b5d0d5482b1f939b60b62c',1,'ObjectInfoManager']]],
+  ['create_20',['Create',['../classPopupBuilder.html#a35410b9ed427b69bc2d41079e487ee5f',1,'PopupBuilder']]],
+  ['createmodelroot_21',['CreateModelRoot',['../classPivotSetter.html#ab4dc57c91a8a6fd824412b9bba47d9ce',1,'PivotSetter']]]
 ];

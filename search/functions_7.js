@@ -7,5 +7,6 @@ var searchData=
   ['handlescreenfitdetectionchange_4',['HandleScreenFitDetectionChange',['../classUIManager.html#a21ef31df74a821fe6a31760f8c770a6e',1,'UIManager']]],
   ['handlespawnposition_5',['HandleSpawnPosition',['../classPatentTransformer.html#a765720931fc1cbbfd5dd75162d4b8cc4',1,'PatentTransformer']]],
   ['handletogglechanged_6',['HandleToggleChanged',['../classPivotSettingManager.html#a60ad8404f69c6a182db8a285b5e9a3f0',1,'PivotSettingManager']]],
-  ['handleuivisibilitychanged_7',['HandleUIVisibilityChanged',['../classDebugModeManager.html#a16b51f3e3f0f0dca5cd18a79f839eeeb',1,'DebugModeManager']]]
+  ['handleuivisibilitychanged_7',['HandleUIVisibilityChanged',['../classDebugModeManager.html#a16b51f3e3f0f0dca5cd18a79f839eeeb',1,'DebugModeManager']]],
+  ['hasexistinglodgroups_8',['HasExistingLodGroups',['../classGenerateLOD.html#a6eb46c949d57d135870e0e7b40d50723',1,'GenerateLOD']]]
 ];

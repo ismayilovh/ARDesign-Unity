@@ -26,11 +26,12 @@ var searchData=
   ['closeallnotifications_23',['CloseAllNotifications',['../classLogManager.html#ad5d0adaee8cb18e93f5003815198dad4',1,'LogManager']]],
   ['closeimmediately_24',['CloseImmediately',['../classLogText.html#a48fd7b9da1d0b0d221e13334a5aea771',1,'LogText']]],
   ['computeworldbounds_25',['ComputeWorldBounds',['../classObjectInfoManager.html#a686c2f16b908e3bc9ebe269127fe9aca',1,'ObjectInfoManager']]],
-  ['contentroot_26',['contentRoot',['../classPivotSetter.html#a9ef01bc45a95d52a4951cf33c4d5598a',1,'PivotSetter']]],
-  ['counttriangles_27',['CountTriangles',['../classObjectInfoManager.html#af7d3032693b5d0d5482b1f939b60b62c',1,'ObjectInfoManager']]],
-  ['create_28',['Create',['../classPopupBuilder.html#a35410b9ed427b69bc2d41079e487ee5f',1,'PopupBuilder']]],
-  ['createmodelroot_29',['CreateModelRoot',['../classPivotSetter.html#ab4dc57c91a8a6fd824412b9bba47d9ce',1,'PivotSetter']]],
-  ['currentcolor_30',['currentColor',['../classLogText.html#a868bacefcfdafa5126253b36160112fd',1,'LogText']]],
-  ['currentstatename_31',['CurrentStateName',['../classStateMachine.html#a6ac87358624e91d53e2c42c4a9a3c986',1,'StateMachine']]],
-  ['currmode_32',['currMode',['../classGameManager.html#a9c973c401e07c35a72514585eac2af97',1,'GameManager']]]
+  ['configuregeneration_26',['ConfigureGeneration',['../classGenerateLOD.html#a8156bc4700d579c86771ef59d9c5c19f',1,'GenerateLOD']]],
+  ['contentroot_27',['contentRoot',['../classPivotSetter.html#a9ef01bc45a95d52a4951cf33c4d5598a',1,'PivotSetter']]],
+  ['counttriangles_28',['CountTriangles',['../classObjectInfoManager.html#af7d3032693b5d0d5482b1f939b60b62c',1,'ObjectInfoManager']]],
+  ['create_29',['Create',['../classPopupBuilder.html#a35410b9ed427b69bc2d41079e487ee5f',1,'PopupBuilder']]],
+  ['createmodelroot_30',['CreateModelRoot',['../classPivotSetter.html#ab4dc57c91a8a6fd824412b9bba47d9ce',1,'PivotSetter']]],
+  ['currentcolor_31',['currentColor',['../classLogText.html#a868bacefcfdafa5126253b36160112fd',1,'LogText']]],
+  ['currentstatename_32',['CurrentStateName',['../classStateMachine.html#a6ac87358624e91d53e2c42c4a9a3c986',1,'StateMachine']]],
+  ['currmode_33',['currMode',['../classGameManager.html#a9c973c401e07c35a72514585eac2af97',1,'GameManager']]]
 ];

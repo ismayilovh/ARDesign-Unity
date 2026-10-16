@@ -9,6 +9,7 @@ var searchData=
   ['handletogglechanged_6',['HandleToggleChanged',['../classPivotSettingManager.html#a60ad8404f69c6a182db8a285b5e9a3f0',1,'PivotSettingManager']]],
   ['handleuivisibilitychanged_7',['HandleUIVisibilityChanged',['../classDebugModeManager.html#a16b51f3e3f0f0dca5cd18a79f839eeeb',1,'DebugModeManager']]],
   ['hascalculatedstate_8',['hasCalculatedState',['../classPivotSetter.html#aafce11238ae0d4df7b10adf3558220af',1,'PivotSetter']]],
-  ['hasoriginalstate_9',['hasOriginalState',['../classPivotSetter.html#a89ec277c550446db6aae5de5e98b0fa9',1,'PivotSetter']]],
-  ['hits_10',['hits',['../classRaycastHandler.html#a0acf5503f518b58a4e583aceb432d25f',1,'RaycastHandler']]]
+  ['hasexistinglodgroups_9',['HasExistingLodGroups',['../classGenerateLOD.html#a6eb46c949d57d135870e0e7b40d50723',1,'GenerateLOD']]],
+  ['hasoriginalstate_10',['hasOriginalState',['../classPivotSetter.html#a89ec277c550446db6aae5de5e98b0fa9',1,'PivotSetter']]],
+  ['hits_11',['hits',['../classRaycastHandler.html#a0acf5503f518b58a4e583aceb432d25f',1,'RaycastHandler']]]
 ];

@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('classGenerateLOD.html',''); initResiza
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classGenerateLOD-members.html">List of all members</a>  </div>
@@ -101,7 +102,7 @@ $(document).ready(function(){initNavTree('classGenerateLOD.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
-<p>MonoBehaviour that automatically generates two LOD levels for its GameObject using UnityMeshSimplifier's LODGenerator on Awake.  
+<p>MonoBehaviour that automatically generates two LOD levels for its GameObject using UnityMeshSimplifier's LODGenerator when requested.  
  <a href="classGenerateLOD.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for GenerateLOD:</div>
@@ -112,18 +113,31 @@ Inheritance diagram for GenerateLOD:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7dd5ad762feee5696174952c22d6f87a" id="r_a7dd5ad762feee5696174952c22d6f87a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#a7dd5ad762feee5696174952c22d6f87a">Generate</a> ()</td></tr>
-<tr class="memdesc:a7dd5ad762feee5696174952c22d6f87a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs LODGenerator.GenerateLODs with the configured levels and attaches a LODGroup to this GameObject.  <br /></td></tr>
-<tr class="separator:a7dd5ad762feee5696174952c22d6f87a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadcac9c2d983824a1769beaf593f6233" id="r_aadcac9c2d983824a1769beaf593f6233"><td class="memItemLeft" align="right" valign="top">async Task&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#aadcac9c2d983824a1769beaf593f6233">GenerateAsync</a> ()</td></tr>
+<tr class="memdesc:aadcac9c2d983824a1769beaf593f6233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reuses precomputed LODGroups when the imported model already has them.  <br /></td></tr>
+<tr class="separator:aadcac9c2d983824a1769beaf593f6233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ab2532faa2d79090aee88465fd70666a3" id="r_ab2532faa2d79090aee88465fd70666a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#ab2532faa2d79090aee88465fd70666a3">Awake</a> ()</td></tr>
-<tr class="memdesc:ab2532faa2d79090aee88465fd70666a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures LOD quality ratios, screen-height transition thresholds, and simplification options, then immediately calls <a class="el" href="classGenerateLOD.html#a7dd5ad762feee5696174952c22d6f87a" title="Runs LODGenerator.GenerateLODs with the configured levels and attaches a LODGroup to this GameObject.">Generate</a>.  <br /></td></tr>
+<tr class="memdesc:ab2532faa2d79090aee88465fd70666a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the LOD levels.  <br /></td></tr>
 <tr class="separator:ab2532faa2d79090aee88465fd70666a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8156bc4700d579c86771ef59d9c5c19f" id="r_a8156bc4700d579c86771ef59d9c5c19f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#a8156bc4700d579c86771ef59d9c5c19f">ConfigureGeneration</a> ()</td></tr>
+<tr class="separator:a8156bc4700d579c86771ef59d9c5c19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb46c949d57d135870e0e7b40d50723" id="r_a6eb46c949d57d135870e0e7b40d50723"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#a6eb46c949d57d135870e0e7b40d50723">HasExistingLodGroups</a> ()</td></tr>
+<tr class="separator:a6eb46c949d57d135870e0e7b40d50723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71863110ee5489969b10817244b64041" id="r_a71863110ee5489969b10817244b64041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#a71863110ee5489969b10817244b64041">AttachLODCollider</a> ()</td></tr>
 <tr class="memdesc:a71863110ee5489969b10817244b64041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches a convex MeshCollider to the Level01 mesh child generated by LODGenerator.  <br /></td></tr>
 <tr class="separator:a71863110ee5489969b10817244b64041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a0520a27a7a841f226371d830dc357efa" id="r_a0520a27a7a841f226371d830dc357efa"><td class="memItemLeft" align="right" valign="top">static Mesh&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#a0520a27a7a841f226371d830dc357efa">GetSharedMesh</a> (Renderer renderer)</td></tr>
+<tr class="separator:a0520a27a7a841f226371d830dc357efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b71632b630de06f42b597a61ca242c3" id="r_a9b71632b630de06f42b597a61ca242c3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#a9b71632b630de06f42b597a61ca242c3">SetSharedMesh</a> (Renderer renderer, Mesh mesh)</td></tr>
+<tr class="separator:a9b71632b630de06f42b597a61ca242c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4226e205affa30e99c5f44486bca7c8b" id="r_a4226e205affa30e99c5f44486bca7c8b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#a4226e205affa30e99c5f44486bca7c8b">DestroyGeneratedMeshes</a> (HashSet&lt; Mesh &gt; meshes)</td></tr>
+<tr class="separator:a4226e205affa30e99c5f44486bca7c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -133,20 +147,22 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a21d9f8cc7aaf2ffee0a45941227b53a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e49f4c5763b05c35b6ee6f0255d777a" id="r_a7e49f4c5763b05c35b6ee6f0255d777a"><td class="memItemLeft" align="right" valign="top">SimplificationOptions&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#a7e49f4c5763b05c35b6ee6f0255d777a">m_SimplificationOptions</a></td></tr>
 <tr class="separator:a7e49f4c5763b05c35b6ee6f0255d777a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22b6a1b68d0281a4ffb366c4cde1c8e3" id="r_a22b6a1b68d0281a4ffb366c4cde1c8e3"><td class="memItemLeft" align="right" valign="top">float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#a22b6a1b68d0281a4ffb366c4cde1c8e3">m_LODQualities</a></td></tr>
-<tr class="separator:a22b6a1b68d0281a4ffb366c4cde1c8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa023dde3ec28f2183390919a55facfd5" id="r_aa023dde3ec28f2183390919a55facfd5"><td class="memItemLeft" align="right" valign="top">float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#aa023dde3ec28f2183390919a55facfd5">m_LODTransitionHeights</a></td></tr>
-<tr class="separator:aa023dde3ec28f2183390919a55facfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57f23fc954b54ef4694038e8e38752e0" id="r_a57f23fc954b54ef4694038e8e38752e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#a57f23fc954b54ef4694038e8e38752e0">m_HasGenerated</a></td></tr>
 <tr class="separator:a57f23fc954b54ef4694038e8e38752e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6bec0f3e1ff76d69565ef382230d814" id="r_ae6bec0f3e1ff76d69565ef382230d814"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#ae6bec0f3e1ff76d69565ef382230d814">m_IsGenerating</a></td></tr>
+<tr class="separator:ae6bec0f3e1ff76d69565ef382230d814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:ad21a98971e7f230308556a1feef044bc" id="r_ad21a98971e7f230308556a1feef044bc"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#ad21a98971e7f230308556a1feef044bc">LOD_COUNT</a> = 2</td></tr>
 <tr class="separator:ad21a98971e7f230308556a1feef044bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9567ef413895b5ac8b2b33f8559ef024" id="r_a9567ef413895b5ac8b2b33f8559ef024"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#a9567ef413895b5ac8b2b33f8559ef024">SIMPLIFIED_LOD_QUALITY</a> = 0.65f</td></tr>
+<tr class="separator:a9567ef413895b5ac8b2b33f8559ef024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0c070e26790c46fc4a0f125aba6a93" id="r_aca0c070e26790c46fc4a0f125aba6a93"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGenerateLOD.html#aca0c070e26790c46fc4a0f125aba6a93">SIMPLIFIED_LOD_TRANSITION_HEIGHT</a> = 0.17f</td></tr>
+<tr class="separator:aca0c070e26790c46fc4a0f125aba6a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>MonoBehaviour that automatically generates two LOD levels for its GameObject using UnityMeshSimplifier's LODGenerator on Awake. </p>
+<div class="textblock"><p>MonoBehaviour that automatically generates two LOD levels for its GameObject using UnityMeshSimplifier's LODGenerator when requested. </p>
 <p>LOD 0 keeps full-quality geometry; LOD 1 uses 65 % mesh quality with combined meshes for better performance. The last LOD is culled by default. Added dynamically to downloaded patent models by <a class="el" href="classQRNetworkHandler.html" title="Singleton that downloads a glTF/GLB model from the URL encoded in the scanned QR code and loads it in...">QRNetworkHandler</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a71863110ee5489969b10817244b64041" name="a71863110ee5489969b10817244b64041"></a>
@@ -200,18 +216,70 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Configures LOD quality ratios, screen-height transition thresholds, and simplification options, then immediately calls <a class="el" href="classGenerateLOD.html#a7dd5ad762feee5696174952c22d6f87a" title="Runs LODGenerator.GenerateLODs with the configured levels and attaches a LODGroup to this GameObject.">Generate</a>. </p>
+<p>Configures the LOD levels. </p>
+<p>Generation is started explicitly after model import so simplification can run asynchronously without blocking Awake. </p>
 
 </div>
 </div>
-<a id="a7dd5ad762feee5696174952c22d6f87a" name="a7dd5ad762feee5696174952c22d6f87a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dd5ad762feee5696174952c22d6f87a">&#9670;&#160;</a></span>Generate()</h2>
+<a id="a8156bc4700d579c86771ef59d9c5c19f" name="a8156bc4700d579c86771ef59d9c5c19f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8156bc4700d579c86771ef59d9c5c19f">&#9670;&#160;</a></span>ConfigureGeneration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GenerateLOD.ConfigureGeneration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4226e205affa30e99c5f44486bca7c8b" name="a4226e205affa30e99c5f44486bca7c8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4226e205affa30e99c5f44486bca7c8b">&#9670;&#160;</a></span>DestroyGeneratedMeshes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GenerateLOD.DestroyGeneratedMeshes </td>
+          <td>(</td>
+          <td class="paramtype">HashSet&lt; Mesh &gt;&#160;</td>
+          <td class="paramname"><em>meshes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aadcac9c2d983824a1769beaf593f6233" name="aadcac9c2d983824a1769beaf593f6233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadcac9c2d983824a1769beaf593f6233">&#9670;&#160;</a></span>GenerateAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void GenerateLOD.Generate </td>
+          <td class="memname">async Task&lt; bool &gt; GenerateLOD.GenerateAsync </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -219,7 +287,95 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Runs LODGenerator.GenerateLODs with the configured levels and attaches a LODGroup to this GameObject. </p>
+<p>Reuses precomputed LODGroups when the imported model already has them. </p>
+<p>Otherwise creates the LOD hierarchy on the main thread and simplifies each lower-LOD mesh on a worker thread. </p>
+
+</div>
+</div>
+<a id="a0520a27a7a841f226371d830dc357efa" name="a0520a27a7a841f226371d830dc357efa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0520a27a7a841f226371d830dc357efa">&#9670;&#160;</a></span>GetSharedMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Mesh GenerateLOD.GetSharedMesh </td>
+          <td>(</td>
+          <td class="paramtype">Renderer&#160;</td>
+          <td class="paramname"><em>renderer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6eb46c949d57d135870e0e7b40d50723" name="a6eb46c949d57d135870e0e7b40d50723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb46c949d57d135870e0e7b40d50723">&#9670;&#160;</a></span>HasExistingLodGroups()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GenerateLOD.HasExistingLodGroups </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b71632b630de06f42b597a61ca242c3" name="a9b71632b630de06f42b597a61ca242c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b71632b630de06f42b597a61ca242c3">&#9670;&#160;</a></span>SetSharedMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GenerateLOD.SetSharedMesh </td>
+          <td>(</td>
+          <td class="paramtype">Renderer&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Mesh&#160;</td>
+          <td class="paramname"><em>mesh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -290,6 +446,28 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae6bec0f3e1ff76d69565ef382230d814" name="ae6bec0f3e1ff76d69565ef382230d814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6bec0f3e1ff76d69565ef382230d814">&#9670;&#160;</a></span>m_IsGenerating</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GenerateLOD.m_IsGenerating</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9a795dddec1ef8aa09964994263e36d8" name="a9a795dddec1ef8aa09964994263e36d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9a795dddec1ef8aa09964994263e36d8">&#9670;&#160;</a></span>m_LodLevels</h2>
 
@@ -301,50 +479,6 @@ Static Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">LODLevel [] GenerateLOD.m_LodLevels</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a22b6a1b68d0281a4ffb366c4cde1c8e3" name="a22b6a1b68d0281a4ffb366c4cde1c8e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22b6a1b68d0281a4ffb366c4cde1c8e3">&#9670;&#160;</a></span>m_LODQualities</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float [] GenerateLOD.m_LODQualities</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa023dde3ec28f2183390919a55facfd5" name="aa023dde3ec28f2183390919a55facfd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa023dde3ec28f2183390919a55facfd5">&#9670;&#160;</a></span>m_LODTransitionHeights</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float [] GenerateLOD.m_LODTransitionHeights</td>
         </tr>
       </table>
   </td>
@@ -372,6 +506,50 @@ Static Private Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9567ef413895b5ac8b2b33f8559ef024" name="a9567ef413895b5ac8b2b33f8559ef024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9567ef413895b5ac8b2b33f8559ef024">&#9670;&#160;</a></span>SIMPLIFIED_LOD_QUALITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float GenerateLOD.SIMPLIFIED_LOD_QUALITY = 0.65f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca0c070e26790c46fc4a0f125aba6a93" name="aca0c070e26790c46fc4a0f125aba6a93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca0c070e26790c46fc4a0f125aba6a93">&#9670;&#160;</a></span>SIMPLIFIED_LOD_TRANSITION_HEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float GenerateLOD.SIMPLIFIED_LOD_TRANSITION_HEIGHT = 0.17f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
