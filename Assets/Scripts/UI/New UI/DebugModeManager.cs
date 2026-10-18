@@ -96,8 +96,8 @@ public class DebugModeManager : MonoBehaviour
         if (debugText == null) return;
 
         StateMachine stateMachine = StateMachine.Instance;
-        PatentManager patentManager = PatentManager.Instance;
-        GameObject activeModel = patentManager != null ? patentManager.ActivePatent : null;
+        DesignManager designManager = DesignManager.Instance;
+        GameObject activeModel = designManager != null ? designManager.ActiveDesign : null;
 
         textBuilder.Clear();
         textBuilder.AppendLine("DEBUG");
@@ -106,7 +106,7 @@ public class DebugModeManager : MonoBehaviour
             .AppendLine();
         textBuilder.AppendFormat(CultureInfo.InvariantCulture, "FPS: {0:0.0}\n", framesPerSecond);
         textBuilder.Append("Model loaded: ")
-            .Append(patentManager != null && patentManager.Patent != null ? "Yes" : "No")
+            .Append(designManager != null && designManager.Design != null ? "Yes" : "No")
             .AppendLine();
         textBuilder.Append("Model spawned: ")
             .Append(activeModel != null ? "Yes" : "No");

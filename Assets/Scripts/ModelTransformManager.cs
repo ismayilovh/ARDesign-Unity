@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 /// <summary>
 /// Singleton manager for model transform controls: lock/unlock movement,
-/// reset transform, and delete the active patent model.
+/// reset transform, and delete the active design model.
 /// Drives confirmation popups via <see cref="PopupBuilder"/> before
 /// executing destructive actions.
 /// </summary>
@@ -16,7 +16,7 @@ public class ModelTransformManager : MonoBehaviour
     /// <summary>Button that resets the model to its initial transform.</summary>
     public Button ResetModelTransformButton;
 
-    /// <summary>Button that deletes the currently active patent model.</summary>
+    /// <summary>Button that deletes the currently active design model.</summary>
     public Button DeleteModelTransformButton;
 
     /// <summary>Underlying <see cref="Toggle"/> component for the lock control.</summary>
@@ -129,7 +129,7 @@ public class ModelTransformManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Shows a confirmation popup before deleting the active patent model.
+    /// Shows a confirmation popup before deleting the active design model.
     /// Creates the popup on first call; reuses it on subsequent calls.
     /// </summary>
     private void DisplayDeleteModelPopup()
@@ -154,13 +154,13 @@ public class ModelTransformManager : MonoBehaviour
 
     /// <summary>
     /// Confirms deletion: restores button interactivity, hides the popup,
-    /// calls <see cref="PatentManager.DeleteActivePatent"/>, and fires <see cref="OnDeleteModel"/>.
+    /// calls <see cref="DesignManager.DeleteActiveDesign"/>, and fires <see cref="OnDeleteModel"/>.
     /// </summary>
     private void OnDeleteModelPopupOK()
     {
         DeleteModelTransformButton.interactable = true;
         m_DeleteModelPopupWindow.SetActive(false);
-        PatentManager.Instance.DeleteActivePatent();
+        DesignManager.Instance.DeleteActiveDesign();
         OnDeleteModel?.Invoke();
     }
 

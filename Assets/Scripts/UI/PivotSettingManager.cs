@@ -75,10 +75,10 @@ public class PivotSettingManager : MonoBehaviour
         if (callbacksRegistered) return;
 
         m_UIToggleComponent.OnToggleValueChanged += HandleToggleChanged;
-        if (PatentManager.Instance != null)
+        if (DesignManager.Instance != null)
         {
-            PatentManager.Instance.patentSpawnedEvent += BindActiveModel;
-            PatentManager.Instance.patentDeletedEvent += HandlePatentDeleted;
+            DesignManager.Instance.designSpawnedEvent += BindActiveModel;
+            DesignManager.Instance.designDeletedEvent += HandleDesignDeleted;
         }
 
         callbacksRegistered = true;
@@ -91,10 +91,10 @@ public class PivotSettingManager : MonoBehaviour
         if (m_UIToggleComponent != null)
             m_UIToggleComponent.OnToggleValueChanged -= HandleToggleChanged;
 
-        if (PatentManager.Instance != null)
+        if (DesignManager.Instance != null)
         {
-            PatentManager.Instance.patentSpawnedEvent -= BindActiveModel;
-            PatentManager.Instance.patentDeletedEvent -= HandlePatentDeleted;
+            DesignManager.Instance.designSpawnedEvent -= BindActiveModel;
+            DesignManager.Instance.designDeletedEvent -= HandleDesignDeleted;
         }
 
         callbacksRegistered = false;
@@ -107,12 +107,12 @@ public class PivotSettingManager : MonoBehaviour
 
     private void BindActiveModel()
     {
-        GameObject activePatent = PatentManager.Instance?.ActivePatent;
-        activePivotSetter = activePatent != null ? activePatent.GetComponent<PivotSetter>() : null;
+        GameObject activeDesign = DesignManager.Instance?.ActiveDesign;
+        activePivotSetter = activeDesign != null ? activeDesign.GetComponent<PivotSetter>() : null;
         activePivotSetter?.SetUseCalculatedPivot(useCalculatedPivot);
     }
 
-    private void HandlePatentDeleted()
+    private void HandleDesignDeleted()
     {
         activePivotSetter = null;
     }

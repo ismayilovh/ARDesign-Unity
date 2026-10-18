@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 /// <summary>
 /// Singleton utility that calculates the uniform scale factor needed to fit a
-/// patent model within a configurable fraction of the device screen.
+/// design model within a configurable fraction of the device screen.
 /// Uses the camera's FOV and the model's world-space bounds from
 /// <see cref="PivotSetter.GetSpawnBounds"/>.
 /// </summary>
@@ -56,10 +56,10 @@ public class ScreenScaler : MonoBehaviour
     // }
 
     /// <summary>
-    /// Calculates the uniform scale multiplier that makes <paramref name="patent"/>
+    /// Calculates the uniform scale multiplier that makes <paramref name="design"/>
     /// fill <c>scaleAmount</c> of the camera's view frustum at its current distance.
     /// </summary>
-    /// <param name="patent">The root GameObject of the patent model to size.</param>
+    /// <param name="design">The root GameObject of the design model to size.</param>
     /// <param name="usePivot">
     /// When <c>true</c>, uses the object's transform position as the reference
     /// center; otherwise uses the bounds center.
@@ -68,22 +68,22 @@ public class ScreenScaler : MonoBehaviour
     /// The scale multiplier to apply, or <c>-1</c> if the calculation cannot
     /// proceed (null inputs or screen fit disabled).
     /// </returns>
-    public float FitScreen(GameObject patent , bool usePivot)
+    public float FitScreen(GameObject design , bool usePivot)
     {
-        if (patent == null || cam == null || !isScreenFitOn)
+        if (design == null || cam == null || !isScreenFitOn)
         {
             Debug.Log("bir şeyler null kardeşim");
             return -1f;
         }
-        // BoxCollider collider = patent.GetComponentInChildren<BoxCollider>();
-        patent.transform.localScale = Vector3.one;
-        Bounds bounds = PivotSetter.GetSpawnBounds(patent);
+        // BoxCollider collider = design.GetComponentInChildren<BoxCollider>();
+        design.transform.localScale = Vector3.one;
+        Bounds bounds = PivotSetter.GetSpawnBounds(design);
         if (originalCenter == Vector3.negativeInfinity && originalSize == Vector3.negativeInfinity)
         {
-            originalCenter = usePivot? patent.transform.position : bounds.center;
+            originalCenter = usePivot? design.transform.position : bounds.center;
             originalSize = bounds.size;
         }
-        float projectedDistance = Vector3.Distance(cam.transform.position, patent.transform.position);
+        float projectedDistance = Vector3.Distance(cam.transform.position, design.transform.position);
         float verticalFOVRadians = cam.fieldOfView * Mathf.Deg2Rad;
         float viewHeightWorld = 2.0f * projectedDistance * Mathf.Tan(verticalFOVRadians * 0.5f);
         float viewWidthWorld = viewHeightWorld * cam.aspect;

@@ -9,7 +9,7 @@ using UnityEngine.Networking;
 /// Singleton that downloads a glTF/GLB model from the URL encoded in the
 /// scanned QR code and loads it into the scene using GLTFast. Shows a
 /// progress-bar popup during download and an error popup on failure.
-/// On success it sets <see cref="PatentManager.Patent"/> and transitions to
+/// On success it sets <see cref="DesignManager.Design"/> and transitions to
 /// <see cref="StateMachine.States.MODEL_VIEW_STATE"/>.
 /// </summary>
 public class QRNetworkHandler : MonoBehaviour
@@ -17,7 +17,7 @@ public class QRNetworkHandler : MonoBehaviour
     GameObject m_QRModelDownloadScreen;
     StateMachine m_StateMachine;
 
-    /// <summary>Temporary reference to the loaded glTF scene root while it is prepared as <see cref="PatentManager.Patent"/>.</summary>
+    /// <summary>Temporary reference to the loaded glTF scene root while it is prepared as <see cref="DesignManager.Design"/>.</summary>
     public GameObject LoadedModel;
 
     private ObjectSpawnerAR _objectSpawnerAR;
@@ -151,7 +151,7 @@ public class QRNetworkHandler : MonoBehaviour
     /// <summary>
     /// Asynchronously parses raw GLB bytes with GLTFast, instantiates the scene
     /// under this transform, prepares it as the inactive
-    /// <see cref="PatentManager.Patent"/> template, and adds <see cref="GenerateLOD"/>.
+    /// <see cref="DesignManager.Design"/> template, and adds <see cref="GenerateLOD"/>.
     /// </summary>
     /// <param name="data">Raw GLB file bytes returned by the web request.</param>
     private async Task<bool> LoadGLBObject(byte[] data, int loadGeneration)
@@ -192,7 +192,7 @@ public class QRNetworkHandler : MonoBehaviour
                     if (loadGeneration != m_LoadGeneration)
                         return false;
 
-                    PatentManager.Instance.Patent = LoadedModel;
+                    DesignManager.Instance.Design = LoadedModel;
                     m_LoadedGltf = gltf;
                     keepImporter = true;
                     LoadedModel = null;

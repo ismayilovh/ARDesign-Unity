@@ -958,7 +958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 590445243}
   m_Layer: 0
-  m_Name: ArPatent
+  m_Name: ArDesign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1302,7 +1302,7 @@ GameObject:
   - component: {fileID: 862852442}
   - component: {fileID: 862852443}
   m_Layer: 0
-  m_Name: PatentManager
+  m_Name: DesignManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1652,7 +1652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   qrScene: {fileID: 4135303361720916059}
-  patentScene: {fileID: 590445242}
+  designScene: {fileID: 590445242}
 --- !u!1 &1305245075
 GameObject:
   m_ObjectHideFlags: 0
@@ -2221,7 +2221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planeDetectionController: {fileID: 2042614501}
   screenFitController: {fileID: 859610347}
-  _resetPatentButton: {fileID: 2009754251}
+  _resetDesignButton: {fileID: 2009754251}
 --- !u!1 &1632663327
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,7 +2268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _placementMode: 0
-  patent: {fileID: 3006527537309614200, guid: c5c17fc403eefd84d811a75e177fe5a4, type: 3}
+  design: {fileID: 3006527537309614200, guid: c5c17fc403eefd84d811a75e177fe5a4, type: 3}
   centerPlacementY: 1.1
   frontPlacementZ: 2
   scaleText: {fileID: 1417440847}
@@ -2685,7 +2685,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reset Patent Transform
+  m_text: Reset Design Transform
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2994,7 +2994,7 @@ GameObject:
   - component: {fileID: 2009754248}
   - component: {fileID: 2009754251}
   m_Layer: 5
-  m_Name: ResetPatentTransoform
+  m_Name: ResetDesignTransoform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

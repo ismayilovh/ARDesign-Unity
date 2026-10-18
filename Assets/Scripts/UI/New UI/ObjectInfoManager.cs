@@ -6,7 +6,7 @@ using UnityEngine;
 
 /// <summary>
 /// Displays periodically refreshed transform and bounds data for the active
-/// patent while caching geometry statistics once per spawned model.
+/// design while caching geometry statistics once per spawned model.
 /// </summary>
 public class ObjectInfoManager : MonoBehaviour
 {
@@ -22,7 +22,7 @@ public class ObjectInfoManager : MonoBehaviour
     private long triangleCount;
     private float refreshTimer;
     private bool toggleCallbackRegistered;
-    private PatentManager subscribedPatentManager;
+    private DesignManager subscribedDesignManager;
 
     /// <summary>Whether the object-information panel is selected for display.</summary>
     public bool IsVisible { get; private set; }
@@ -91,20 +91,20 @@ public class ObjectInfoManager : MonoBehaviour
             toggleCallbackRegistered = true;
         }
 
-        PatentManager patentManager = PatentManager.Instance;
-        if (subscribedPatentManager == patentManager) return;
+        DesignManager designManager = DesignManager.Instance;
+        if (subscribedDesignManager == designManager) return;
 
-        if (subscribedPatentManager != null)
+        if (subscribedDesignManager != null)
         {
-            subscribedPatentManager.patentSpawnedEvent -= BindActiveModel;
-            subscribedPatentManager.patentDeletedEvent -= HandleModelDeleted;
+            subscribedDesignManager.designSpawnedEvent -= BindActiveModel;
+            subscribedDesignManager.designDeletedEvent -= HandleModelDeleted;
         }
 
-        subscribedPatentManager = patentManager;
-        if (subscribedPatentManager != null)
+        subscribedDesignManager = designManager;
+        if (subscribedDesignManager != null)
         {
-            subscribedPatentManager.patentSpawnedEvent += BindActiveModel;
-            subscribedPatentManager.patentDeletedEvent += HandleModelDeleted;
+            subscribedDesignManager.designSpawnedEvent += BindActiveModel;
+            subscribedDesignManager.designDeletedEvent += HandleModelDeleted;
         }
     }
 
@@ -114,13 +114,13 @@ public class ObjectInfoManager : MonoBehaviour
             visibilityToggle.OnToggleValueChanged -= SetVisible;
         toggleCallbackRegistered = false;
 
-        if (subscribedPatentManager != null)
+        if (subscribedDesignManager != null)
         {
-            subscribedPatentManager.patentSpawnedEvent -= BindActiveModel;
-            subscribedPatentManager.patentDeletedEvent -= HandleModelDeleted;
+            subscribedDesignManager.designSpawnedEvent -= BindActiveModel;
+            subscribedDesignManager.designDeletedEvent -= HandleModelDeleted;
         }
 
-        subscribedPatentManager = null;
+        subscribedDesignManager = null;
     }
 
     private void ApplyPanelVisibility()
@@ -131,7 +131,7 @@ public class ObjectInfoManager : MonoBehaviour
 
     private void BindActiveModel()
     {
-        GameObject model = PatentManager.Instance?.ActivePatent;
+        GameObject model = DesignManager.Instance?.ActiveDesign;
         if (model == activeModel) return;
 
         activeModel = model;

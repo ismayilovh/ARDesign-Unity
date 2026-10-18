@@ -1,6 +1,6 @@
-# 3DPatentAR Unity
+# ARDesign Unity
 
-3DPatentAR Unity is the mobile augmented-reality client for viewing 3D patent
+ARDesign Unity is the mobile augmented-reality client for viewing 3D design
 models. The application scans a QR code containing a model URL, downloads the
 glTF/GLB model, and lets the user inspect and manipulate it in an AR scene.
 
@@ -27,7 +27,7 @@ glTF/GLB model, and lets the user inspect and manipulate it in an AR scene.
 
    ```bash
    git lfs install
-   git clone https://github.com/ismayilovh/3DPatentAR-Unity.git
+   git clone https://github.com/ismayilovh/ARDesign-Unity.git
    ```
 
 2. Add the cloned directory to Unity Hub and open it with Unity `6000.3.17f1`.

@@ -460,7 +460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 590445243}
   m_Layer: 0
-  m_Name: ArPatent
+  m_Name: ArDesign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -669,7 +669,7 @@ GameObject:
   - component: {fileID: 862852443}
   - component: {fileID: 862852444}
   m_Layer: 0
-  m_Name: PatentManager
+  m_Name: DesignManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1030,7 +1030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   qrScene: {fileID: 4135303361720916059}
-  patentScene: {fileID: 590445242}
+  designScene: {fileID: 590445242}
 --- !u!114 &1267107215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,7 +1043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a5331ab881053e4798369f2da4b0a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patent: {fileID: 8771091787928289351, guid: 2f30ce470b283674cb3f4b4f4ff1e7f3, type: 3}
+  design: {fileID: 8771091787928289351, guid: 2f30ce470b283674cb3f4b4f4ff1e7f3, type: 3}
 --- !u!114 &1267107216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1359,7 +1359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _placementMode: 0
-  patent: {fileID: 3006527537309614200, guid: c5c17fc403eefd84d811a75e177fe5a4, type: 3}
+  design: {fileID: 3006527537309614200, guid: c5c17fc403eefd84d811a75e177fe5a4, type: 3}
   centerPlacementY: 1.1
   frontPlacementZ: 2
   scaleText: {fileID: 0}

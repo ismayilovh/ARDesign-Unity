@@ -9,7 +9,7 @@ using UnityMeshSimplifier;
 /// using UnityMeshSimplifier's <see cref="LODGenerator"/> when requested.
 /// LOD 0 keeps full-quality geometry; LOD 1 uses 65 % mesh quality with
 /// combined meshes for better performance. The last LOD is culled by default.
-/// Added dynamically to downloaded patent models by <see cref="QRNetworkHandler"/>.
+/// Added dynamically to downloaded design models by <see cref="QRNetworkHandler"/>.
 /// </summary>
 public class GenerateLOD : MonoBehaviour
 {

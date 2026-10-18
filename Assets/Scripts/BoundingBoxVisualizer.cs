@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 /// <summary>
-/// Renders a wireframe bounding box around the active patent model using
+/// Renders a wireframe bounding box around the active design model using
 /// 12 <see cref="LineRenderer"/> edges. Visibility is toggled via
 /// <see cref="PopupMenuManager.OnEnableBoundingBox"/> and the box is
 /// automatically hidden when the model is deleted.
@@ -30,7 +30,7 @@ public class BoundingBoxVisualizer : MonoBehaviour
     private Material _material;
     private bool _isVisible;
     private bool _edgesActive;
-    private GameObject _cachedPatent;
+    private GameObject _cachedDesign;
     private PivotSetter _cachedPivotSetter;
     private int _cachedBoundsVersion = -1;
     private Bounds _cachedLocalBounds;
@@ -44,9 +44,9 @@ public class BoundingBoxVisualizer : MonoBehaviour
     private void Start()
     {
 
-       // PatentManager.Instance.patentDeletedEvent += OnPatentDeleted;
+       // DesignManager.Instance.designDeletedEvent += OnDesignDeleted;
         if (ModelTransformManager.Instance != null)
-            ModelTransformManager.Instance.OnDeleteModel += OnPatentDeleted;
+            ModelTransformManager.Instance.OnDeleteModel += OnDesignDeleted;
         else
             Debug.LogError("delete is ulaaa");
 
@@ -85,9 +85,9 @@ public class BoundingBoxVisualizer : MonoBehaviour
     private void OnDestroy()
     {
         if (ModelTransformManager.Instance != null)
-            ModelTransformManager.Instance.OnDeleteModel -= OnPatentDeleted;
-        if (PatentManager.Instance != null)
-            PatentManager.Instance.patentDeletedEvent -= OnPatentDeleted;
+            ModelTransformManager.Instance.OnDeleteModel -= OnDesignDeleted;
+        if (DesignManager.Instance != null)
+            DesignManager.Instance.designDeletedEvent -= OnDesignDeleted;
         if (popupMenuManager != null)
             popupMenuManager.OnEnableBoundingBox -= SetVisible;
         if (_material != null) Destroy(_material);
@@ -105,31 +105,31 @@ public class BoundingBoxVisualizer : MonoBehaviour
             SetEdgesActive(false);
     }
 
-    /// <summary>Hides all edge renderers when the active patent is deleted.</summary>
-    private void OnPatentDeleted()
+    /// <summary>Hides all edge renderers when the active design is deleted.</summary>
+    private void OnDesignDeleted()
     {
         SetEdgesActive(false);
     }
 
     /// <summary>
-    /// Each frame, when visible, retrieves the active patent and either hides
-    /// the edges (no patent present) or refreshes their positions to track the
+    /// Each frame, when visible, retrieves the active design and either hides
+    /// the edges (no design present) or refreshes their positions to track the
     /// model as it moves and scales.
     /// </summary>
     private void Update()
     {
         if (!_isVisible) return;
 
-        GameObject patent = PatentManager.Instance?.ActivePatent;
+        GameObject design = DesignManager.Instance?.ActiveDesign;
 
-        if (patent == null)
+        if (design == null)
         {
             SetEdgesActive(false);
             return;
         }
 
         SetEdgesActive(true);
-        RefreshEdges(patent);
+        RefreshEdges(design);
     }
 
     /// <summary>
@@ -150,12 +150,12 @@ public class BoundingBoxVisualizer : MonoBehaviour
     /// local bounds, scales line widths relative to the box diagonal, and updates
     /// both endpoints of each of the 12 edge renderers.
     /// </summary>
-    /// <param name="root">The patent root GameObject whose bounds define the box.</param>
+    /// <param name="root">The design root GameObject whose bounds define the box.</param>
     private void RefreshEdges(GameObject root)
     {
-        if (_cachedPatent != root)
+        if (_cachedDesign != root)
         {
-            _cachedPatent = root;
+            _cachedDesign = root;
             _cachedPivotSetter = root.GetComponent<PivotSetter>();
             _cachedBoundsVersion = -1;
         }

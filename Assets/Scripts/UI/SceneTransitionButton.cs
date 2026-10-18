@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// UI button handler that toggles between QR-scanning and AR patent-viewing
+/// UI button handler that toggles between QR-scanning and AR design-viewing
 /// modes by calling <see cref="GameManager.ChangeMode"/> when clicked.
 /// </summary>
 public class SceneTransitionButton : MonoBehaviour

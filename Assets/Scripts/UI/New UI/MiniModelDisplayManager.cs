@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// Renders a miniature preview of the loaded patent model into a
+/// Renders a miniature preview of the loaded design model into a
 /// <see cref="RenderTexture"/> and displays the result in the UI as a
 /// <see cref="Sprite"/>. Triggered when entering
 /// <see cref="StateMachine.States.MODEL_VIEW_STATE"/> and reset on QR scan.

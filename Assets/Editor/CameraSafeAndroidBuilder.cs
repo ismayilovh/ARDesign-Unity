@@ -8,7 +8,7 @@ using UnityEngine;
 internal static class CameraSafeAndroidBuilder
 {
     // Uses explicit BuildOptions so active Build Profile diagnostics cannot leak into the APK.
-    private const string OutputPath = "Build/3DPatentAR.apk";
+    private const string OutputPath = "Build/ARDesign.apk";
 
     [MenuItem("Tools/AR/Build and Run Camera-Safe Android %#k")]
     private static void BuildAndRun()

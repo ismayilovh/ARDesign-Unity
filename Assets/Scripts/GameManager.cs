@@ -1,13 +1,14 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 /// <summary>
 /// Internal enum representing which high-level mode the app is currently in.
 /// </summary>
 enum ArMode
 {
-    /// <summary>The AR patent-viewing mode is active.</summary>
-    Patent,
+    /// <summary>The AR design-viewing mode is active.</summary>
+    Design,
 
     /// <summary>The QR-code scanning mode is active.</summary>
     Qr
@@ -15,7 +16,7 @@ enum ArMode
 
 /// <summary>
 /// Singleton bootstrap manager that routes the app between QR scanning and
-/// AR patent-viewing by toggling scene root GameObjects and wiring up
+/// AR design-viewing by toggling scene root GameObjects and wiring up
 /// <see cref="StateMachine"/> state-enter callbacks.
 /// </summary>
 public class GameManager : MonoBehaviour
@@ -25,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject qrScene;
 
-    [SerializeField] private GameObject patentScene;
+    [SerializeField, FormerlySerializedAs("patentScene")] private GameObject designScene;
     [SerializeField, Range(30, 120)] private int targetFrameRate = 60;
     private RaycastHandler raycastHandler;
     private ArMode currMode = ArMode.Qr;
@@ -55,7 +56,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         raycastHandler = FindAnyObjectByType<RaycastHandler>();
-        StateMachine.Instance.GetState(StateMachine.States.MODEL_VIEW_STATE).OnStateEnter += ActivatePatentParts;
+        StateMachine.Instance.GetState(StateMachine.States.MODEL_VIEW_STATE).OnStateEnter += ActivateDesignParts;
         StateMachine.Instance.GetState(StateMachine.States.NO_MODEL_VIEW_STATE).OnStateEnter += ActivateQrParts;
         StateMachine.Instance.GetState(StateMachine.States.QR_SCAN_STATE).OnStateEnter += ActivateQrParts;
         ActivateQrParts();
@@ -70,57 +71,57 @@ public class GameManager : MonoBehaviour
 
     // private void OnDisable()
     // {
-    //     StateMachine.Instance.GetState(StateMachine.States.MODEL_VIEW_STATE).OnStateEnter -= ActivatePatentParts;
+    //     StateMachine.Instance.GetState(StateMachine.States.MODEL_VIEW_STATE).OnStateEnter -= ActivateDesignParts;
     //     StateMachine.Instance.GetState(StateMachine.States.NO_MODEL_VIEW_STATE).OnStateEnter -= ActivateQrParts;
     //
     // }
 
     /// <summary>
-    /// Toggles between QR and patent modes based on the current <see cref="ArMode"/>.
+    /// Toggles between QR and design modes based on the current <see cref="ArMode"/>.
     /// </summary>
     public void ChangeMode()
     {
-        if (currMode == ArMode.Patent)
+        if (currMode == ArMode.Design)
         {
             ActivateQrParts();
         }
         else if (currMode == ArMode.Qr)
         {
-            ActivatePatentParts();
+            ActivateDesignParts();
         }
     }
 
     /// <summary>
-    /// Hides the patent scene, disables plane detection, shows the QR scene,
+    /// Hides the design scene, disables plane detection, shows the QR scene,
     /// and sets the current mode to <see cref="ArMode.Qr"/>.
     /// </summary>
     private void ActivateQrParts()
     {
-        patentScene.SetActive(false);
-        setPatentScripts(false);
+        designScene.SetActive(false);
+        setDesignScripts(false);
         raycastHandler.changePlaneDetection(false);
         qrScene.SetActive(true);
         currMode = ArMode.Qr;
     }
 
     /// <summary>
-    /// Hides the QR scene, enables patent scripts, shows the patent scene,
-    /// and sets the current mode to <see cref="ArMode.Patent"/>.
+    /// Hides the QR scene, enables design scripts, shows the design scene,
+    /// and sets the current mode to <see cref="ArMode.Design"/>.
     /// </summary>
-    private void ActivatePatentParts()
+    private void ActivateDesignParts()
     {
         qrScene.SetActive(false);
-        setPatentScripts(true);
-        patentScene.SetActive(true);
-        currMode = ArMode.Patent;
+        setDesignScripts(true);
+        designScene.SetActive(true);
+        currMode = ArMode.Design;
     }
 
     /// <summary>
     /// Enables or disables the <see cref="RaycastHandler"/> component to prevent
-    /// AR raycasts from firing outside of patent-viewing mode.
+    /// AR raycasts from firing outside of design-viewing mode.
     /// </summary>
     /// <param name="active"><c>true</c> to enable; <c>false</c> to disable.</param>
-    private void setPatentScripts(bool active)
+    private void setDesignScripts(bool active)
     {
        // raycastHandler.changePlaneDetection(active);
         raycastHandler.enabled = active;

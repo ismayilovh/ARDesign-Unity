@@ -1,8 +1,8 @@
 using UnityEngine;
 
 /// <summary>
-/// Owns the reversible pivot offset for a spawned patent and also provides the
-/// bounds and positioning helpers used when placing or scaling a patent in AR.
+/// Owns the reversible pivot offset for a spawned design and also provides the
+/// bounds and positioning helpers used when placing or scaling a design in AR.
 /// </summary>
 public class PivotSetter : MonoBehaviour
 {
@@ -28,7 +28,7 @@ public class PivotSetter : MonoBehaviour
     /// <summary>
     /// Creates an unchanged transform root around the imported instance so pivot
     /// changes can be applied to the content without moving the root manipulated
-    /// by <see cref="PatentTransformer"/>.
+    /// by <see cref="DesignTransformer"/>.
     /// </summary>
     public static GameObject CreateModelRoot(GameObject spawnedContent)
     {
@@ -139,31 +139,31 @@ public class PivotSetter : MonoBehaviour
     }
 
     /// <summary>
-    /// Repositions <paramref name="patent"/> so its bounding box no longer
+    /// Repositions <paramref name="design"/> so its bounding box no longer
     /// overlaps the camera position in the XZ plane, pushing it along the
     /// camera's forward direction when the camera is inside the model bounds.
     /// Used when switching to 1:1 real-world scale mode.
     /// </summary>
-    /// <param name="patent">The root GameObject of the patent model.</param>
+    /// <param name="design">The root GameObject of the design model.</param>
     /// <param name="camTransform">The AR camera transform.</param>
     /// <param name="offSet">Extra clearance distance in metres beyond the model edge.</param>
     /// <returns>
     /// The calculated offset vector (currently always <see cref="Vector3.zero"/>),
-    /// or <see cref="Vector3.positiveInfinity"/> if <paramref name="patent"/> is null.
+    /// or <see cref="Vector3.positiveInfinity"/> if <paramref name="design"/> is null.
     /// </returns>
-    public static Vector3 ChangeToOneOneMode(GameObject patent ,Transform camTransform, float offSet)
+    public static Vector3 ChangeToOneOneMode(GameObject design ,Transform camTransform, float offSet)
     {
-        if (patent == null)
+        if (design == null)
         {
-            Debug.Log("Patent is null");
+            Debug.Log("Design is null");
             return Vector3.positiveInfinity;
         }
 
         Physics.SyncTransforms();
             
         Vector3 calculatedOffSet = Vector3.zero;
-        patent.transform.localScale = Vector3.one;
-        Bounds bounds = GetSpawnBounds(patent);
+        design.transform.localScale = Vector3.one;
+        Bounds bounds = GetSpawnBounds(design);
         
         Vector3 mins = bounds.min;
         Vector3 maxs = bounds.max;
@@ -205,7 +205,7 @@ public class PivotSetter : MonoBehaviour
             Vector2 newCenterXZ = cameraXZ + (pushDir * targetDistance);
             Vector2 movementDelta = newCenterXZ - boundsCenterXZ;
             
-            patent.transform.position += new Vector3(movementDelta.x, 0, movementDelta.y);
+            design.transform.position += new Vector3(movementDelta.x, 0, movementDelta.y);
         }
         
         return calculatedOffSet;
@@ -213,16 +213,16 @@ public class PivotSetter : MonoBehaviour
 
     /// <summary>
     /// Computes the world-space axis-aligned bounding box that encapsulates all
-    /// <see cref="MeshRenderer"/> components in <paramref name="patent"/>'s hierarchy.
+    /// <see cref="MeshRenderer"/> components in <paramref name="design"/>'s hierarchy.
     /// </summary>
-    /// <param name="patent">The root GameObject whose renderers are measured.</param>
+    /// <param name="design">The root GameObject whose renderers are measured.</param>
     /// <returns>
     /// The encapsulating <see cref="Bounds"/> in world space, or a zero-size
     /// bounds at the object's position if no renderers are found.
     /// </returns>
-    public static Bounds GetSpawnBounds(GameObject patent)
+    public static Bounds GetSpawnBounds(GameObject design)
     {
-        Renderer[] renderers = patent.GetComponentsInChildren<Renderer>();
+        Renderer[] renderers = design.GetComponentsInChildren<Renderer>();
         bool initialized = false;
         Bounds bounds = default;
 
@@ -241,23 +241,23 @@ public class PivotSetter : MonoBehaviour
             }
         }
 
-        return initialized ? bounds : new Bounds(patent.transform.position, Vector3.zero);
+        return initialized ? bounds : new Bounds(design.transform.position, Vector3.zero);
     }
 
     /// <summary>
-    /// Computes the local-space axis-aligned bounding box of <paramref name="patent"/>
+    /// Computes the local-space axis-aligned bounding box of <paramref name="design"/>
     /// by transforming all mesh-corner vertices into the root object's local space.
     /// More accurate than <see cref="GetSpawnBounds"/> for rotated hierarchies.
     /// </summary>
-    /// <param name="patent">The root GameObject whose mesh filters are measured.</param>
+    /// <param name="design">The root GameObject whose mesh filters are measured.</param>
     /// <returns>The local-space <see cref="Bounds"/>, or a small default if no meshes exist.</returns>
-    public static Bounds GetBounds(GameObject patent)
+    public static Bounds GetBounds(GameObject design)
     {
-        Matrix4x4 worldToRoot = patent.transform.worldToLocalMatrix;
+        Matrix4x4 worldToRoot = design.transform.worldToLocalMatrix;
         bool initialized = false;
         Bounds result = default;
 
-        MeshFilter[] filters = patent.GetComponentsInChildren<MeshFilter>();
+        MeshFilter[] filters = design.GetComponentsInChildren<MeshFilter>();
         foreach (MeshFilter meshFilter in filters)
         {
             if (meshFilter.sharedMesh == null) continue;
@@ -266,7 +266,7 @@ public class PivotSetter : MonoBehaviour
             EncapsulateBounds(meshFilter.sharedMesh.bounds, meshToRoot, ref result, ref initialized);
         }
 
-        SkinnedMeshRenderer[] skinnedRenderers = patent.GetComponentsInChildren<SkinnedMeshRenderer>();
+        SkinnedMeshRenderer[] skinnedRenderers = design.GetComponentsInChildren<SkinnedMeshRenderer>();
         foreach (SkinnedMeshRenderer skinnedRenderer in skinnedRenderers)
         {
             if (skinnedRenderer.sharedMesh == null) continue;
@@ -307,12 +307,12 @@ public class PivotSetter : MonoBehaviour
     }
 
     /// <summary>
-    /// Adjusts the Y position of <paramref name="patent"/> so its bottom face sits
+    /// Adjusts the Y position of <paramref name="design"/> so its bottom face sits
     /// on the detected AR plane (when <paramref name="toGround"/> is <c>true</c>)
     /// or its center aligns with the spawn Y coordinate.
     /// Also re-centres the XZ pivot relative to the bounds center.
     /// </summary>
-    /// <param name="patent">The root GameObject to reposition.</param>
+    /// <param name="design">The root GameObject to reposition.</param>
     /// <param name="toGround">
     /// <c>true</c> to snap the bottom of the model to the plane surface;
     /// <c>false</c> to align the center.
@@ -321,19 +321,19 @@ public class PivotSetter : MonoBehaviour
     /// <c>true</c> to treat the transform position as the pivot point;
     /// <c>false</c> to use the bounds center.
     /// </param>
-    public static void SnapToYOffset(GameObject patent , bool toGround , bool usePivot)
+    public static void SnapToYOffset(GameObject design , bool toGround , bool usePivot)
     {
-        if (patent == null)
+        if (design == null)
         {
-            Debug.Log("patent is null from pivot setter");
+            Debug.Log("design is null from pivot setter");
             return;
         }
 
-        Bounds bounds = GetSpawnBounds(patent);
-        Vector3 center = usePivot ? patent.transform.position : bounds.center;
+        Bounds bounds = GetSpawnBounds(design);
+        Vector3 center = usePivot ? design.transform.position : bounds.center;
         float target = toGround ? bounds.min.y : center.y;
         Vector2 xzCenter = new Vector2(center.x, center.z);
-        Transform t = patent.transform;
+        Transform t = design.transform;
         t.position = new Vector3(2*t.position.x - xzCenter.x, 2 * t.position.y - target, 2*t.position.z - xzCenter.y);
     }
 

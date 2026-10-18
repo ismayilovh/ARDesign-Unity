@@ -1,10 +1,11 @@
 using System;
 
 using UnityEngine;
+using UnityEngine.Serialization;
 
 /// <summary>
 /// Legacy coordinator for the older UI layer. Bridges
-/// <see cref="PlaneDetectionController"/> toggles and <see cref="ResetPatentButton"/>
+/// <see cref="PlaneDetectionController"/> toggles and <see cref="ResetDesignButton"/>
 /// clicks to <see cref="RaycastHandler"/>, <see cref="ScreenScaler"/>, and
 /// <see cref="ObjectSpawnerAR"/>. Superseded by the New UI system in
 /// <c>Scripts/UI/New UI/</c>.
@@ -14,7 +15,7 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private PlaneDetectionController planeDetectionController;
     [SerializeField] private PlaneDetectionController screenFitController;
-    [SerializeField] private ResetPatentButton _resetPatentButton;
+    [SerializeField, FormerlySerializedAs("_resetPatentButton")] private ResetDesignButton _resetDesignButton;
     private RaycastHandler raycastHandler;
     private ObjectSpawnerAR _objectSpawnerAR;
 
@@ -30,7 +31,7 @@ public class UIManager : MonoBehaviour
     {
         planeDetectionController.planeDetectionToggleChange += HandlePlaneDetectionChange;
         screenFitController.planeDetectionToggleChange += HandleScreenFitDetectionChange;
-        _resetPatentButton.resetPatentTransformAction += ResetPatentTransform;
+        _resetDesignButton.resetDesignTransformAction += ResetDesignTransform;
     }
 
     /// <summary>Unsubscribes from all legacy UI control events.</summary>
@@ -38,7 +39,7 @@ public class UIManager : MonoBehaviour
     {
         planeDetectionController.planeDetectionToggleChange -= HandlePlaneDetectionChange;
         screenFitController.planeDetectionToggleChange -= HandleScreenFitDetectionChange;
-        _resetPatentButton.resetPatentTransformAction -= ResetPatentTransform;
+        _resetDesignButton.resetDesignTransformAction -= ResetDesignTransform;
     }
 
     /// <summary>Forwards the plane-detection toggle state to <see cref="RaycastHandler.changePlaneDetection"/>.</summary>
@@ -49,10 +50,10 @@ public class UIManager : MonoBehaviour
         raycastHandler.changePlaneDetection(isOn);
     }
 
-    /// <summary>Delegates to <see cref="ObjectSpawnerAR.ResetPatentTransform"/>.</summary>
-    void ResetPatentTransform()
+    /// <summary>Delegates to <see cref="ObjectSpawnerAR.ResetDesignTransform"/>.</summary>
+    void ResetDesignTransform()
     {
-        _objectSpawnerAR.ResetPatentTransform();
+        _objectSpawnerAR.ResetDesignTransform();
     }
 
     /// <summary>Forwards the screen-fit toggle state to <see cref="ScreenScaler.SetScreenFit"/>.</summary>
