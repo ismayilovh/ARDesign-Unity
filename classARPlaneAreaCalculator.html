@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3DPatentAR: ARPlaneAreaCalculator Class Reference</title>
+<title>ARDesign: ARPlaneAreaCalculator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">3DPatentAR
+   <div id="projectname">ARDesign
    </div>
-   <div id="projectbrief">Mobile AR patent viewer — Unity 6 with ARFoundation and glTFast</div>
+   <div id="projectbrief">Mobile AR design viewer — Unity 6 with ARFoundation and glTFast</div>
   </td>
  </tr>
  </tbody>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('classARPlaneAreaCalculator.html',''); 
 </div><!--header-->
 <div class="contents">
 
-<p>Stub component intended to calculate whether a detected AR plane is large enough to accommodate a patent model.  
+<p>Stub component intended to calculate whether a detected AR plane is large enough to accommodate a design model.  
  <a href="classARPlaneAreaCalculator.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ARPlaneAreaCalculator:</div>
@@ -113,9 +113,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:af4d1150312a1779b6cee1fd8d855b882" id="r_af4d1150312a1779b6cee1fd8d855b882"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classARPlaneAreaCalculator.html#af4d1150312a1779b6cee1fd8d855b882">Awake</a> ()</td></tr>
 <tr class="memdesc:af4d1150312a1779b6cee1fd8d855b882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locates and caches the scene's ARPlaneManager.  <br /></td></tr>
 <tr class="separator:af4d1150312a1779b6cee1fd8d855b882"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f8a06871abc67b9caed03d87cc58f82" id="r_a7f8a06871abc67b9caed03d87cc58f82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classARPlaneAreaCalculator.html#a7f8a06871abc67b9caed03d87cc58f82">calculateArea</a> (BoxCollider patentCollider)</td></tr>
-<tr class="memdesc:a7f8a06871abc67b9caed03d87cc58f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the bounding box of the given patent collider fits within any tracked AR plane.  <br /></td></tr>
-<tr class="separator:a7f8a06871abc67b9caed03d87cc58f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f2f71c2f09e6bee577e798949f9de20" id="r_a8f2f71c2f09e6bee577e798949f9de20"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classARPlaneAreaCalculator.html#a8f2f71c2f09e6bee577e798949f9de20">calculateArea</a> (BoxCollider designCollider)</td></tr>
+<tr class="memdesc:a8f2f71c2f09e6bee577e798949f9de20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the bounding box of the given design collider fits within any tracked AR plane.  <br /></td></tr>
+<tr class="separator:a8f2f71c2f09e6bee577e798949f9de20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -123,7 +123,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a7e7ca60b33e050651d7ff5954d55338c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Stub component intended to calculate whether a detected AR plane is large enough to accommodate a patent model. </p>
+<div class="textblock"><p>Stub component intended to calculate whether a detected AR plane is large enough to accommodate a design model. </p>
 <p>Currently unimplemented. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af4d1150312a1779b6cee1fd8d855b882" name="af4d1150312a1779b6cee1fd8d855b882"></a>
@@ -153,8 +153,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7f8a06871abc67b9caed03d87cc58f82" name="a7f8a06871abc67b9caed03d87cc58f82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f8a06871abc67b9caed03d87cc58f82">&#9670;&#160;</a></span>calculateArea()</h2>
+<a id="a8f2f71c2f09e6bee577e798949f9de20" name="a8f2f71c2f09e6bee577e798949f9de20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f2f71c2f09e6bee577e798949f9de20">&#9670;&#160;</a></span>calculateArea()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +166,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">bool ARPlaneAreaCalculator.calculateArea </td>
           <td>(</td>
           <td class="paramtype">BoxCollider&#160;</td>
-          <td class="paramname"><em>patentCollider</em></td><td>)</td>
+          <td class="paramname"><em>designCollider</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -177,11 +177,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Checks whether the bounding box of the given patent collider fits within any tracked AR plane. </p>
+<p>Checks whether the bounding box of the given design collider fits within any tracked AR plane. </p>
 <p>Always returns <code>false</code> — implementation is incomplete.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">patentCollider</td><td>The collider of the patent model to test.</td></tr>
+    <tr><td class="paramname">designCollider</td><td>The collider of the design model to test.</td></tr>
   </table>
   </dd>
 </dl>

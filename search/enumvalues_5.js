@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['patent_0',['Patent',['../GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a092ade8847d7c0575bae2ecb87ffcbc4',1,'GameManager.cs']]]
+  ['onetoone_0',['OneToOne',['../ScalingModeController_8cs.html#a78c7b1502744aa251556cfc2b75485f0a7dae9a7e25f8b6e3ee6af9a505bd6cee',1,'ScalingModeController.cs']]]
 ];

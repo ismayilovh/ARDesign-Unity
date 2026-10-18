@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3DPatentAR: UIManager Class Reference</title>
+<title>ARDesign: UIManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">3DPatentAR
+   <div id="projectname">ARDesign
    </div>
-   <div id="projectbrief">Mobile AR patent viewer — Unity 6 with ARFoundation and glTFast</div>
+   <div id="projectbrief">Mobile AR design viewer — Unity 6 with ARFoundation and glTFast</div>
   </td>
  </tr>
  </tbody>
@@ -111,7 +111,7 @@ Inheritance diagram for UIManager:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:acc416c0efeedcaf946f3f278127dc241" id="r_acc416c0efeedcaf946f3f278127dc241"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIManager.html#acc416c0efeedcaf946f3f278127dc241">Awake</a> ()</td></tr>
-<tr class="memdesc:acc416c0efeedcaf946f3f278127dc241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locates and caches the <a class="el" href="classRaycastHandler.html" title="Handles AR screen-tap input and fires clickEvent with raycast results against detected AR planes.">RaycastHandler</a> and <a class="el" href="classObjectSpawnerAR.html" title="Listens for RaycastHandler.clickEvent and instantiates the downloaded patent model into the AR scene,...">ObjectSpawnerAR</a> singletons.  <br /></td></tr>
+<tr class="memdesc:acc416c0efeedcaf946f3f278127dc241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locates and caches the <a class="el" href="classRaycastHandler.html" title="Handles AR screen-tap input and fires clickEvent with raycast results against detected AR planes.">RaycastHandler</a> and <a class="el" href="classObjectSpawnerAR.html" title="Listens for RaycastHandler.clickEvent and instantiates the downloaded design model into the AR scene,...">ObjectSpawnerAR</a> singletons.  <br /></td></tr>
 <tr class="separator:acc416c0efeedcaf946f3f278127dc241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e092f39ae3ca11fd392f93a40844cf4" id="r_a9e092f39ae3ca11fd392f93a40844cf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIManager.html#a9e092f39ae3ca11fd392f93a40844cf4">OnEnable</a> ()</td></tr>
 <tr class="memdesc:a9e092f39ae3ca11fd392f93a40844cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribes to all legacy UI control events.  <br /></td></tr>
@@ -122,9 +122,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a7e43fe0923125e2ecf35d15a5d4e2214" id="r_a7e43fe0923125e2ecf35d15a5d4e2214"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIManager.html#a7e43fe0923125e2ecf35d15a5d4e2214">HandlePlaneDetectionChange</a> (bool isOn)</td></tr>
 <tr class="memdesc:a7e43fe0923125e2ecf35d15a5d4e2214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards the plane-detection toggle state to <a class="el" href="classRaycastHandler.html#a04641cf1f8fa39003020e87892eb562f" title="Enables or disables horizontal AR plane detection and toggles the visibility of all currently tracked...">RaycastHandler.changePlaneDetection</a>.  <br /></td></tr>
 <tr class="separator:a7e43fe0923125e2ecf35d15a5d4e2214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4961522a2aca4c3f2ff00196d1afc3f3" id="r_a4961522a2aca4c3f2ff00196d1afc3f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIManager.html#a4961522a2aca4c3f2ff00196d1afc3f3">ResetPatentTransform</a> ()</td></tr>
-<tr class="memdesc:a4961522a2aca4c3f2ff00196d1afc3f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegates to <a class="el" href="classObjectSpawnerAR.html#a8e20b522fe13542ae6c38bcb57799056" title="Resets the patent&#39;s scale to Vector3.one and repositions it using PivotSetter.ChangeToOneOneMode.">ObjectSpawnerAR.ResetPatentTransform</a>.  <br /></td></tr>
-<tr class="separator:a4961522a2aca4c3f2ff00196d1afc3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14abbb18fecc03506b9ac2603606c74d" id="r_a14abbb18fecc03506b9ac2603606c74d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIManager.html#a14abbb18fecc03506b9ac2603606c74d">ResetDesignTransform</a> ()</td></tr>
+<tr class="memdesc:a14abbb18fecc03506b9ac2603606c74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegates to <a class="el" href="classObjectSpawnerAR.html#aa809e6e76f074723d15c6e4565813414" title="Resets the design&#39;s scale to Vector3.one and repositions it using PivotSetter.ChangeToOneOneMode.">ObjectSpawnerAR.ResetDesignTransform</a>.  <br /></td></tr>
+<tr class="separator:a14abbb18fecc03506b9ac2603606c74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21ef31df74a821fe6a31760f8c770a6e" id="r_a21ef31df74a821fe6a31760f8c770a6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIManager.html#a21ef31df74a821fe6a31760f8c770a6e">HandleScreenFitDetectionChange</a> (bool isOn)</td></tr>
 <tr class="memdesc:a21ef31df74a821fe6a31760f8c770a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards the screen-fit toggle state to <a class="el" href="classScreenScaler.html#a6f6e43b450e2ebd4080d8fb199225517" title="Enables or disables the screen-fit calculation.">ScreenScaler.SetScreenFit</a>.  <br /></td></tr>
 <tr class="separator:a21ef31df74a821fe6a31760f8c770a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,8 +135,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a840b4c7cfdc0bd1060d7728f15e260e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad57a1e7bb8526bceb91d5b886bed0e67" id="r_ad57a1e7bb8526bceb91d5b886bed0e67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPlaneDetectionController.html">PlaneDetectionController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIManager.html#ad57a1e7bb8526bceb91d5b886bed0e67">screenFitController</a></td></tr>
 <tr class="separator:ad57a1e7bb8526bceb91d5b886bed0e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7df7506178318201b60e08b6a1507dc" id="r_af7df7506178318201b60e08b6a1507dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classResetPatentButton.html">ResetPatentButton</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIManager.html#af7df7506178318201b60e08b6a1507dc">_resetPatentButton</a></td></tr>
-<tr class="separator:af7df7506178318201b60e08b6a1507dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d36f4c677f2076c7397104aa247a53" id="r_a84d36f4c677f2076c7397104aa247a53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classResetDesignButton.html">ResetDesignButton</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIManager.html#a84d36f4c677f2076c7397104aa247a53">_resetDesignButton</a></td></tr>
+<tr class="separator:a84d36f4c677f2076c7397104aa247a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea2580fcc2b76d12ce6b9f81650f610" id="r_afea2580fcc2b76d12ce6b9f81650f610"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRaycastHandler.html">RaycastHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIManager.html#afea2580fcc2b76d12ce6b9f81650f610">raycastHandler</a></td></tr>
 <tr class="separator:afea2580fcc2b76d12ce6b9f81650f610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a128ad3a9cd06e2e943a04ddf83219654" id="r_a128ad3a9cd06e2e943a04ddf83219654"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classObjectSpawnerAR.html">ObjectSpawnerAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUIManager.html#a128ad3a9cd06e2e943a04ddf83219654">_objectSpawnerAR</a></td></tr>
@@ -144,7 +144,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Legacy coordinator for the older UI layer. </p>
-<p>Bridges <a class="el" href="classPlaneDetectionController.html" title="Legacy toggle component used in the older UI layer.">PlaneDetectionController</a> toggles and <a class="el" href="classResetPatentButton.html" title="Legacy UI button that fires resetPatentTransformAction when clicked, allowing subscribers to reset th...">ResetPatentButton</a> clicks to <a class="el" href="classRaycastHandler.html" title="Handles AR screen-tap input and fires clickEvent with raycast results against detected AR planes.">RaycastHandler</a>, <a class="el" href="classScreenScaler.html" title="Singleton utility that calculates the uniform scale factor needed to fit a patent model within a conf...">ScreenScaler</a>, and <a class="el" href="classObjectSpawnerAR.html" title="Listens for RaycastHandler.clickEvent and instantiates the downloaded patent model into the AR scene,...">ObjectSpawnerAR</a>. Superseded by the New UI system in <code>Scripts/UI/New UI/</code>. </p>
+<p>Bridges <a class="el" href="classPlaneDetectionController.html" title="Legacy toggle component used in the older UI layer.">PlaneDetectionController</a> toggles and <a class="el" href="classResetDesignButton.html" title="Legacy UI button that fires resetDesignTransformAction when clicked, allowing subscribers to reset th...">ResetDesignButton</a> clicks to <a class="el" href="classRaycastHandler.html" title="Handles AR screen-tap input and fires clickEvent with raycast results against detected AR planes.">RaycastHandler</a>, <a class="el" href="classScreenScaler.html" title="Singleton utility that calculates the uniform scale factor needed to fit a design model within a conf...">ScreenScaler</a>, and <a class="el" href="classObjectSpawnerAR.html" title="Listens for RaycastHandler.clickEvent and instantiates the downloaded design model into the AR scene,...">ObjectSpawnerAR</a>. Superseded by the New UI system in <code>Scripts/UI/New UI/</code>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acc416c0efeedcaf946f3f278127dc241" name="acc416c0efeedcaf946f3f278127dc241"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc416c0efeedcaf946f3f278127dc241">&#9670;&#160;</a></span>Awake()</h2>
@@ -169,7 +169,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Locates and caches the <a class="el" href="classRaycastHandler.html" title="Handles AR screen-tap input and fires clickEvent with raycast results against detected AR planes.">RaycastHandler</a> and <a class="el" href="classObjectSpawnerAR.html" title="Listens for RaycastHandler.clickEvent and instantiates the downloaded patent model into the AR scene,...">ObjectSpawnerAR</a> singletons. </p>
+<p>Locates and caches the <a class="el" href="classRaycastHandler.html" title="Handles AR screen-tap input and fires clickEvent with raycast results against detected AR planes.">RaycastHandler</a> and <a class="el" href="classObjectSpawnerAR.html" title="Listens for RaycastHandler.clickEvent and instantiates the downloaded design model into the AR scene,...">ObjectSpawnerAR</a> singletons. </p>
 
 </div>
 </div>
@@ -295,8 +295,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4961522a2aca4c3f2ff00196d1afc3f3" name="a4961522a2aca4c3f2ff00196d1afc3f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4961522a2aca4c3f2ff00196d1afc3f3">&#9670;&#160;</a></span>ResetPatentTransform()</h2>
+<a id="a14abbb18fecc03506b9ac2603606c74d" name="a14abbb18fecc03506b9ac2603606c74d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14abbb18fecc03506b9ac2603606c74d">&#9670;&#160;</a></span>ResetDesignTransform()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,7 +305,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void UIManager.ResetPatentTransform </td>
+          <td class="memname">void UIManager.ResetDesignTransform </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -318,7 +318,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Delegates to <a class="el" href="classObjectSpawnerAR.html#a8e20b522fe13542ae6c38bcb57799056" title="Resets the patent&#39;s scale to Vector3.one and repositions it using PivotSetter.ChangeToOneOneMode.">ObjectSpawnerAR.ResetPatentTransform</a>. </p>
+<p>Delegates to <a class="el" href="classObjectSpawnerAR.html#aa809e6e76f074723d15c6e4565813414" title="Resets the design&#39;s scale to Vector3.one and repositions it using PivotSetter.ChangeToOneOneMode.">ObjectSpawnerAR.ResetDesignTransform</a>. </p>
 
 </div>
 </div>
@@ -345,8 +345,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af7df7506178318201b60e08b6a1507dc" name="af7df7506178318201b60e08b6a1507dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7df7506178318201b60e08b6a1507dc">&#9670;&#160;</a></span>_resetPatentButton</h2>
+<a id="a84d36f4c677f2076c7397104aa247a53" name="a84d36f4c677f2076c7397104aa247a53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d36f4c677f2076c7397104aa247a53">&#9670;&#160;</a></span>_resetDesignButton</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,7 +355,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classResetPatentButton.html">ResetPatentButton</a> UIManager._resetPatentButton</td>
+          <td class="memname"><a class="el" href="classResetDesignButton.html">ResetDesignButton</a> UIManager._resetDesignButton</td>
         </tr>
       </table>
   </td>

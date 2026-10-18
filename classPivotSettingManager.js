@@ -2,7 +2,7 @@ var classPivotSettingManager =
 [
     [ "Awake", "classPivotSettingManager.html#a4249080bfbf1598ed0a5d24c1be1ed15", null ],
     [ "BindActiveModel", "classPivotSettingManager.html#a1f582ace446c5cdd586c873df26915be", null ],
-    [ "HandlePatentDeleted", "classPivotSettingManager.html#a3bf0b1ba3ef4913e0de3a547077798d4", null ],
+    [ "HandleDesignDeleted", "classPivotSettingManager.html#ab1a5b060f9ed2b7c91040a0772694c43", null ],
     [ "HandleToggleChanged", "classPivotSettingManager.html#a60ad8404f69c6a182db8a285b5e9a3f0", null ],
     [ "Initialize", "classPivotSettingManager.html#acccf208aa8b7cbe97cf4bc9ef04d4a0b", null ],
     [ "OnDisable", "classPivotSettingManager.html#a9a04bbab7e870e7f779367d2684b6d1c", null ],

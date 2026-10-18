@@ -5,7 +5,7 @@ var dir_53ff6e473d46d4e442ba5a7ce9f895e3 =
     [ "LogText.cs", "LogText_8cs.html", "LogText_8cs" ],
     [ "PivotSettingManager.cs", "PivotSettingManager_8cs.html", "PivotSettingManager_8cs" ],
     [ "PlaneDetectionController.cs", "PlaneDetectionController_8cs.html", "PlaneDetectionController_8cs" ],
-    [ "ResetPatentButton.cs", "ResetPatentButton_8cs.html", "ResetPatentButton_8cs" ],
+    [ "ResetDesignButton.cs", "ResetDesignButton_8cs.html", "ResetDesignButton_8cs" ],
     [ "SceneTransitionButton.cs", "SceneTransitionButton_8cs.html", "SceneTransitionButton_8cs" ],
     [ "UIManager.cs", "UIManager_8cs.html", "UIManager_8cs" ]
 ];

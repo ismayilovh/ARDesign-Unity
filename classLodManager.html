@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3DPatentAR: LodManager Class Reference</title>
+<title>ARDesign: LodManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">3DPatentAR
+   <div id="projectname">ARDesign
    </div>
-   <div id="projectbrief">Mobile AR patent viewer — Unity 6 with ARFoundation and glTFast</div>
+   <div id="projectbrief">Mobile AR design viewer — Unity 6 with ARFoundation and glTFast</div>
   </td>
  </tr>
  </tbody>
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('classLodManager.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 
-<p>Listens to <a class="el" href="classPopupMenuManager.html#adb44b173097b7cc73b1f9c82ac1b3d56" title="Fired when the LOD toggle changes. Parameter is true for LOD 1 (simplified).">PopupMenuManager.OnLodChange</a> and forces all LODGroup components in the active patent to the manually selected LOD level.  
+<p>Listens to <a class="el" href="classPopupMenuManager.html#adb44b173097b7cc73b1f9c82ac1b3d56" title="Fired when the LOD toggle changes. Parameter is true for LOD 1 (simplified).">PopupMenuManager.OnLodChange</a> and forces all LODGroup components in the active design to the manually selected LOD level.  
  <a href="classLodManager.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for LodManager:</div>
@@ -113,7 +113,7 @@ Inheritance diagram for LodManager:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a448d24a19d14923d44b1845763d0b66c" id="r_a448d24a19d14923d44b1845763d0b66c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLodManager.html#a448d24a19d14923d44b1845763d0b66c">SetLodLevel</a> (int lodLevel)</td></tr>
-<tr class="memdesc:a448d24a19d14923d44b1845763d0b66c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects a manual LOD level for the current session and applies it to the active patent.  <br /></td></tr>
+<tr class="memdesc:a448d24a19d14923d44b1845763d0b66c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects a manual LOD level for the current session and applies it to the active design.  <br /></td></tr>
 <tr class="separator:a448d24a19d14923d44b1845763d0b66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
@@ -122,26 +122,26 @@ Properties</h2></td></tr>
 <tr class="memdesc:a6e8bcacebfc5bebd538c13c653ed8527"><td class="mdescLeft">&#160;</td><td class="mdescRight">The LOD level currently selected by the user.  <br /></td></tr>
 <tr class="separator:a6e8bcacebfc5bebd538c13c653ed8527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd1dd8d4570c57e38ff7590373f5cc8" id="r_addd1dd8d4570c57e38ff7590373f5cc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLodManager.html#addd1dd8d4570c57e38ff7590373f5cc8">AvailableLodLevelCount</a><code> [get, private set]</code></td></tr>
-<tr class="memdesc:addd1dd8d4570c57e38ff7590373f5cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of LOD levels shared by every valid LODGroup on the active patent.  <br /></td></tr>
+<tr class="memdesc:addd1dd8d4570c57e38ff7590373f5cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of LOD levels shared by every valid LODGroup on the active design.  <br /></td></tr>
 <tr class="separator:addd1dd8d4570c57e38ff7590373f5cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ab3dcffbc8941d1338d04e2a26072fd34" id="r_ab3dcffbc8941d1338d04e2a26072fd34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLodManager.html#ab3dcffbc8941d1338d04e2a26072fd34">Start</a> ()</td></tr>
-<tr class="memdesc:ab3dcffbc8941d1338d04e2a26072fd34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribes to the LOD UI and patent lifecycle, then applies the current session selection if a patent is already active.  <br /></td></tr>
+<tr class="memdesc:ab3dcffbc8941d1338d04e2a26072fd34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribes to the LOD UI and design lifecycle, then applies the current session selection if a design is already active.  <br /></td></tr>
 <tr class="separator:ab3dcffbc8941d1338d04e2a26072fd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae291ed4d85fa75d361e18628521e4f66" id="r_ae291ed4d85fa75d361e18628521e4f66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLodManager.html#ae291ed4d85fa75d361e18628521e4f66">OnDestroy</a> ()</td></tr>
-<tr class="memdesc:ae291ed4d85fa75d361e18628521e4f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribes from UI and patent lifecycle callbacks.  <br /></td></tr>
+<tr class="memdesc:ae291ed4d85fa75d361e18628521e4f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribes from UI and design lifecycle callbacks.  <br /></td></tr>
 <tr class="separator:ae291ed4d85fa75d361e18628521e4f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee72c2b60792e2d91be4d439df5e641" id="r_aaee72c2b60792e2d91be4d439df5e641"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLodManager.html#aaee72c2b60792e2d91be4d439df5e641">SetPerformanceMode</a> (bool isOn)</td></tr>
 <tr class="memdesc:aaee72c2b60792e2d91be4d439df5e641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps the existing two-state UI to LOD 0 or LOD 1.  <br /></td></tr>
 <tr class="separator:aaee72c2b60792e2d91be4d439df5e641"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa482968b020a68d870bca391e02d7afa" id="r_aa482968b020a68d870bca391e02d7afa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLodManager.html#aa482968b020a68d870bca391e02d7afa">BindActivePatent</a> ()</td></tr>
-<tr class="memdesc:aa482968b020a68d870bca391e02d7afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caches LOD groups once when a patent is spawned.  <br /></td></tr>
-<tr class="separator:aa482968b020a68d870bca391e02d7afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa785646d6ae62626e2ceb34d930c4cad" id="r_aa785646d6ae62626e2ceb34d930c4cad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLodManager.html#aa785646d6ae62626e2ceb34d930c4cad">ClearActivePatent</a> ()</td></tr>
-<tr class="memdesc:aa785646d6ae62626e2ceb34d930c4cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears per-model references while preserving the user's selection.  <br /></td></tr>
-<tr class="separator:aa785646d6ae62626e2ceb34d930c4cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece4634bf8550808a0b51b98de775bac" id="r_aece4634bf8550808a0b51b98de775bac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLodManager.html#aece4634bf8550808a0b51b98de775bac">BindActiveDesign</a> ()</td></tr>
+<tr class="memdesc:aece4634bf8550808a0b51b98de775bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caches LOD groups once when a design is spawned.  <br /></td></tr>
+<tr class="separator:aece4634bf8550808a0b51b98de775bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec465fee1c61bbce76d7f49cd136c8f" id="r_afec465fee1c61bbce76d7f49cd136c8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLodManager.html#afec465fee1c61bbce76d7f49cd136c8f">ClearActiveDesign</a> ()</td></tr>
+<tr class="memdesc:afec465fee1c61bbce76d7f49cd136c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears per-model references while preserving the user's selection.  <br /></td></tr>
+<tr class="separator:afec465fee1c61bbce76d7f49cd136c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acee7244e44260feebb57675ba1343063" id="r_acee7244e44260feebb57675ba1343063"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLodManager.html#acee7244e44260feebb57675ba1343063">ApplySelectedLodLevel</a> ()</td></tr>
 <tr class="memdesc:acee7244e44260feebb57675ba1343063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces the selected, validated level on every cached LOD group.  <br /></td></tr>
 <tr class="separator:acee7244e44260feebb57675ba1343063"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,11 +154,11 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a3ea0ee7ca8f1e121b06758384e1d42f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a543c5221e4d6d44d6050a4f33dab60d8" id="r_a543c5221e4d6d44d6050a4f33dab60d8"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLodManager.html#a543c5221e4d6d44d6050a4f33dab60d8">activeLodCounts</a> = Array.Empty&lt;int&gt;()</td></tr>
 <tr class="separator:a543c5221e4d6d44d6050a4f33dab60d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a109f41969d57f8cd08625a02e0df1326" id="r_a109f41969d57f8cd08625a02e0df1326"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPatentManager.html">PatentManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLodManager.html#a109f41969d57f8cd08625a02e0df1326">subscribedPatentManager</a></td></tr>
-<tr class="separator:a109f41969d57f8cd08625a02e0df1326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc53fd458a5755abe6ac87eb3ed1ceb" id="r_a8dc53fd458a5755abe6ac87eb3ed1ceb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDesignManager.html">DesignManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLodManager.html#a8dc53fd458a5755abe6ac87eb3ed1ceb">subscribedDesignManager</a></td></tr>
+<tr class="separator:a8dc53fd458a5755abe6ac87eb3ed1ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Listens to <a class="el" href="classPopupMenuManager.html#adb44b173097b7cc73b1f9c82ac1b3d56" title="Fired when the LOD toggle changes. Parameter is true for LOD 1 (simplified).">PopupMenuManager.OnLodChange</a> and forces all LODGroup components in the active patent to the manually selected LOD level. </p>
+<div class="textblock"><p>Listens to <a class="el" href="classPopupMenuManager.html#adb44b173097b7cc73b1f9c82ac1b3d56" title="Fired when the LOD toggle changes. Parameter is true for LOD 1 (simplified).">PopupMenuManager.OnLodChange</a> and forces all LODGroup components in the active design to the manually selected LOD level. </p>
 <p>LOD 0 = full quality; LOD 1 = the simplified mesh generated by <a class="el" href="classGenerateLOD.html" title="MonoBehaviour that automatically generates two LOD levels for its GameObject using UnityMeshSimplifie...">GenerateLOD</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acee7244e44260feebb57675ba1343063" name="acee7244e44260feebb57675ba1343063"></a>
@@ -188,8 +188,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa482968b020a68d870bca391e02d7afa" name="aa482968b020a68d870bca391e02d7afa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa482968b020a68d870bca391e02d7afa">&#9670;&#160;</a></span>BindActivePatent()</h2>
+<a id="aece4634bf8550808a0b51b98de775bac" name="aece4634bf8550808a0b51b98de775bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aece4634bf8550808a0b51b98de775bac">&#9670;&#160;</a></span>BindActiveDesign()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,7 +198,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void LodManager.BindActivePatent </td>
+          <td class="memname">void LodManager.BindActiveDesign </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -211,12 +211,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Caches LOD groups once when a patent is spawned. </p>
+<p>Caches LOD groups once when a design is spawned. </p>
 
 </div>
 </div>
-<a id="aa785646d6ae62626e2ceb34d930c4cad" name="aa785646d6ae62626e2ceb34d930c4cad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa785646d6ae62626e2ceb34d930c4cad">&#9670;&#160;</a></span>ClearActivePatent()</h2>
+<a id="afec465fee1c61bbce76d7f49cd136c8f" name="afec465fee1c61bbce76d7f49cd136c8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec465fee1c61bbce76d7f49cd136c8f">&#9670;&#160;</a></span>ClearActiveDesign()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +225,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void LodManager.ClearActivePatent </td>
+          <td class="memname">void LodManager.ClearActiveDesign </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -265,7 +265,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Unsubscribes from UI and patent lifecycle callbacks. </p>
+<p>Unsubscribes from UI and design lifecycle callbacks. </p>
 
 </div>
 </div>
@@ -285,7 +285,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Selects a manual LOD level for the current session and applies it to the active patent. </p>
+<p>Selects a manual LOD level for the current session and applies it to the active design. </p>
 <p>The existing UI exposes levels 0 and 1; models with fewer levels are safely clamped to their last available level.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -347,7 +347,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Subscribes to the LOD UI and patent lifecycle, then applies the current session selection if a patent is already active. </p>
+<p>Subscribes to the LOD UI and design lifecycle, then applies the current session selection if a design is already active. </p>
 
 </div>
 </div>
@@ -418,8 +418,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a109f41969d57f8cd08625a02e0df1326" name="a109f41969d57f8cd08625a02e0df1326"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a109f41969d57f8cd08625a02e0df1326">&#9670;&#160;</a></span>subscribedPatentManager</h2>
+<a id="a8dc53fd458a5755abe6ac87eb3ed1ceb" name="a8dc53fd458a5755abe6ac87eb3ed1ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dc53fd458a5755abe6ac87eb3ed1ceb">&#9670;&#160;</a></span>subscribedDesignManager</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -428,7 +428,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classPatentManager.html">PatentManager</a> LodManager.subscribedPatentManager</td>
+          <td class="memname"><a class="el" href="classDesignManager.html">DesignManager</a> LodManager.subscribedDesignManager</td>
         </tr>
       </table>
   </td>
@@ -461,8 +461,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Number of LOD levels shared by every valid LODGroup on the active patent. </p>
-<p>Zero means that no active patent with LODs is available. </p>
+<p>Number of LOD levels shared by every valid LODGroup on the active design. </p>
+<p>Zero means that no active design with LODs is available. </p>
 
 </div>
 </div>

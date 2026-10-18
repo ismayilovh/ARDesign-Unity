@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "3DPatentAR", "index.html", [
+  [ "ARDesign", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -51,7 +51,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "ARPlaneAreaCalculator_8cs.html",
-"classModelTransformManager.html#a5002fd95f751ea16684e38e5e2290daf",
+"classLogText.html#a48fd7b9da1d0b0d221e13334a5aea771",
 "classQRNetworkHandler.html#a86a6ae0787143b0fcaaf12e314e983ff"
 ];
 

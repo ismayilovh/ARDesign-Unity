@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3DPatentAR: QRNetworkHandler Class Reference</title>
+<title>ARDesign: QRNetworkHandler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">3DPatentAR
+   <div id="projectname">ARDesign
    </div>
-   <div id="projectbrief">Mobile AR patent viewer — Unity 6 with ARFoundation and glTFast</div>
+   <div id="projectbrief">Mobile AR design viewer — Unity 6 with ARFoundation and glTFast</div>
   </td>
  </tr>
  </tbody>
@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a83028ff7ab89b8a060045f0692551e24" id="r_a83028ff7ab89b8a060045f0692551e24"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQRNetworkHandler.html#a83028ff7ab89b8a060045f0692551e24">LoadedModel</a></td></tr>
-<tr class="memdesc:a83028ff7ab89b8a060045f0692551e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary reference to the loaded glTF scene root while it is prepared as <a class="el" href="classPatentManager.html#a54be3951a1569e3bd3e433b488c71384" title="The prefab or downloaded model assigned as the source for instantiation.">PatentManager.Patent</a>.  <br /></td></tr>
+<tr class="memdesc:a83028ff7ab89b8a060045f0692551e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary reference to the loaded glTF scene root while it is prepared as <a class="el" href="classDesignManager.html#a24271205ff2430e0f6d3ef3fb5a0104c" title="The prefab or downloaded model assigned as the source for instantiation.">DesignManager.Design</a>.  <br /></td></tr>
 <tr class="separator:a83028ff7ab89b8a060045f0692551e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a284313853276da2956605279f816e4ad" id="r_a284313853276da2956605279f816e4ad"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQRNetworkHandler.html#a284313853276da2956605279f816e4ad">ModelLoadTransform</a></td></tr>
 <tr class="memdesc:a284313853276da2956605279f816e4ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform under which the GLTFast importer instantiates the model temporarily.  <br /></td></tr>
@@ -154,10 +154,10 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:acc1b05a7d1567d2497cc14143af7010a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the progress bar slider and percentage label during an active download.  <br /></td></tr>
 <tr class="separator:acc1b05a7d1567d2497cc14143af7010a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab634c090ef1dcbed4d35ec3ec5de90c5" id="r_ab634c090ef1dcbed4d35ec3ec5de90c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQRNetworkHandler.html#ab634c090ef1dcbed4d35ec3ec5de90c5">ResetNetworkHandler</a> ()</td></tr>
-<tr class="memdesc:ab634c090ef1dcbed4d35ec3ec5de90c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the <a class="el" href="classQRNetworkHandler.html#a83028ff7ab89b8a060045f0692551e24" title="Temporary reference to the loaded glTF scene root while it is prepared as PatentManager....">LoadedModel</a> reference to prepare for a new download.  <br /></td></tr>
+<tr class="memdesc:ab634c090ef1dcbed4d35ec3ec5de90c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the <a class="el" href="classQRNetworkHandler.html#a83028ff7ab89b8a060045f0692551e24" title="Temporary reference to the loaded glTF scene root while it is prepared as DesignManager....">LoadedModel</a> reference to prepare for a new download.  <br /></td></tr>
 <tr class="separator:ab634c090ef1dcbed4d35ec3ec5de90c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4c01b678aea546d537af57c6a0c71ae" id="r_ab4c01b678aea546d537af57c6a0c71ae"><td class="memItemLeft" align="right" valign="top">async Task&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQRNetworkHandler.html#ab4c01b678aea546d537af57c6a0c71ae">LoadGLBObject</a> (byte[] data, int loadGeneration)</td></tr>
-<tr class="memdesc:ab4c01b678aea546d537af57c6a0c71ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously parses raw GLB bytes with GLTFast, instantiates the scene under this transform, prepares it as the inactive <a class="el" href="classPatentManager.html#a54be3951a1569e3bd3e433b488c71384" title="The prefab or downloaded model assigned as the source for instantiation.">PatentManager.Patent</a> template, and adds <a class="el" href="classGenerateLOD.html" title="MonoBehaviour that automatically generates two LOD levels for its GameObject using UnityMeshSimplifie...">GenerateLOD</a>.  <br /></td></tr>
+<tr class="memdesc:ab4c01b678aea546d537af57c6a0c71ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously parses raw GLB bytes with GLTFast, instantiates the scene under this transform, prepares it as the inactive <a class="el" href="classDesignManager.html#a24271205ff2430e0f6d3ef3fb5a0104c" title="The prefab or downloaded model assigned as the source for instantiation.">DesignManager.Design</a> template, and adds <a class="el" href="classGenerateLOD.html" title="MonoBehaviour that automatically generates two LOD levels for its GameObject using UnityMeshSimplifie...">GenerateLOD</a>.  <br /></td></tr>
 <tr class="separator:ab4c01b678aea546d537af57c6a0c71ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a1d1d4d8c9c678fa5fb6f1dd8139b94" id="r_a3a1d1d4d8c9c678fa5fb6f1dd8139b94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQRNetworkHandler.html#a3a1d1d4d8c9c678fa5fb6f1dd8139b94">OnDownloadError</a> (string error)</td></tr>
 <tr class="memdesc:a3a1d1d4d8c9c678fa5fb6f1dd8139b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the progress popup and replaces it with an error popup that displays the failure message and an OK button to dismiss.  <br /></td></tr>
@@ -197,7 +197,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Singleton that downloads a glTF/GLB model from the URL encoded in the scanned QR code and loads it into the scene using GLTFast. </p>
-<p>Shows a progress-bar popup during download and an error popup on failure. On success it sets <a class="el" href="classPatentManager.html#a54be3951a1569e3bd3e433b488c71384" title="The prefab or downloaded model assigned as the source for instantiation.">PatentManager.Patent</a> and transitions to <a class="el" href="classStateMachine.html#a905d1c2a570856577ca5bca4274217f6ae65ce883120c5c45b801ae21913a3030" title="Model placed in AR scene; interaction enabled.">StateMachine.States.MODEL_VIEW_STATE</a>. </p>
+<p>Shows a progress-bar popup during download and an error popup on failure. On success it sets <a class="el" href="classDesignManager.html#a24271205ff2430e0f6d3ef3fb5a0104c" title="The prefab or downloaded model assigned as the source for instantiation.">DesignManager.Design</a> and transitions to <a class="el" href="classStateMachine.html#a905d1c2a570856577ca5bca4274217f6ae65ce883120c5c45b801ae21913a3030" title="Model placed in AR scene; interaction enabled.">StateMachine.States.MODEL_VIEW_STATE</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a06c32f6381df882fbc006fd556f4ed26" name="a06c32f6381df882fbc006fd556f4ed26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a06c32f6381df882fbc006fd556f4ed26">&#9670;&#160;</a></span>Awake()</h2>
@@ -387,7 +387,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Asynchronously parses raw GLB bytes with GLTFast, instantiates the scene under this transform, prepares it as the inactive <a class="el" href="classPatentManager.html#a54be3951a1569e3bd3e433b488c71384" title="The prefab or downloaded model assigned as the source for instantiation.">PatentManager.Patent</a> template, and adds <a class="el" href="classGenerateLOD.html" title="MonoBehaviour that automatically generates two LOD levels for its GameObject using UnityMeshSimplifie...">GenerateLOD</a>. </p>
+<p>Asynchronously parses raw GLB bytes with GLTFast, instantiates the scene under this transform, prepares it as the inactive <a class="el" href="classDesignManager.html#a24271205ff2430e0f6d3ef3fb5a0104c" title="The prefab or downloaded model assigned as the source for instantiation.">DesignManager.Design</a> template, and adds <a class="el" href="classGenerateLOD.html" title="MonoBehaviour that automatically generates two LOD levels for its GameObject using UnityMeshSimplifie...">GenerateLOD</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Raw GLB file bytes returned by the web request.</td></tr>
@@ -513,7 +513,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Clears the <a class="el" href="classQRNetworkHandler.html#a83028ff7ab89b8a060045f0692551e24" title="Temporary reference to the loaded glTF scene root while it is prepared as PatentManager....">LoadedModel</a> reference to prepare for a new download. </p>
+<p>Clears the <a class="el" href="classQRNetworkHandler.html#a83028ff7ab89b8a060045f0692551e24" title="Temporary reference to the loaded glTF scene root while it is prepared as DesignManager....">LoadedModel</a> reference to prepare for a new download. </p>
 
 </div>
 </div>
@@ -598,7 +598,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Temporary reference to the loaded glTF scene root while it is prepared as <a class="el" href="classPatentManager.html#a54be3951a1569e3bd3e433b488c71384" title="The prefab or downloaded model assigned as the source for instantiation.">PatentManager.Patent</a>. </p>
+<p>Temporary reference to the loaded glTF scene root while it is prepared as <a class="el" href="classDesignManager.html#a24271205ff2430e0f6d3ef3fb5a0104c" title="The prefab or downloaded model assigned as the source for instantiation.">DesignManager.Design</a>. </p>
 
 </div>
 </div>

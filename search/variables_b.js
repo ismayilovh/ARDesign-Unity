@@ -37,14 +37,14 @@ var searchData=
   ['m_5fstatemap_34',['m_StateMap',['../classStateMachine.html#a7607927f9e86c9b9afad717ddd86b3d1',1,'StateMachine']]],
   ['m_5ftoggle_35',['m_Toggle',['../classUIToggle.html#a1aa12dcfa2a17c7a64fd7a4850a24c1b',1,'UIToggle']]],
   ['m_5fuitogglecomponent_36',['m_uitogglecomponent',['../classPivotSettingManager.html#a7a001de3c469c2b843e74aff6f6d56e8',1,'PivotSettingManager.m_UIToggleComponent'],['../classUIVisibilityManager.html#a567b4856dccadde62e0e8fdc92f827f0',1,'UIVisibilityManager.m_UIToggleComponent'],['../classModelPlaneDetectionManager.html#aedbc30718a84814fb18cc81eb6f4c8b9',1,'ModelPlaneDetectionManager.m_UIToggleComponent']]],
-  ['maincamera_37',['mainCamera',['../classPatentTransformer.html#a8345d636e2f6db68a9e4c585bbeed6af',1,'PatentTransformer']]],
-  ['maxscale_38',['maxScale',['../classPatentTransformer.html#a0492caecfa9fc43131d17fca688bd97d',1,'PatentTransformer']]],
+  ['maincamera_37',['mainCamera',['../classDesignTransformer.html#a67b48780c213c6d38b122a5144bbb926',1,'DesignTransformer']]],
+  ['maxscale_38',['maxScale',['../classDesignTransformer.html#a7c01c07da2f05019207891c73653993d',1,'DesignTransformer']]],
   ['maxscandimension_39',['maxScanDimension',['../classQRScanner.html#a2531843419bb56deacb27ef9dce36bcb',1,'QRScanner']]],
   ['meshentries_40',['meshEntries',['../classObjectInfoManager.html#a761505244097c5eb191de8b288bfe4fa',1,'ObjectInfoManager']]],
-  ['minscale_41',['minScale',['../classPatentTransformer.html#aec988a6ae6cc622274b62b36dc2f88ff',1,'PatentTransformer']]],
+  ['minscale_41',['minScale',['../classDesignTransformer.html#abca95823053f027a0c305215f5365e42',1,'DesignTransformer']]],
   ['mode_42',['mode',['../classScalingModeController.html#ad1ecd8313e79a8d0c535aeb9c5665a1e',1,'ScalingModeController']]],
   ['modelimagelayer_43',['ModelImageLayer',['../classMiniModelDisplayManager.html#adcc55c2781de9ad313397771010aebf2',1,'MiniModelDisplayManager']]],
   ['modelloadtransform_44',['ModelLoadTransform',['../classQRNetworkHandler.html#a284313853276da2956605279f816e4ad',1,'QRNetworkHandler']]],
-  ['mousedragtorotate_45',['mouseDragToRotate',['../classPatentTransformer.html#a1bd24db4f7d33fae2468d3428dfb96b7',1,'PatentTransformer']]],
-  ['mousescrolltoscale_46',['mouseScrollToScale',['../classPatentTransformer.html#a7d869a2e55e3f005dacc350c6713976b',1,'PatentTransformer']]]
+  ['mousedragtorotate_45',['mouseDragToRotate',['../classDesignTransformer.html#a830c2888cafbf98e767a20aac9d152d6',1,'DesignTransformer']]],
+  ['mousescrolltoscale_46',['mouseScrollToScale',['../classDesignTransformer.html#ab2a910b9ad261fac2c5f3bcce006328f',1,'DesignTransformer']]]
 ];

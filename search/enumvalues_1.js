@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['fitscreen_0',['FitScreen',['../ScalingModeController_8cs.html#a78c7b1502744aa251556cfc2b75485f0a78f0f0023518665aa87869c617a3ff20',1,'ScalingModeController.cs']]],
-  ['front_1',['Front',['../ObjectSpawnerAR_8cs.html#aaf159fca6c090cbe566a9e3ddc897c7ba5835bab1ade0060909e31a06af2e2cde',1,'ObjectSpawnerAR.cs']]]
+  ['design_0',['Design',['../GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a1afa74da05ca145d3418aad9af510109',1,'GameManager.cs']]]
 ];

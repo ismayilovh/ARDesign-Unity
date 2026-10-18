@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3DPatentAR: ScreenScaler Class Reference</title>
+<title>ARDesign: ScreenScaler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">3DPatentAR
+   <div id="projectname">ARDesign
    </div>
-   <div id="projectbrief">Mobile AR patent viewer — Unity 6 with ARFoundation and glTFast</div>
+   <div id="projectbrief">Mobile AR design viewer — Unity 6 with ARFoundation and glTFast</div>
   </td>
  </tr>
  </tbody>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('classScreenScaler.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>Singleton utility that calculates the uniform scale factor needed to fit a patent model within a configurable fraction of the device screen.  
+<p>Singleton utility that calculates the uniform scale factor needed to fit a design model within a configurable fraction of the device screen.  
  <a href="classScreenScaler.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ScreenScaler:</div>
@@ -116,9 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f6e43b450e2ebd4080d8fb199225517" id="r_a6f6e43b450e2ebd4080d8fb199225517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScreenScaler.html#a6f6e43b450e2ebd4080d8fb199225517">SetScreenFit</a> (bool isOn)</td></tr>
 <tr class="memdesc:a6f6e43b450e2ebd4080d8fb199225517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the screen-fit calculation.  <br /></td></tr>
 <tr class="separator:a6f6e43b450e2ebd4080d8fb199225517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21643cb05cd9eed8d45363c23c1653fa" id="r_a21643cb05cd9eed8d45363c23c1653fa"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScreenScaler.html#a21643cb05cd9eed8d45363c23c1653fa">FitScreen</a> (GameObject patent, bool usePivot)</td></tr>
-<tr class="memdesc:a21643cb05cd9eed8d45363c23c1653fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the uniform scale multiplier that makes <em>patent</em>  fill <code>scaleAmount</code> of the camera's view frustum at its current distance.  <br /></td></tr>
-<tr class="separator:a21643cb05cd9eed8d45363c23c1653fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7dff78f78b9792e7d896299da8c3c2" id="r_a8b7dff78f78b9792e7d896299da8c3c2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScreenScaler.html#a8b7dff78f78b9792e7d896299da8c3c2">FitScreen</a> (GameObject design, bool usePivot)</td></tr>
+<tr class="memdesc:a8b7dff78f78b9792e7d896299da8c3c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the uniform scale multiplier that makes <em>design</em>  fill <code>scaleAmount</code> of the camera's view frustum at its current distance.  <br /></td></tr>
+<tr class="separator:a8b7dff78f78b9792e7d896299da8c3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -129,7 +129,7 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a5e8746a9ce859027597b630b1d6acdde" id="r_a5e8746a9ce859027597b630b1d6acdde"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classScreenScaler.html">ScreenScaler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classScreenScaler.html#a5e8746a9ce859027597b630b1d6acdde">instance</a></td></tr>
-<tr class="memdesc:a5e8746a9ce859027597b630b1d6acdde"><td class="mdescLeft">&#160;</td><td class="mdescRight">The single active instance of <a class="el" href="classScreenScaler.html" title="Singleton utility that calculates the uniform scale factor needed to fit a patent model within a conf...">ScreenScaler</a>.  <br /></td></tr>
+<tr class="memdesc:a5e8746a9ce859027597b630b1d6acdde"><td class="mdescLeft">&#160;</td><td class="mdescRight">The single active instance of <a class="el" href="classScreenScaler.html" title="Singleton utility that calculates the uniform scale factor needed to fit a design model within a conf...">ScreenScaler</a>.  <br /></td></tr>
 <tr class="separator:a5e8746a9ce859027597b630b1d6acdde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -154,8 +154,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a7dfee10e36894cfb3ea7b4d46c06f64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Singleton utility that calculates the uniform scale factor needed to fit a patent model within a configurable fraction of the device screen. </p>
-<p>Uses the camera's FOV and the model's world-space bounds from <a class="el" href="classPivotSetter.html#a639cf16e9b918517162dcfca3432021c" title="Computes the world-space axis-aligned bounding box that encapsulates all MeshRenderer components in p...">PivotSetter.GetSpawnBounds</a>. </p>
+<div class="textblock"><p>Singleton utility that calculates the uniform scale factor needed to fit a design model within a configurable fraction of the device screen. </p>
+<p>Uses the camera's FOV and the model's world-space bounds from <a class="el" href="classPivotSetter.html#ac998bdc5fa3a266d7d16ad8e034845fc" title="Computes the world-space axis-aligned bounding box that encapsulates all MeshRenderer components in d...">PivotSetter.GetSpawnBounds</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a558ebaded43f55d0fdf7ea1dc3090783" name="a558ebaded43f55d0fdf7ea1dc3090783"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a558ebaded43f55d0fdf7ea1dc3090783">&#9670;&#160;</a></span>Awake()</h2>
@@ -184,8 +184,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a21643cb05cd9eed8d45363c23c1653fa" name="a21643cb05cd9eed8d45363c23c1653fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21643cb05cd9eed8d45363c23c1653fa">&#9670;&#160;</a></span>FitScreen()</h2>
+<a id="a8b7dff78f78b9792e7d896299da8c3c2" name="a8b7dff78f78b9792e7d896299da8c3c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7dff78f78b9792e7d896299da8c3c2">&#9670;&#160;</a></span>FitScreen()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,7 +194,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">float ScreenScaler.FitScreen </td>
           <td>(</td>
           <td class="paramtype">GameObject&#160;</td>
-          <td class="paramname"><em>patent</em>, </td>
+          <td class="paramname"><em>design</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -210,10 +210,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calculates the uniform scale multiplier that makes <em>patent</em>  fill <code>scaleAmount</code> of the camera's view frustum at its current distance. </p>
+<p>Calculates the uniform scale multiplier that makes <em>design</em>  fill <code>scaleAmount</code> of the camera's view frustum at its current distance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">patent</td><td>The root GameObject of the patent model to size.</td></tr>
+    <tr><td class="paramname">design</td><td>The root GameObject of the design model to size.</td></tr>
     <tr><td class="paramname">usePivot</td><td>When <code>true</code>, uses the object's transform position as the reference center; otherwise uses the bounds center. </td></tr>
   </table>
   </dd>
@@ -239,7 +239,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enables or disables the screen-fit calculation. </p>
-<p>When disabled <a class="el" href="classScreenScaler.html#a21643cb05cd9eed8d45363c23c1653fa" title="Calculates the uniform scale multiplier that makes patent  fill scaleAmount of the camera&#39;s view frus...">FitScreen</a> returns <code>-1</code>.</p>
+<p>When disabled <a class="el" href="classScreenScaler.html#a8b7dff78f78b9792e7d896299da8c3c2" title="Calculates the uniform scale multiplier that makes design  fill scaleAmount of the camera&#39;s view frus...">FitScreen</a> returns <code>-1</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">isOn</td><td><code>true</code> to enable screen fitting.</td></tr>
@@ -292,7 +292,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The single active instance of <a class="el" href="classScreenScaler.html" title="Singleton utility that calculates the uniform scale factor needed to fit a patent model within a conf...">ScreenScaler</a>. </p>
+<p>The single active instance of <a class="el" href="classScreenScaler.html" title="Singleton utility that calculates the uniform scale factor needed to fit a design model within a conf...">ScreenScaler</a>. </p>
 
 </div>
 </div>

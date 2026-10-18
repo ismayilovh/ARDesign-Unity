@@ -1,7 +1,7 @@
 var classScreenScaler =
 [
     [ "Awake", "classScreenScaler.html#a558ebaded43f55d0fdf7ea1dc3090783", null ],
-    [ "FitScreen", "classScreenScaler.html#a21643cb05cd9eed8d45363c23c1653fa", null ],
+    [ "FitScreen", "classScreenScaler.html#a8b7dff78f78b9792e7d896299da8c3c2", null ],
     [ "SetScreenFit", "classScreenScaler.html#a6f6e43b450e2ebd4080d8fb199225517", null ],
     [ "cam", "classScreenScaler.html#a8f8a46a770b556720a242fa3b4e1947c", null ],
     [ "instance", "classScreenScaler.html#a5e8746a9ce859027597b630b1d6acdde", null ],

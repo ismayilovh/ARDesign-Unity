@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3DPatentAR: BoundingBoxVisualizer Class Reference</title>
+<title>ARDesign: BoundingBoxVisualizer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">3DPatentAR
+   <div id="projectname">ARDesign
    </div>
-   <div id="projectbrief">Mobile AR patent viewer — Unity 6 with ARFoundation and glTFast</div>
+   <div id="projectbrief">Mobile AR design viewer — Unity 6 with ARFoundation and glTFast</div>
   </td>
  </tr>
  </tbody>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('classBoundingBoxVisualizer.html',''); 
 </div><!--header-->
 <div class="contents">
 
-<p>Renders a wireframe bounding box around the active patent model using 12 LineRenderer edges.  
+<p>Renders a wireframe bounding box around the active design model using 12 LineRenderer edges.  
  <a href="classBoundingBoxVisualizer.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for BoundingBoxVisualizer:</div>
@@ -120,11 +120,11 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a3f097a08412b7e8bcd28ee030bd741f0" id="r_a3f097a08412b7e8bcd28ee030bd741f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBoxVisualizer.html#a3f097a08412b7e8bcd28ee030bd741f0">SetVisible</a> (bool visible)</td></tr>
 <tr class="memdesc:a3f097a08412b7e8bcd28ee030bd741f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records the desired visibility state and hides all edges immediately when visibility is turned off.  <br /></td></tr>
 <tr class="separator:a3f097a08412b7e8bcd28ee030bd741f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96bc4f298ff31ab5ac973ebc4a87ae82" id="r_a96bc4f298ff31ab5ac973ebc4a87ae82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBoxVisualizer.html#a96bc4f298ff31ab5ac973ebc4a87ae82">OnPatentDeleted</a> ()</td></tr>
-<tr class="memdesc:a96bc4f298ff31ab5ac973ebc4a87ae82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides all edge renderers when the active patent is deleted.  <br /></td></tr>
-<tr class="separator:a96bc4f298ff31ab5ac973ebc4a87ae82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedfb6bfcd24ca7e6b9805000d09cdc66" id="r_aedfb6bfcd24ca7e6b9805000d09cdc66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBoxVisualizer.html#aedfb6bfcd24ca7e6b9805000d09cdc66">OnDesignDeleted</a> ()</td></tr>
+<tr class="memdesc:aedfb6bfcd24ca7e6b9805000d09cdc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides all edge renderers when the active design is deleted.  <br /></td></tr>
+<tr class="separator:aedfb6bfcd24ca7e6b9805000d09cdc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29ac405a7cb8467140eb471faacd474c" id="r_a29ac405a7cb8467140eb471faacd474c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBoxVisualizer.html#a29ac405a7cb8467140eb471faacd474c">Update</a> ()</td></tr>
-<tr class="memdesc:a29ac405a7cb8467140eb471faacd474c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each frame, when visible, retrieves the active patent and either hides the edges (no patent present) or refreshes their positions to track the model as it moves and scales.  <br /></td></tr>
+<tr class="memdesc:a29ac405a7cb8467140eb471faacd474c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each frame, when visible, retrieves the active design and either hides the edges (no design present) or refreshes their positions to track the model as it moves and scales.  <br /></td></tr>
 <tr class="separator:a29ac405a7cb8467140eb471faacd474c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb3c1f88e13c559dadf6045f0c3bdcab" id="r_afb3c1f88e13c559dadf6045f0c3bdcab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBoxVisualizer.html#afb3c1f88e13c559dadf6045f0c3bdcab">SetEdgesActive</a> (bool active)</td></tr>
 <tr class="memdesc:afb3c1f88e13c559dadf6045f0c3bdcab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables all 12 edge LineRenderer GameObjects.  <br /></td></tr>
@@ -149,8 +149,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1695dc05387d2e1bdb1c5ee6ea3aa516"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1261adbcc2dcdb2a209d810137d482c1" id="r_a1261adbcc2dcdb2a209d810137d482c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBoxVisualizer.html#a1261adbcc2dcdb2a209d810137d482c1">_edgesActive</a></td></tr>
 <tr class="separator:a1261adbcc2dcdb2a209d810137d482c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abed1f9e20ff6dfdc1cddb7fe04f1f8eb" id="r_abed1f9e20ff6dfdc1cddb7fe04f1f8eb"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBoxVisualizer.html#abed1f9e20ff6dfdc1cddb7fe04f1f8eb">_cachedPatent</a></td></tr>
-<tr class="separator:abed1f9e20ff6dfdc1cddb7fe04f1f8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b17662d010bed265ae88eb33c07f2c6" id="r_a2b17662d010bed265ae88eb33c07f2c6"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBoxVisualizer.html#a2b17662d010bed265ae88eb33c07f2c6">_cachedDesign</a></td></tr>
+<tr class="separator:a2b17662d010bed265ae88eb33c07f2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b6b3b18e668027fa52e1a471b65356c" id="r_a0b6b3b18e668027fa52e1a471b65356c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPivotSetter.html">PivotSetter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBoxVisualizer.html#a0b6b3b18e668027fa52e1a471b65356c">_cachedPivotSetter</a></td></tr>
 <tr class="separator:a0b6b3b18e668027fa52e1a471b65356c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab98873835de83a016d51ff41287c1866" id="r_ab98873835de83a016d51ff41287c1866"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBoundingBoxVisualizer.html#ab98873835de83a016d51ff41287c1866">_cachedBoundsVersion</a> = -1</td></tr>
@@ -166,9 +166,36 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a2bf83aaad1421ba3f36cda5e28e4d698"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Renders a wireframe bounding box around the active patent model using 12 LineRenderer edges. </p>
+<div class="textblock"><p>Renders a wireframe bounding box around the active design model using 12 LineRenderer edges. </p>
 <p>Visibility is toggled via <a class="el" href="classPopupMenuManager.html#a72b78c24a7745af1bf75e863b25e9d78" title="Fired when the bounding-box toggle changes. Parameter is the new state.">PopupMenuManager.OnEnableBoundingBox</a> and the box is automatically hidden when the model is deleted. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aedfb6bfcd24ca7e6b9805000d09cdc66" name="aedfb6bfcd24ca7e6b9805000d09cdc66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedfb6bfcd24ca7e6b9805000d09cdc66">&#9670;&#160;</a></span>OnDesignDeleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BoundingBoxVisualizer.OnDesignDeleted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Hides all edge renderers when the active design is deleted. </p>
+
+</div>
+</div>
 <a id="a0aae3379ca2c074778478428c2904ded" name="a0aae3379ca2c074778478428c2904ded"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0aae3379ca2c074778478428c2904ded">&#9670;&#160;</a></span>OnDestroy()</h2>
 
@@ -193,33 +220,6 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Unsubscribes all events and destroys the shared line material to prevent memory leaks when the component is removed from the scene. </p>
-
-</div>
-</div>
-<a id="a96bc4f298ff31ab5ac973ebc4a87ae82" name="a96bc4f298ff31ab5ac973ebc4a87ae82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96bc4f298ff31ab5ac973ebc4a87ae82">&#9670;&#160;</a></span>OnPatentDeleted()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void BoundingBoxVisualizer.OnPatentDeleted </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Hides all edge renderers when the active patent is deleted. </p>
 
 </div>
 </div>
@@ -250,7 +250,7 @@ Static Private Attributes</h2></td></tr>
 <p>Recomputes all 8 world-space corner positions of <em>root</em> 's local bounds, scales line widths relative to the box diagonal, and updates both endpoints of each of the 12 edge renderers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">root</td><td>The patent root GameObject whose bounds define the box.</td></tr>
+    <tr><td class="paramname">root</td><td>The design root GameObject whose bounds define the box.</td></tr>
   </table>
   </dd>
 </dl>
@@ -376,7 +376,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Each frame, when visible, retrieves the active patent and either hides the edges (no patent present) or refreshes their positions to track the model as it moves and scales. </p>
+<p>Each frame, when visible, retrieves the active design and either hides the edges (no design present) or refreshes their positions to track the model as it moves and scales. </p>
 
 </div>
 </div>
@@ -403,8 +403,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8fe34f8377c60aaa566b72a1291f7e09" name="a8fe34f8377c60aaa566b72a1291f7e09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fe34f8377c60aaa566b72a1291f7e09">&#9670;&#160;</a></span>_cachedLocalBounds</h2>
+<a id="a2b17662d010bed265ae88eb33c07f2c6" name="a2b17662d010bed265ae88eb33c07f2c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b17662d010bed265ae88eb33c07f2c6">&#9670;&#160;</a></span>_cachedDesign</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,7 +413,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Bounds BoundingBoxVisualizer._cachedLocalBounds</td>
+          <td class="memname">GameObject BoundingBoxVisualizer._cachedDesign</td>
         </tr>
       </table>
   </td>
@@ -425,8 +425,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="abed1f9e20ff6dfdc1cddb7fe04f1f8eb" name="abed1f9e20ff6dfdc1cddb7fe04f1f8eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abed1f9e20ff6dfdc1cddb7fe04f1f8eb">&#9670;&#160;</a></span>_cachedPatent</h2>
+<a id="a8fe34f8377c60aaa566b72a1291f7e09" name="a8fe34f8377c60aaa566b72a1291f7e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe34f8377c60aaa566b72a1291f7e09">&#9670;&#160;</a></span>_cachedLocalBounds</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -435,7 +435,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GameObject BoundingBoxVisualizer._cachedPatent</td>
+          <td class="memname">Bounds BoundingBoxVisualizer._cachedLocalBounds</td>
         </tr>
       </table>
   </td>

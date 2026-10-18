@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3DPatentAR: PivotSetter Class Reference</title>
+<title>ARDesign: PivotSetter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">3DPatentAR
+   <div id="projectname">ARDesign
    </div>
-   <div id="projectbrief">Mobile AR patent viewer — Unity 6 with ARFoundation and glTFast</div>
+   <div id="projectbrief">Mobile AR design viewer — Unity 6 with ARFoundation and glTFast</div>
   </td>
  </tr>
  </tbody>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('classPivotSetter.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
-<p>Owns the reversible pivot offset for a spawned patent and also provides the bounds and positioning helpers used when placing or scaling a patent in AR.  
+<p>Owns the reversible pivot offset for a spawned design and also provides the bounds and positioning helpers used when placing or scaling a design in AR.  
  <a href="classPivotSetter.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for PivotSetter:</div>
@@ -124,20 +124,20 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab4dc57c91a8a6fd824412b9bba47d9ce" id="r_ab4dc57c91a8a6fd824412b9bba47d9ce"><td class="memItemLeft" align="right" valign="top">static GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPivotSetter.html#ab4dc57c91a8a6fd824412b9bba47d9ce">CreateModelRoot</a> (GameObject spawnedContent)</td></tr>
-<tr class="memdesc:ab4dc57c91a8a6fd824412b9bba47d9ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an unchanged transform root around the imported instance so pivot changes can be applied to the content without moving the root manipulated by <a class="el" href="classPatentTransformer.html" title="Handles touch gestures (drag-to-rotate, pinch-to-scale) and mouse fallback to transform the active pa...">PatentTransformer</a>.  <br /></td></tr>
+<tr class="memdesc:ab4dc57c91a8a6fd824412b9bba47d9ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an unchanged transform root around the imported instance so pivot changes can be applied to the content without moving the root manipulated by <a class="el" href="classDesignTransformer.html" title="Handles touch gestures (drag-to-rotate, pinch-to-scale) and mouse fallback to transform the active de...">DesignTransformer</a>.  <br /></td></tr>
 <tr class="separator:ab4dc57c91a8a6fd824412b9bba47d9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ba93b3c2ee0b518eeaa1694f7835b1d" id="r_a2ba93b3c2ee0b518eeaa1694f7835b1d"><td class="memItemLeft" align="right" valign="top">static Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPivotSetter.html#a2ba93b3c2ee0b518eeaa1694f7835b1d">ChangeToOneOneMode</a> (GameObject patent, Transform camTransform, float offSet)</td></tr>
-<tr class="memdesc:a2ba93b3c2ee0b518eeaa1694f7835b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repositions <em>patent</em>  so its bounding box no longer overlaps the camera position in the XZ plane, pushing it along the camera's forward direction when the camera is inside the model bounds.  <br /></td></tr>
-<tr class="separator:a2ba93b3c2ee0b518eeaa1694f7835b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a639cf16e9b918517162dcfca3432021c" id="r_a639cf16e9b918517162dcfca3432021c"><td class="memItemLeft" align="right" valign="top">static Bounds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPivotSetter.html#a639cf16e9b918517162dcfca3432021c">GetSpawnBounds</a> (GameObject patent)</td></tr>
-<tr class="memdesc:a639cf16e9b918517162dcfca3432021c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the world-space axis-aligned bounding box that encapsulates all MeshRenderer components in <em>patent</em> 's hierarchy.  <br /></td></tr>
-<tr class="separator:a639cf16e9b918517162dcfca3432021c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10446c1260fc67247e5c00af3917c223" id="r_a10446c1260fc67247e5c00af3917c223"><td class="memItemLeft" align="right" valign="top">static Bounds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPivotSetter.html#a10446c1260fc67247e5c00af3917c223">GetBounds</a> (GameObject patent)</td></tr>
-<tr class="memdesc:a10446c1260fc67247e5c00af3917c223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the local-space axis-aligned bounding box of <em>patent</em>  by transforming all mesh-corner vertices into the root object's local space.  <br /></td></tr>
-<tr class="separator:a10446c1260fc67247e5c00af3917c223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a315511afac34fb1335e32d90b150307f" id="r_a315511afac34fb1335e32d90b150307f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPivotSetter.html#a315511afac34fb1335e32d90b150307f">SnapToYOffset</a> (GameObject patent, bool toGround, bool usePivot)</td></tr>
-<tr class="memdesc:a315511afac34fb1335e32d90b150307f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts the Y position of <em>patent</em>  so its bottom face sits on the detected AR plane (when <em>toGround</em>  is <code>true</code>) or its center aligns with the spawn Y coordinate.  <br /></td></tr>
-<tr class="separator:a315511afac34fb1335e32d90b150307f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad672a27512b3a8a1e834fadb877304ff" id="r_ad672a27512b3a8a1e834fadb877304ff"><td class="memItemLeft" align="right" valign="top">static Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPivotSetter.html#ad672a27512b3a8a1e834fadb877304ff">ChangeToOneOneMode</a> (GameObject design, Transform camTransform, float offSet)</td></tr>
+<tr class="memdesc:ad672a27512b3a8a1e834fadb877304ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repositions <em>design</em>  so its bounding box no longer overlaps the camera position in the XZ plane, pushing it along the camera's forward direction when the camera is inside the model bounds.  <br /></td></tr>
+<tr class="separator:ad672a27512b3a8a1e834fadb877304ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac998bdc5fa3a266d7d16ad8e034845fc" id="r_ac998bdc5fa3a266d7d16ad8e034845fc"><td class="memItemLeft" align="right" valign="top">static Bounds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPivotSetter.html#ac998bdc5fa3a266d7d16ad8e034845fc">GetSpawnBounds</a> (GameObject design)</td></tr>
+<tr class="memdesc:ac998bdc5fa3a266d7d16ad8e034845fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the world-space axis-aligned bounding box that encapsulates all MeshRenderer components in <em>design</em> 's hierarchy.  <br /></td></tr>
+<tr class="separator:ac998bdc5fa3a266d7d16ad8e034845fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646806277c783dd82911c0af956ae8bb" id="r_a646806277c783dd82911c0af956ae8bb"><td class="memItemLeft" align="right" valign="top">static Bounds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPivotSetter.html#a646806277c783dd82911c0af956ae8bb">GetBounds</a> (GameObject design)</td></tr>
+<tr class="memdesc:a646806277c783dd82911c0af956ae8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the local-space axis-aligned bounding box of <em>design</em>  by transforming all mesh-corner vertices into the root object's local space.  <br /></td></tr>
+<tr class="separator:a646806277c783dd82911c0af956ae8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a3a18244fbdb9b067a87ebd8436f01" id="r_aa6a3a18244fbdb9b067a87ebd8436f01"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPivotSetter.html#aa6a3a18244fbdb9b067a87ebd8436f01">SnapToYOffset</a> (GameObject design, bool toGround, bool usePivot)</td></tr>
+<tr class="memdesc:aa6a3a18244fbdb9b067a87ebd8436f01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts the Y position of <em>design</em>  so its bottom face sits on the detected AR plane (when <em>toGround</em>  is <code>true</code>) or its center aligns with the spawn Y coordinate.  <br /></td></tr>
+<tr class="separator:aa6a3a18244fbdb9b067a87ebd8436f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -186,7 +186,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a7b8ce7d6053e375b54b57b93acefb325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Owns the reversible pivot offset for a spawned patent and also provides the bounds and positioning helpers used when placing or scaling a patent in AR. </p>
+<div class="textblock"><p>Owns the reversible pivot offset for a spawned design and also provides the bounds and positioning helpers used when placing or scaling a design in AR. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a614b45c3e3d178f9e565eb929191a4f0" name="a614b45c3e3d178f9e565eb929191a4f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a614b45c3e3d178f9e565eb929191a4f0">&#9670;&#160;</a></span>ApplyCalculatedPivot()</h2>
@@ -288,8 +288,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2ba93b3c2ee0b518eeaa1694f7835b1d" name="a2ba93b3c2ee0b518eeaa1694f7835b1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ba93b3c2ee0b518eeaa1694f7835b1d">&#9670;&#160;</a></span>ChangeToOneOneMode()</h2>
+<a id="ad672a27512b3a8a1e834fadb877304ff" name="ad672a27512b3a8a1e834fadb877304ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad672a27512b3a8a1e834fadb877304ff">&#9670;&#160;</a></span>ChangeToOneOneMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,7 +301,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">static Vector3 PivotSetter.ChangeToOneOneMode </td>
           <td>(</td>
           <td class="paramtype">GameObject&#160;</td>
-          <td class="paramname"><em>patent</em>, </td>
+          <td class="paramname"><em>design</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -328,17 +328,17 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Repositions <em>patent</em>  so its bounding box no longer overlaps the camera position in the XZ plane, pushing it along the camera's forward direction when the camera is inside the model bounds. </p>
+<p>Repositions <em>design</em>  so its bounding box no longer overlaps the camera position in the XZ plane, pushing it along the camera's forward direction when the camera is inside the model bounds. </p>
 <p>Used when switching to 1:1 real-world scale mode.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">patent</td><td>The root GameObject of the patent model.</td></tr>
+    <tr><td class="paramname">design</td><td>The root GameObject of the design model.</td></tr>
     <tr><td class="paramname">camTransform</td><td>The AR camera transform.</td></tr>
     <tr><td class="paramname">offSet</td><td>Extra clearance distance in metres beyond the model edge.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The calculated offset vector (currently always Vector3.zero), or Vector3.positiveInfinity if <em>patent</em>  is null. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The calculated offset vector (currently always Vector3.zero), or Vector3.positiveInfinity if <em>design</em>  is null. </dd></dl>
 
 </div>
 </div>
@@ -366,7 +366,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates an unchanged transform root around the imported instance so pivot changes can be applied to the content without moving the root manipulated by <a class="el" href="classPatentTransformer.html" title="Handles touch gestures (drag-to-rotate, pinch-to-scale) and mouse fallback to transform the active pa...">PatentTransformer</a>. </p>
+<p>Creates an unchanged transform root around the imported instance so pivot changes can be applied to the content without moving the root manipulated by <a class="el" href="classDesignTransformer.html" title="Handles touch gestures (drag-to-rotate, pinch-to-scale) and mouse fallback to transform the active de...">DesignTransformer</a>. </p>
 
 </div>
 </div>
@@ -418,8 +418,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a10446c1260fc67247e5c00af3917c223" name="a10446c1260fc67247e5c00af3917c223"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10446c1260fc67247e5c00af3917c223">&#9670;&#160;</a></span>GetBounds()</h2>
+<a id="a646806277c783dd82911c0af956ae8bb" name="a646806277c783dd82911c0af956ae8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646806277c783dd82911c0af956ae8bb">&#9670;&#160;</a></span>GetBounds()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,7 +431,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">static Bounds PivotSetter.GetBounds </td>
           <td>(</td>
           <td class="paramtype">GameObject&#160;</td>
-          <td class="paramname"><em>patent</em></td><td>)</td>
+          <td class="paramname"><em>design</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -442,11 +442,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Computes the local-space axis-aligned bounding box of <em>patent</em>  by transforming all mesh-corner vertices into the root object's local space. </p>
-<p>More accurate than <a class="el" href="classPivotSetter.html#a639cf16e9b918517162dcfca3432021c" title="Computes the world-space axis-aligned bounding box that encapsulates all MeshRenderer components in p...">GetSpawnBounds</a> for rotated hierarchies.</p>
+<p>Computes the local-space axis-aligned bounding box of <em>design</em>  by transforming all mesh-corner vertices into the root object's local space. </p>
+<p>More accurate than <a class="el" href="classPivotSetter.html#ac998bdc5fa3a266d7d16ad8e034845fc" title="Computes the world-space axis-aligned bounding box that encapsulates all MeshRenderer components in d...">GetSpawnBounds</a> for rotated hierarchies.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">patent</td><td>The root GameObject whose mesh filters are measured.</td></tr>
+    <tr><td class="paramname">design</td><td>The root GameObject whose mesh filters are measured.</td></tr>
   </table>
   </dd>
 </dl>
@@ -454,8 +454,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a639cf16e9b918517162dcfca3432021c" name="a639cf16e9b918517162dcfca3432021c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a639cf16e9b918517162dcfca3432021c">&#9670;&#160;</a></span>GetSpawnBounds()</h2>
+<a id="ac998bdc5fa3a266d7d16ad8e034845fc" name="ac998bdc5fa3a266d7d16ad8e034845fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac998bdc5fa3a266d7d16ad8e034845fc">&#9670;&#160;</a></span>GetSpawnBounds()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,7 +467,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">static Bounds PivotSetter.GetSpawnBounds </td>
           <td>(</td>
           <td class="paramtype">GameObject&#160;</td>
-          <td class="paramname"><em>patent</em></td><td>)</td>
+          <td class="paramname"><em>design</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -478,10 +478,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Computes the world-space axis-aligned bounding box that encapsulates all MeshRenderer components in <em>patent</em> 's hierarchy. </p>
+<p>Computes the world-space axis-aligned bounding box that encapsulates all MeshRenderer components in <em>design</em> 's hierarchy. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">patent</td><td>The root GameObject whose renderers are measured.</td></tr>
+    <tr><td class="paramname">design</td><td>The root GameObject whose renderers are measured.</td></tr>
   </table>
   </dd>
 </dl>
@@ -556,8 +556,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a315511afac34fb1335e32d90b150307f" name="a315511afac34fb1335e32d90b150307f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a315511afac34fb1335e32d90b150307f">&#9670;&#160;</a></span>SnapToYOffset()</h2>
+<a id="aa6a3a18244fbdb9b067a87ebd8436f01" name="aa6a3a18244fbdb9b067a87ebd8436f01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a3a18244fbdb9b067a87ebd8436f01">&#9670;&#160;</a></span>SnapToYOffset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -569,7 +569,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">static void PivotSetter.SnapToYOffset </td>
           <td>(</td>
           <td class="paramtype">GameObject&#160;</td>
-          <td class="paramname"><em>patent</em>, </td>
+          <td class="paramname"><em>design</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -596,11 +596,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Adjusts the Y position of <em>patent</em>  so its bottom face sits on the detected AR plane (when <em>toGround</em>  is <code>true</code>) or its center aligns with the spawn Y coordinate. </p>
+<p>Adjusts the Y position of <em>design</em>  so its bottom face sits on the detected AR plane (when <em>toGround</em>  is <code>true</code>) or its center aligns with the spawn Y coordinate. </p>
 <p>Also re-centres the XZ pivot relative to the bounds center.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">patent</td><td>The root GameObject to reposition.</td></tr>
+    <tr><td class="paramname">design</td><td>The root GameObject to reposition.</td></tr>
     <tr><td class="paramname">toGround</td><td><code>true</code> to snap the bottom of the model to the plane surface; <code>false</code> to align the center. </td></tr>
     <tr><td class="paramname">usePivot</td><td><code>true</code> to treat the transform position as the pivot point; <code>false</code> to use the bounds center. </td></tr>
   </table>

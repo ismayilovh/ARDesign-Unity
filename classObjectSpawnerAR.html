@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3DPatentAR: ObjectSpawnerAR Class Reference</title>
+<title>ARDesign: ObjectSpawnerAR Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">3DPatentAR
+   <div id="projectname">ARDesign
    </div>
-   <div id="projectbrief">Mobile AR patent viewer — Unity 6 with ARFoundation and glTFast</div>
+   <div id="projectbrief">Mobile AR design viewer — Unity 6 with ARFoundation and glTFast</div>
   </td>
  </tr>
  </tbody>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('classObjectSpawnerAR.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
-<p>Listens for <a class="el" href="classRaycastHandler.html#aaf90faa24cf10e2daeaa7cce70323eb5" title="Raised each time a valid tap is processed.">RaycastHandler.clickEvent</a> and instantiates the downloaded patent model into the AR scene, either at a detected plane pose or at a fixed camera-relative position when no plane is available.  
+<p>Listens for <a class="el" href="classRaycastHandler.html#aaf90faa24cf10e2daeaa7cce70323eb5" title="Raised each time a valid tap is processed.">RaycastHandler.clickEvent</a> and instantiates the downloaded design model into the AR scene, either at a detected plane pose or at a fixed camera-relative position when no plane is available.  
  <a href="classObjectSpawnerAR.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ObjectSpawnerAR:</div>
@@ -113,15 +113,15 @@ Inheritance diagram for ObjectSpawnerAR:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6a41a4dd8c002dce875f01291ebef798" id="r_a6a41a4dd8c002dce875f01291ebef798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a6a41a4dd8c002dce875f01291ebef798">SetActivePatent</a> (GameObject downloaded_patent)</td></tr>
-<tr class="memdesc:a6a41a4dd8c002dce875f01291ebef798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the given downloaded model as the patent prefab to be instantiated on next tap.  <br /></td></tr>
-<tr class="separator:a6a41a4dd8c002dce875f01291ebef798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e310e75d1747922dd0c3a5816d66fdc" id="r_a7e310e75d1747922dd0c3a5816d66fdc"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a7e310e75d1747922dd0c3a5816d66fdc">getActivePatent</a> ()</td></tr>
-<tr class="memdesc:a7e310e75d1747922dd0c3a5816d66fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the currently instantiated patent instance in the AR scene.  <br /></td></tr>
-<tr class="separator:a7e310e75d1747922dd0c3a5816d66fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e20b522fe13542ae6c38bcb57799056" id="r_a8e20b522fe13542ae6c38bcb57799056"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a8e20b522fe13542ae6c38bcb57799056">ResetPatentTransform</a> ()</td></tr>
-<tr class="memdesc:a8e20b522fe13542ae6c38bcb57799056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the patent's scale to Vector3.one and repositions it using <a class="el" href="classPivotSetter.html#a2ba93b3c2ee0b518eeaa1694f7835b1d" title="Repositions patent  so its bounding box no longer overlaps the camera position in the XZ plane,...">PivotSetter.ChangeToOneOneMode</a>.  <br /></td></tr>
-<tr class="separator:a8e20b522fe13542ae6c38bcb57799056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8d7ae271a3cc4b16f00221bb1d1e32" id="r_a6e8d7ae271a3cc4b16f00221bb1d1e32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a6e8d7ae271a3cc4b16f00221bb1d1e32">SetActiveDesign</a> (GameObject downloaded_design)</td></tr>
+<tr class="memdesc:a6e8d7ae271a3cc4b16f00221bb1d1e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the given downloaded model as the design prefab to be instantiated on next tap.  <br /></td></tr>
+<tr class="separator:a6e8d7ae271a3cc4b16f00221bb1d1e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c7d9f598d780aaae5614795eb11ca2" id="r_ad9c7d9f598d780aaae5614795eb11ca2"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#ad9c7d9f598d780aaae5614795eb11ca2">getActiveDesign</a> ()</td></tr>
+<tr class="memdesc:ad9c7d9f598d780aaae5614795eb11ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the currently instantiated design instance in the AR scene.  <br /></td></tr>
+<tr class="separator:ad9c7d9f598d780aaae5614795eb11ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa809e6e76f074723d15c6e4565813414" id="r_aa809e6e76f074723d15c6e4565813414"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#aa809e6e76f074723d15c6e4565813414">ResetDesignTransform</a> ()</td></tr>
+<tr class="memdesc:aa809e6e76f074723d15c6e4565813414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the design's scale to Vector3.one and repositions it using <a class="el" href="classPivotSetter.html#ad672a27512b3a8a1e834fadb877304ff" title="Repositions design  so its bounding box no longer overlaps the camera position in the XZ plane,...">PivotSetter.ChangeToOneOneMode</a>.  <br /></td></tr>
+<tr class="separator:aa809e6e76f074723d15c6e4565813414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -132,7 +132,7 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="events" name="events"></a>
 Events</h2></td></tr>
 <tr class="memitem:a356de22d47b73bb484dc61df09fdede6" id="r_a356de22d47b73bb484dc61df09fdede6"><td class="memItemLeft" align="right" valign="top">static Action&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a356de22d47b73bb484dc61df09fdede6">objectSpawnedEvent</a></td></tr>
-<tr class="memdesc:a356de22d47b73bb484dc61df09fdede6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired after a patent is spawned.  <br /></td></tr>
+<tr class="memdesc:a356de22d47b73bb484dc61df09fdede6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired after a design is spawned.  <br /></td></tr>
 <tr class="separator:a356de22d47b73bb484dc61df09fdede6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -141,23 +141,23 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a355feb596dfbb097d4ca817d144b83c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribes to <a class="el" href="classRaycastHandler.html#aaf90faa24cf10e2daeaa7cce70323eb5" title="Raised each time a valid tap is processed.">RaycastHandler.clickEvent</a> to receive tap notifications.  <br /></td></tr>
 <tr class="separator:a355feb596dfbb097d4ca817d144b83c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcbb5fbba3132156e66a13c0de7ca803" id="r_afcbb5fbba3132156e66a13c0de7ca803"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#afcbb5fbba3132156e66a13c0de7ca803">SpawnObject</a> (List&lt; ARRaycastHit &gt; hits)</td></tr>
-<tr class="memdesc:afcbb5fbba3132156e66a13c0de7ca803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles a tap event: ignores it if no patent is loaded or one is already placed, then delegates to <a class="el" href="classObjectSpawnerAR.html#a044894a0e5750cad7d8128f1dc03d80e" title="Instantiates the patent at a camera-relative position (center offset or directly in front) when no AR...">spawnWithNoRaycast</a> or <a class="el" href="classObjectSpawnerAR.html#a0b8495cac298010d20176ad0778fa85d" title="Instantiates the patent at the pose returned by the AR plane raycast, aligning it to the detected sur...">spawnWithRaycast</a> depending on whether plane hits were detected.  <br /></td></tr>
+<tr class="memdesc:afcbb5fbba3132156e66a13c0de7ca803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles a tap event: ignores it if no design is loaded or one is already placed, then delegates to <a class="el" href="classObjectSpawnerAR.html#a044894a0e5750cad7d8128f1dc03d80e" title="Instantiates the design at a camera-relative position (center offset or directly in front) when no AR...">spawnWithNoRaycast</a> or <a class="el" href="classObjectSpawnerAR.html#a0b8495cac298010d20176ad0778fa85d" title="Instantiates the design at the pose returned by the AR plane raycast, aligning it to the detected sur...">spawnWithRaycast</a> depending on whether plane hits were detected.  <br /></td></tr>
 <tr class="separator:afcbb5fbba3132156e66a13c0de7ca803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a044894a0e5750cad7d8128f1dc03d80e" id="r_a044894a0e5750cad7d8128f1dc03d80e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a044894a0e5750cad7d8128f1dc03d80e">spawnWithNoRaycast</a> ()</td></tr>
-<tr class="memdesc:a044894a0e5750cad7d8128f1dc03d80e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the patent at a camera-relative position (center offset or directly in front) when no AR plane was detected.  <br /></td></tr>
+<tr class="memdesc:a044894a0e5750cad7d8128f1dc03d80e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the design at a camera-relative position (center offset or directly in front) when no AR plane was detected.  <br /></td></tr>
 <tr class="separator:a044894a0e5750cad7d8128f1dc03d80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b8495cac298010d20176ad0778fa85d" id="r_a0b8495cac298010d20176ad0778fa85d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a0b8495cac298010d20176ad0778fa85d">spawnWithRaycast</a> (Pose hitPose)</td></tr>
-<tr class="memdesc:a0b8495cac298010d20176ad0778fa85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the patent at the pose returned by the AR plane raycast, aligning it to the detected surface.  <br /></td></tr>
+<tr class="memdesc:a0b8495cac298010d20176ad0778fa85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the design at the pose returned by the AR plane raycast, aligning it to the detected surface.  <br /></td></tr>
 <tr class="separator:a0b8495cac298010d20176ad0778fa85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa018f46977c6a45c23277669ff29d644" id="r_aa018f46977c6a45c23277669ff29d644"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#aa018f46977c6a45c23277669ff29d644">SpawnPatent</a> (Vector3 position, Quaternion rotation, bool toGround)</td></tr>
-<tr class="separator:aa018f46977c6a45c23277669ff29d644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee8f4ee872165a9ef3df0058a72eabe" id="r_a4ee8f4ee872165a9ef3df0058a72eabe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a4ee8f4ee872165a9ef3df0058a72eabe">SpawnDesign</a> (Vector3 position, Quaternion rotation, bool toGround)</td></tr>
+<tr class="separator:a4ee8f4ee872165a9ef3df0058a72eabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a79777e4d531d67db2b73854e5195e23f" id="r_a79777e4d531d67db2b73854e5195e23f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ObjectSpawnerAR_8cs.html#aaf159fca6c090cbe566a9e3ddc897c7b">PlacementMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a79777e4d531d67db2b73854e5195e23f">_placementMode</a> = <a class="el" href="ObjectSpawnerAR_8cs.html#aaf159fca6c090cbe566a9e3ddc897c7ba5835bab1ade0060909e31a06af2e2cde">PlacementMode.Front</a></td></tr>
 <tr class="separator:a79777e4d531d67db2b73854e5195e23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fdb28c956a273062b1c847209f5269d" id="r_a3fdb28c956a273062b1c847209f5269d"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a3fdb28c956a273062b1c847209f5269d">patent</a></td></tr>
-<tr class="separator:a3fdb28c956a273062b1c847209f5269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d0b995158847866879a9c6ab5b23a6" id="r_a42d0b995158847866879a9c6ab5b23a6"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a42d0b995158847866879a9c6ab5b23a6">design</a></td></tr>
+<tr class="separator:a42d0b995158847866879a9c6ab5b23a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28510201d5bf9b01385ef0a9daec5137" id="r_a28510201d5bf9b01385ef0a9daec5137"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a28510201d5bf9b01385ef0a9daec5137">centerPlacementY</a> = 1.1f</td></tr>
 <tr class="separator:a28510201d5bf9b01385ef0a9daec5137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5812492ff6245b4bd4d16a21f7deb3ea" id="r_a5812492ff6245b4bd4d16a21f7deb3ea"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a5812492ff6245b4bd4d16a21f7deb3ea">frontPlacementZ</a> = 2f</td></tr>
@@ -166,21 +166,21 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a632207d69bafb70e0e6339459e1e8328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a2cfd8af76a57960294cc2b5b14beef" id="r_a9a2cfd8af76a57960294cc2b5b14beef"><td class="memItemLeft" align="right" valign="top">TextMeshProUGUI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a9a2cfd8af76a57960294cc2b5b14beef">positionText</a></td></tr>
 <tr class="separator:a9a2cfd8af76a57960294cc2b5b14beef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b3bc24314d7553db6cc8603ba2ee1e5" id="r_a0b3bc24314d7553db6cc8603ba2ee1e5"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a0b3bc24314d7553db6cc8603ba2ee1e5">activePatent</a></td></tr>
-<tr class="separator:a0b3bc24314d7553db6cc8603ba2ee1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12feb91fe710a7e96b1a3c154c1b8765" id="r_a12feb91fe710a7e96b1a3c154c1b8765"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObjectSpawnerAR.html#a12feb91fe710a7e96b1a3c154c1b8765">activeDesign</a></td></tr>
+<tr class="separator:a12feb91fe710a7e96b1a3c154c1b8765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Listens for <a class="el" href="classRaycastHandler.html#aaf90faa24cf10e2daeaa7cce70323eb5" title="Raised each time a valid tap is processed.">RaycastHandler.clickEvent</a> and instantiates the downloaded patent model into the AR scene, either at a detected plane pose or at a fixed camera-relative position when no plane is available. </p>
-<p>Raises <a class="el" href="classObjectSpawnerAR.html#a356de22d47b73bb484dc61df09fdede6" title="Fired after a patent is spawned.">objectSpawnedEvent</a> after placement. </p>
+<div class="textblock"><p>Listens for <a class="el" href="classRaycastHandler.html#aaf90faa24cf10e2daeaa7cce70323eb5" title="Raised each time a valid tap is processed.">RaycastHandler.clickEvent</a> and instantiates the downloaded design model into the AR scene, either at a detected plane pose or at a fixed camera-relative position when no plane is available. </p>
+<p>Raises <a class="el" href="classObjectSpawnerAR.html#a356de22d47b73bb484dc61df09fdede6" title="Fired after a design is spawned.">objectSpawnedEvent</a> after placement. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7e310e75d1747922dd0c3a5816d66fdc" name="a7e310e75d1747922dd0c3a5816d66fdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e310e75d1747922dd0c3a5816d66fdc">&#9670;&#160;</a></span>getActivePatent()</h2>
+<a id="ad9c7d9f598d780aaae5614795eb11ca2" name="ad9c7d9f598d780aaae5614795eb11ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c7d9f598d780aaae5614795eb11ca2">&#9670;&#160;</a></span>getActiveDesign()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">GameObject ObjectSpawnerAR.getActivePatent </td>
+          <td class="memname">GameObject ObjectSpawnerAR.getActiveDesign </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -188,19 +188,19 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the currently instantiated patent instance in the AR scene. </p>
-<dl class="section return"><dt>Returns</dt><dd>The active patent GameObject, or <code>null</code> if none.</dd></dl>
+<p>Returns the currently instantiated design instance in the AR scene. </p>
+<dl class="section return"><dt>Returns</dt><dd>The active design GameObject, or <code>null</code> if none.</dd></dl>
 
 </div>
 </div>
-<a id="a8e20b522fe13542ae6c38bcb57799056" name="a8e20b522fe13542ae6c38bcb57799056"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e20b522fe13542ae6c38bcb57799056">&#9670;&#160;</a></span>ResetPatentTransform()</h2>
+<a id="aa809e6e76f074723d15c6e4565813414" name="aa809e6e76f074723d15c6e4565813414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa809e6e76f074723d15c6e4565813414">&#9670;&#160;</a></span>ResetDesignTransform()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ObjectSpawnerAR.ResetPatentTransform </td>
+          <td class="memname">void ObjectSpawnerAR.ResetDesignTransform </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -208,38 +208,38 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Resets the patent's scale to Vector3.one and repositions it using <a class="el" href="classPivotSetter.html#a2ba93b3c2ee0b518eeaa1694f7835b1d" title="Repositions patent  so its bounding box no longer overlaps the camera position in the XZ plane,...">PivotSetter.ChangeToOneOneMode</a>. </p>
+<p>Resets the design's scale to Vector3.one and repositions it using <a class="el" href="classPivotSetter.html#ad672a27512b3a8a1e834fadb877304ff" title="Repositions design  so its bounding box no longer overlaps the camera position in the XZ plane,...">PivotSetter.ChangeToOneOneMode</a>. </p>
 
 </div>
 </div>
-<a id="a6a41a4dd8c002dce875f01291ebef798" name="a6a41a4dd8c002dce875f01291ebef798"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a41a4dd8c002dce875f01291ebef798">&#9670;&#160;</a></span>SetActivePatent()</h2>
+<a id="a6e8d7ae271a3cc4b16f00221bb1d1e32" name="a6e8d7ae271a3cc4b16f00221bb1d1e32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e8d7ae271a3cc4b16f00221bb1d1e32">&#9670;&#160;</a></span>SetActiveDesign()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ObjectSpawnerAR.SetActivePatent </td>
+          <td class="memname">void ObjectSpawnerAR.SetActiveDesign </td>
           <td>(</td>
           <td class="paramtype">GameObject&#160;</td>
-          <td class="paramname"><em>downloaded_patent</em></td><td>)</td>
+          <td class="paramname"><em>downloaded_design</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Assigns the given downloaded model as the patent prefab to be instantiated on next tap. </p>
+<p>Assigns the given downloaded model as the design prefab to be instantiated on next tap. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">downloaded_patent</td><td>The downloaded model GameObject.</td></tr>
+    <tr><td class="paramname">downloaded_design</td><td>The downloaded model GameObject.</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="afcbb5fbba3132156e66a13c0de7ca803" name="afcbb5fbba3132156e66a13c0de7ca803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcbb5fbba3132156e66a13c0de7ca803">&#9670;&#160;</a></span>SpawnObject()</h2>
+<a id="a4ee8f4ee872165a9ef3df0058a72eabe" name="a4ee8f4ee872165a9ef3df0058a72eabe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee8f4ee872165a9ef3df0058a72eabe">&#9670;&#160;</a></span>SpawnDesign()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,41 +248,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ObjectSpawnerAR.SpawnObject </td>
-          <td>(</td>
-          <td class="paramtype">List&lt; ARRaycastHit &gt;&#160;</td>
-          <td class="paramname"><em>hits</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Handles a tap event: ignores it if no patent is loaded or one is already placed, then delegates to <a class="el" href="classObjectSpawnerAR.html#a044894a0e5750cad7d8128f1dc03d80e" title="Instantiates the patent at a camera-relative position (center offset or directly in front) when no AR...">spawnWithNoRaycast</a> or <a class="el" href="classObjectSpawnerAR.html#a0b8495cac298010d20176ad0778fa85d" title="Instantiates the patent at the pose returned by the AR plane raycast, aligning it to the detected sur...">spawnWithRaycast</a> depending on whether plane hits were detected. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hits</td><td>AR plane raycast hits, or <code>null</code> when plane detection is off.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa018f46977c6a45c23277669ff29d644" name="aa018f46977c6a45c23277669ff29d644"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa018f46977c6a45c23277669ff29d644">&#9670;&#160;</a></span>SpawnPatent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ObjectSpawnerAR.SpawnPatent </td>
+          <td class="memname">void ObjectSpawnerAR.SpawnDesign </td>
           <td>(</td>
           <td class="paramtype">Vector3&#160;</td>
           <td class="paramname"><em>position</em>, </td>
@@ -314,6 +280,40 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="afcbb5fbba3132156e66a13c0de7ca803" name="afcbb5fbba3132156e66a13c0de7ca803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcbb5fbba3132156e66a13c0de7ca803">&#9670;&#160;</a></span>SpawnObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ObjectSpawnerAR.SpawnObject </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; ARRaycastHit &gt;&#160;</td>
+          <td class="paramname"><em>hits</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles a tap event: ignores it if no design is loaded or one is already placed, then delegates to <a class="el" href="classObjectSpawnerAR.html#a044894a0e5750cad7d8128f1dc03d80e" title="Instantiates the design at a camera-relative position (center offset or directly in front) when no AR...">spawnWithNoRaycast</a> or <a class="el" href="classObjectSpawnerAR.html#a0b8495cac298010d20176ad0778fa85d" title="Instantiates the design at the pose returned by the AR plane raycast, aligning it to the detected sur...">spawnWithRaycast</a> depending on whether plane hits were detected. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hits</td><td>AR plane raycast hits, or <code>null</code> when plane detection is off.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a044894a0e5750cad7d8128f1dc03d80e" name="a044894a0e5750cad7d8128f1dc03d80e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a044894a0e5750cad7d8128f1dc03d80e">&#9670;&#160;</a></span>spawnWithNoRaycast()</h2>
 
@@ -337,7 +337,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Instantiates the patent at a camera-relative position (center offset or directly in front) when no AR plane was detected. </p>
+<p>Instantiates the design at a camera-relative position (center offset or directly in front) when no AR plane was detected. </p>
 
 </div>
 </div>
@@ -365,7 +365,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Instantiates the patent at the pose returned by the AR plane raycast, aligning it to the detected surface. </p>
+<p>Instantiates the design at the pose returned by the AR plane raycast, aligning it to the detected surface. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hitPose</td><td>The world-space pose of the first AR plane hit.</td></tr>
@@ -425,8 +425,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0b3bc24314d7553db6cc8603ba2ee1e5" name="a0b3bc24314d7553db6cc8603ba2ee1e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b3bc24314d7553db6cc8603ba2ee1e5">&#9670;&#160;</a></span>activePatent</h2>
+<a id="a12feb91fe710a7e96b1a3c154c1b8765" name="a12feb91fe710a7e96b1a3c154c1b8765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12feb91fe710a7e96b1a3c154c1b8765">&#9670;&#160;</a></span>activeDesign</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -435,7 +435,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GameObject ObjectSpawnerAR.activePatent</td>
+          <td class="memname">GameObject ObjectSpawnerAR.activeDesign</td>
         </tr>
       </table>
   </td>
@@ -469,8 +469,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5812492ff6245b4bd4d16a21f7deb3ea" name="a5812492ff6245b4bd4d16a21f7deb3ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5812492ff6245b4bd4d16a21f7deb3ea">&#9670;&#160;</a></span>frontPlacementZ</h2>
+<a id="a42d0b995158847866879a9c6ab5b23a6" name="a42d0b995158847866879a9c6ab5b23a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42d0b995158847866879a9c6ab5b23a6">&#9670;&#160;</a></span>design</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -479,7 +479,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float ObjectSpawnerAR.frontPlacementZ = 2f</td>
+          <td class="memname">GameObject ObjectSpawnerAR.design</td>
         </tr>
       </table>
   </td>
@@ -491,8 +491,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3fdb28c956a273062b1c847209f5269d" name="a3fdb28c956a273062b1c847209f5269d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fdb28c956a273062b1c847209f5269d">&#9670;&#160;</a></span>patent</h2>
+<a id="a5812492ff6245b4bd4d16a21f7deb3ea" name="a5812492ff6245b4bd4d16a21f7deb3ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5812492ff6245b4bd4d16a21f7deb3ea">&#9670;&#160;</a></span>frontPlacementZ</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -501,7 +501,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GameObject ObjectSpawnerAR.patent</td>
+          <td class="memname">float ObjectSpawnerAR.frontPlacementZ = 2f</td>
         </tr>
       </table>
   </td>
@@ -594,7 +594,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Fired after a patent is spawned. </p>
+<p>Fired after a design is spawned. </p>
 <p>The <code>bool</code> parameter is <code>true</code> when placed on a detected AR plane, <code>false</code> otherwise. </p>
 
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3DPatentAR: GameManager.cs File Reference</title>
+<title>ARDesign: GameManager.cs File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">3DPatentAR
+   <div id="projectname">ARDesign
    </div>
-   <div id="projectbrief">Mobile AR patent viewer — Unity 6 with ARFoundation and glTFast</div>
+   <div id="projectbrief">Mobile AR design viewer — Unity 6 with ARFoundation and glTFast</div>
   </td>
  </tr>
  </tbody>
@@ -101,12 +101,12 @@ $(document).ready(function(){initNavTree('GameManager_8cs.html',''); initResizab
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameManager.html">GameManager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton bootstrap manager that routes the app between QR scanning and AR patent-viewing by toggling scene root GameObjects and wiring up <a class="el" href="classStateMachine.html" title="Singleton finite state machine that drives the overall app flow.">StateMachine</a> state-enter callbacks.  <a href="classGameManager.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton bootstrap manager that routes the app between QR scanning and AR design-viewing by toggling scene root GameObjects and wiring up <a class="el" href="classStateMachine.html" title="Singleton finite state machine that drives the overall app flow.">StateMachine</a> state-enter callbacks.  <a href="classGameManager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a4c6ba9790ff5172cfa66b51a94656be1" id="r_a4c6ba9790ff5172cfa66b51a94656be1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1">ArMode</a> { <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a092ade8847d7c0575bae2ecb87ffcbc4">Patent</a>
+<tr class="memitem:a4c6ba9790ff5172cfa66b51a94656be1" id="r_a4c6ba9790ff5172cfa66b51a94656be1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1">ArMode</a> { <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a1afa74da05ca145d3418aad9af510109">Design</a>
 , <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a48e635c5e05ea5ab0389fb26424b8487">Qr</a>
  }</td></tr>
 <tr class="memdesc:a4c6ba9790ff5172cfa66b51a94656be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal enum representing which high-level mode the app is currently in.  <a href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1">More...</a><br /></td></tr>
@@ -127,7 +127,7 @@ Enumerations</h2></td></tr>
 
 <p>Internal enum representing which high-level mode the app is currently in. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4c6ba9790ff5172cfa66b51a94656be1a092ade8847d7c0575bae2ecb87ffcbc4" name="a4c6ba9790ff5172cfa66b51a94656be1a092ade8847d7c0575bae2ecb87ffcbc4"></a>Patent&#160;</td><td class="fielddoc"><p>The AR patent-viewing mode is active. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4c6ba9790ff5172cfa66b51a94656be1a1afa74da05ca145d3418aad9af510109" name="a4c6ba9790ff5172cfa66b51a94656be1a1afa74da05ca145d3418aad9af510109"></a>Design&#160;</td><td class="fielddoc"><p>The AR design-viewing mode is active. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a4c6ba9790ff5172cfa66b51a94656be1a48e635c5e05ea5ab0389fb26424b8487" name="a4c6ba9790ff5172cfa66b51a94656be1a48e635c5e05ea5ab0389fb26424b8487"></a>Qr&#160;</td><td class="fielddoc"><p>The QR-code scanning mode is active. </p>
 </td></tr>

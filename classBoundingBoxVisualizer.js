@@ -1,15 +1,15 @@
 var classBoundingBoxVisualizer =
 [
+    [ "OnDesignDeleted", "classBoundingBoxVisualizer.html#aedfb6bfcd24ca7e6b9805000d09cdc66", null ],
     [ "OnDestroy", "classBoundingBoxVisualizer.html#a0aae3379ca2c074778478428c2904ded", null ],
-    [ "OnPatentDeleted", "classBoundingBoxVisualizer.html#a96bc4f298ff31ab5ac973ebc4a87ae82", null ],
     [ "RefreshEdges", "classBoundingBoxVisualizer.html#a93bb7e3fabb7f252ccb5ea5bca15d4d2", null ],
     [ "SetEdgesActive", "classBoundingBoxVisualizer.html#afb3c1f88e13c559dadf6045f0c3bdcab", null ],
     [ "SetVisible", "classBoundingBoxVisualizer.html#a3f097a08412b7e8bcd28ee030bd741f0", null ],
     [ "Start", "classBoundingBoxVisualizer.html#a6a863d588bac5b1d34d037c50a15cc9d", null ],
     [ "Update", "classBoundingBoxVisualizer.html#a29ac405a7cb8467140eb471faacd474c", null ],
     [ "_cachedBoundsVersion", "classBoundingBoxVisualizer.html#ab98873835de83a016d51ff41287c1866", null ],
+    [ "_cachedDesign", "classBoundingBoxVisualizer.html#a2b17662d010bed265ae88eb33c07f2c6", null ],
     [ "_cachedLocalBounds", "classBoundingBoxVisualizer.html#a8fe34f8377c60aaa566b72a1291f7e09", null ],
-    [ "_cachedPatent", "classBoundingBoxVisualizer.html#abed1f9e20ff6dfdc1cddb7fe04f1f8eb", null ],
     [ "_cachedPivotSetter", "classBoundingBoxVisualizer.html#a0b6b3b18e668027fa52e1a471b65356c", null ],
     [ "_edges", "classBoundingBoxVisualizer.html#afb2433b987fe129958b6b13afdf9dd02", null ],
     [ "_edgesActive", "classBoundingBoxVisualizer.html#a1261adbcc2dcdb2a209d810137d482c1", null ],

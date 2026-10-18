@@ -22,7 +22,7 @@ var classObjectInfoManager =
     [ "panelRoot", "classObjectInfoManager.html#a3e7aef966331b4bb3fb6ef419ae7eb0a", null ],
     [ "refreshInterval", "classObjectInfoManager.html#a7224f9f9bc693b624e3541382e01d3b8", null ],
     [ "refreshTimer", "classObjectInfoManager.html#a1eefcd07673ed12df1d2ca0948e5a58b", null ],
-    [ "subscribedPatentManager", "classObjectInfoManager.html#a657ba0e1c86527ceac4a4e905c5e6ea7", null ],
+    [ "subscribedDesignManager", "classObjectInfoManager.html#afa798a5b62e9e5cbcfae053062949abd", null ],
     [ "textBuilder", "classObjectInfoManager.html#a4978a6e66d6e708124c7a33266e3562a", null ],
     [ "toggleCallbackRegistered", "classObjectInfoManager.html#ad841b4151d8ad536d6ca3a8625bb1ca5", null ],
     [ "triangleCount", "classObjectInfoManager.html#a556f6bcf7fe160dedf6b63085df80308", null ],

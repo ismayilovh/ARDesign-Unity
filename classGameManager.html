@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3DPatentAR: GameManager Class Reference</title>
+<title>ARDesign: GameManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,9 +26,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">3DPatentAR
+   <div id="projectname">ARDesign
    </div>
-   <div id="projectbrief">Mobile AR patent viewer — Unity 6 with ARFoundation and glTFast</div>
+   <div id="projectbrief">Mobile AR design viewer — Unity 6 with ARFoundation and glTFast</div>
   </td>
  </tr>
  </tbody>
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('classGameManager.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 
-<p>Singleton bootstrap manager that routes the app between QR scanning and AR patent-viewing by toggling scene root GameObjects and wiring up <a class="el" href="classStateMachine.html" title="Singleton finite state machine that drives the overall app flow.">StateMachine</a> state-enter callbacks.  
+<p>Singleton bootstrap manager that routes the app between QR scanning and AR design-viewing by toggling scene root GameObjects and wiring up <a class="el" href="classStateMachine.html" title="Singleton finite state machine that drives the overall app flow.">StateMachine</a> state-enter callbacks.  
  <a href="classGameManager.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for GameManager:</div>
@@ -113,13 +113,13 @@ Inheritance diagram for GameManager:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c8c21ceaa1857c94b243b741d33a229" id="r_a5c8c21ceaa1857c94b243b741d33a229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameManager.html#a5c8c21ceaa1857c94b243b741d33a229">ChangeMode</a> ()</td></tr>
-<tr class="memdesc:a5c8c21ceaa1857c94b243b741d33a229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles between QR and patent modes based on the current <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1" title="Internal enum representing which high-level mode the app is currently in.">ArMode</a>.  <br /></td></tr>
+<tr class="memdesc:a5c8c21ceaa1857c94b243b741d33a229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles between QR and design modes based on the current <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1" title="Internal enum representing which high-level mode the app is currently in.">ArMode</a>.  <br /></td></tr>
 <tr class="separator:a5c8c21ceaa1857c94b243b741d33a229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a7666e8468dac197b9eb32dd32128524f" id="r_a7666e8468dac197b9eb32dd32128524f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classGameManager.html">GameManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameManager.html#a7666e8468dac197b9eb32dd32128524f">instance</a></td></tr>
-<tr class="memdesc:a7666e8468dac197b9eb32dd32128524f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The single active instance of <a class="el" href="classGameManager.html" title="Singleton bootstrap manager that routes the app between QR scanning and AR patent-viewing by toggling...">GameManager</a>.  <br /></td></tr>
+<tr class="memdesc:a7666e8468dac197b9eb32dd32128524f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The single active instance of <a class="el" href="classGameManager.html" title="Singleton bootstrap manager that routes the app between QR scanning and AR design-viewing by toggling...">GameManager</a>.  <br /></td></tr>
 <tr class="separator:a7666e8468dac197b9eb32dd32128524f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -134,21 +134,21 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:ac68d06321520b6b17beb92a3cfa29ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved for future enable-time setup.  <br /></td></tr>
 <tr class="separator:ac68d06321520b6b17beb92a3cfa29ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b94a29e855b89ee5fd58a2163687079" id="r_a8b94a29e855b89ee5fd58a2163687079"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameManager.html#a8b94a29e855b89ee5fd58a2163687079">ActivateQrParts</a> ()</td></tr>
-<tr class="memdesc:a8b94a29e855b89ee5fd58a2163687079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides the patent scene, disables plane detection, shows the QR scene, and sets the current mode to <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a48e635c5e05ea5ab0389fb26424b8487" title="The QR-code scanning mode is active.">ArMode.Qr</a>.  <br /></td></tr>
+<tr class="memdesc:a8b94a29e855b89ee5fd58a2163687079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides the design scene, disables plane detection, shows the QR scene, and sets the current mode to <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a48e635c5e05ea5ab0389fb26424b8487" title="The QR-code scanning mode is active.">ArMode.Qr</a>.  <br /></td></tr>
 <tr class="separator:a8b94a29e855b89ee5fd58a2163687079"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5551e8ba18b969d38a6ae0f6684228a" id="r_ae5551e8ba18b969d38a6ae0f6684228a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameManager.html#ae5551e8ba18b969d38a6ae0f6684228a">ActivatePatentParts</a> ()</td></tr>
-<tr class="memdesc:ae5551e8ba18b969d38a6ae0f6684228a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides the QR scene, enables patent scripts, shows the patent scene, and sets the current mode to <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a092ade8847d7c0575bae2ecb87ffcbc4" title="The AR patent-viewing mode is active.">ArMode.Patent</a>.  <br /></td></tr>
-<tr class="separator:ae5551e8ba18b969d38a6ae0f6684228a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af74e4d938436eef1959d64ec7b0533c1" id="r_af74e4d938436eef1959d64ec7b0533c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameManager.html#af74e4d938436eef1959d64ec7b0533c1">setPatentScripts</a> (bool active)</td></tr>
-<tr class="memdesc:af74e4d938436eef1959d64ec7b0533c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the <a class="el" href="classRaycastHandler.html" title="Handles AR screen-tap input and fires clickEvent with raycast results against detected AR planes.">RaycastHandler</a> component to prevent AR raycasts from firing outside of patent-viewing mode.  <br /></td></tr>
-<tr class="separator:af74e4d938436eef1959d64ec7b0533c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656d6102009b11bf28ca77c111e9f3fb" id="r_a656d6102009b11bf28ca77c111e9f3fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameManager.html#a656d6102009b11bf28ca77c111e9f3fb">ActivateDesignParts</a> ()</td></tr>
+<tr class="memdesc:a656d6102009b11bf28ca77c111e9f3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides the QR scene, enables design scripts, shows the design scene, and sets the current mode to <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a1afa74da05ca145d3418aad9af510109" title="The AR design-viewing mode is active.">ArMode.Design</a>.  <br /></td></tr>
+<tr class="separator:a656d6102009b11bf28ca77c111e9f3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892f4f2eede683531cd8eadc99b15b8a" id="r_a892f4f2eede683531cd8eadc99b15b8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameManager.html#a892f4f2eede683531cd8eadc99b15b8a">setDesignScripts</a> (bool active)</td></tr>
+<tr class="memdesc:a892f4f2eede683531cd8eadc99b15b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the <a class="el" href="classRaycastHandler.html" title="Handles AR screen-tap input and fires clickEvent with raycast results against detected AR planes.">RaycastHandler</a> component to prevent AR raycasts from firing outside of design-viewing mode.  <br /></td></tr>
+<tr class="separator:a892f4f2eede683531cd8eadc99b15b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ae4522c217d10ae18823063ea82311ce4" id="r_ae4522c217d10ae18823063ea82311ce4"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameManager.html#ae4522c217d10ae18823063ea82311ce4">qrScene</a></td></tr>
 <tr class="separator:ae4522c217d10ae18823063ea82311ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e1f66fb7bbe1b8cbe3951ce3d6f4751" id="r_a4e1f66fb7bbe1b8cbe3951ce3d6f4751"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameManager.html#a4e1f66fb7bbe1b8cbe3951ce3d6f4751">patentScene</a></td></tr>
-<tr class="separator:a4e1f66fb7bbe1b8cbe3951ce3d6f4751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae990df0bb38e99e930cee8ca4ab0e487" id="r_ae990df0bb38e99e930cee8ca4ab0e487"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameManager.html#ae990df0bb38e99e930cee8ca4ab0e487">designScene</a></td></tr>
+<tr class="separator:ae990df0bb38e99e930cee8ca4ab0e487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4748bb084eb0fa84c548ec13ff1ceb4e" id="r_a4748bb084eb0fa84c548ec13ff1ceb4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameManager.html#a4748bb084eb0fa84c548ec13ff1ceb4e">targetFrameRate</a> = 60</td></tr>
 <tr class="separator:a4748bb084eb0fa84c548ec13ff1ceb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab20c4f9bbc31538619e7860162f12cb" id="r_aab20c4f9bbc31538619e7860162f12cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRaycastHandler.html">RaycastHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameManager.html#aab20c4f9bbc31538619e7860162f12cb">raycastHandler</a></td></tr>
@@ -157,10 +157,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a9c973c401e07c35a72514585eac2af97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Singleton bootstrap manager that routes the app between QR scanning and AR patent-viewing by toggling scene root GameObjects and wiring up <a class="el" href="classStateMachine.html" title="Singleton finite state machine that drives the overall app flow.">StateMachine</a> state-enter callbacks. </p>
+<div class="textblock"><p>Singleton bootstrap manager that routes the app between QR scanning and AR design-viewing by toggling scene root GameObjects and wiring up <a class="el" href="classStateMachine.html" title="Singleton finite state machine that drives the overall app flow.">StateMachine</a> state-enter callbacks. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae5551e8ba18b969d38a6ae0f6684228a" name="ae5551e8ba18b969d38a6ae0f6684228a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5551e8ba18b969d38a6ae0f6684228a">&#9670;&#160;</a></span>ActivatePatentParts()</h2>
+<a id="a656d6102009b11bf28ca77c111e9f3fb" name="a656d6102009b11bf28ca77c111e9f3fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a656d6102009b11bf28ca77c111e9f3fb">&#9670;&#160;</a></span>ActivateDesignParts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,7 +169,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GameManager.ActivatePatentParts </td>
+          <td class="memname">void GameManager.ActivateDesignParts </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -182,7 +182,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Hides the QR scene, enables patent scripts, shows the patent scene, and sets the current mode to <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a092ade8847d7c0575bae2ecb87ffcbc4" title="The AR patent-viewing mode is active.">ArMode.Patent</a>. </p>
+<p>Hides the QR scene, enables design scripts, shows the design scene, and sets the current mode to <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a1afa74da05ca145d3418aad9af510109" title="The AR design-viewing mode is active.">ArMode.Design</a>. </p>
 
 </div>
 </div>
@@ -209,7 +209,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Hides the patent scene, disables plane detection, shows the QR scene, and sets the current mode to <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a48e635c5e05ea5ab0389fb26424b8487" title="The QR-code scanning mode is active.">ArMode.Qr</a>. </p>
+<p>Hides the design scene, disables plane detection, shows the QR scene, and sets the current mode to <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1a48e635c5e05ea5ab0389fb26424b8487" title="The QR-code scanning mode is active.">ArMode.Qr</a>. </p>
 
 </div>
 </div>
@@ -255,7 +255,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Toggles between QR and patent modes based on the current <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1" title="Internal enum representing which high-level mode the app is currently in.">ArMode</a>. </p>
+<p>Toggles between QR and design modes based on the current <a class="el" href="GameManager_8cs.html#a4c6ba9790ff5172cfa66b51a94656be1" title="Internal enum representing which high-level mode the app is currently in.">ArMode</a>. </p>
 
 </div>
 </div>
@@ -286,8 +286,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af74e4d938436eef1959d64ec7b0533c1" name="af74e4d938436eef1959d64ec7b0533c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af74e4d938436eef1959d64ec7b0533c1">&#9670;&#160;</a></span>setPatentScripts()</h2>
+<a id="a892f4f2eede683531cd8eadc99b15b8a" name="a892f4f2eede683531cd8eadc99b15b8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a892f4f2eede683531cd8eadc99b15b8a">&#9670;&#160;</a></span>setDesignScripts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -296,7 +296,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GameManager.setPatentScripts </td>
+          <td class="memname">void GameManager.setDesignScripts </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>active</em></td><td>)</td>
@@ -310,7 +310,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enables or disables the <a class="el" href="classRaycastHandler.html" title="Handles AR screen-tap input and fires clickEvent with raycast results against detected AR planes.">RaycastHandler</a> component to prevent AR raycasts from firing outside of patent-viewing mode. </p>
+<p>Enables or disables the <a class="el" href="classRaycastHandler.html" title="Handles AR screen-tap input and fires clickEvent with raycast results against detected AR planes.">RaycastHandler</a> component to prevent AR raycasts from firing outside of design-viewing mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">active</td><td><code>true</code> to enable; <code>false</code> to disable.</td></tr>
@@ -370,6 +370,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae990df0bb38e99e930cee8ca4ab0e487" name="ae990df0bb38e99e930cee8ca4ab0e487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae990df0bb38e99e930cee8ca4ab0e487">&#9670;&#160;</a></span>designScene</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject GameManager.designScene</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7666e8468dac197b9eb32dd32128524f" name="a7666e8468dac197b9eb32dd32128524f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7666e8468dac197b9eb32dd32128524f">&#9670;&#160;</a></span>instance</h2>
 
@@ -390,29 +412,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The single active instance of <a class="el" href="classGameManager.html" title="Singleton bootstrap manager that routes the app between QR scanning and AR patent-viewing by toggling...">GameManager</a>. </p>
-
-</div>
-</div>
-<a id="a4e1f66fb7bbe1b8cbe3951ce3d6f4751" name="a4e1f66fb7bbe1b8cbe3951ce3d6f4751"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e1f66fb7bbe1b8cbe3951ce3d6f4751">&#9670;&#160;</a></span>patentScene</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">GameObject GameManager.patentScene</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>The single active instance of <a class="el" href="classGameManager.html" title="Singleton bootstrap manager that routes the app between QR scanning and AR design-viewing by toggling...">GameManager</a>. </p>
 
 </div>
 </div>

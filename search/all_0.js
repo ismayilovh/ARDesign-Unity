@@ -1,8 +1,8 @@
 var searchData=
 [
   ['_5fcachedboundsversion_0',['_cachedBoundsVersion',['../classBoundingBoxVisualizer.html#ab98873835de83a016d51ff41287c1866',1,'BoundingBoxVisualizer']]],
-  ['_5fcachedlocalbounds_1',['_cachedLocalBounds',['../classBoundingBoxVisualizer.html#a8fe34f8377c60aaa566b72a1291f7e09',1,'BoundingBoxVisualizer']]],
-  ['_5fcachedpatent_2',['_cachedPatent',['../classBoundingBoxVisualizer.html#abed1f9e20ff6dfdc1cddb7fe04f1f8eb',1,'BoundingBoxVisualizer']]],
+  ['_5fcacheddesign_1',['_cachedDesign',['../classBoundingBoxVisualizer.html#a2b17662d010bed265ae88eb33c07f2c6',1,'BoundingBoxVisualizer']]],
+  ['_5fcachedlocalbounds_2',['_cachedLocalBounds',['../classBoundingBoxVisualizer.html#a8fe34f8377c60aaa566b72a1291f7e09',1,'BoundingBoxVisualizer']]],
   ['_5fcachedpivotsetter_3',['_cachedPivotSetter',['../classBoundingBoxVisualizer.html#a0b6b3b18e668027fa52e1a471b65356c',1,'BoundingBoxVisualizer']]],
   ['_5fedges_4',['_edges',['../classBoundingBoxVisualizer.html#afb2433b987fe129958b6b13afdf9dd02',1,'BoundingBoxVisualizer']]],
   ['_5fedgesactive_5',['_edgesActive',['../classBoundingBoxVisualizer.html#a1261adbcc2dcdb2a209d810137d482c1',1,'BoundingBoxVisualizer']]],
@@ -10,7 +10,7 @@ var searchData=
   ['_5fmaterial_7',['_material',['../classBoundingBoxVisualizer.html#a2264dad7dc95e43837653889e4d638ed',1,'BoundingBoxVisualizer']]],
   ['_5fobjectspawnerar_8',['_objectspawnerar',['../classQRNetworkHandler.html#a9ec4331b4909cf0180fc3803c1a24af6',1,'QRNetworkHandler._objectSpawnerAR'],['../classUIManager.html#a128ad3a9cd06e2e943a04ddf83219654',1,'UIManager._objectSpawnerAR']]],
   ['_5fplacementmode_9',['_placementMode',['../classObjectSpawnerAR.html#a79777e4d531d67db2b73854e5195e23f',1,'ObjectSpawnerAR']]],
-  ['_5fresetpatentbutton_10',['_resetPatentButton',['../classUIManager.html#af7df7506178318201b60e08b6a1507dc',1,'UIManager']]],
+  ['_5fresetdesignbutton_10',['_resetDesignButton',['../classUIManager.html#a84d36f4c677f2076c7397104aa247a53',1,'UIManager']]],
   ['_5fsavedambientlight_11',['_savedAmbientLight',['../classLightingController.html#af1d5ef8bdda4d69057eafb546d6e2258',1,'LightingController']]],
   ['_5fsavedambientmode_12',['_savedAmbientMode',['../classLightingController.html#a7b4e93dc94ebd88a465b0b82860cf49b',1,'LightingController']]],
   ['_5fsavedfacingdirection_13',['_savedFacingDirection',['../classLightingController.html#a19ced060e752d276303cfdde3a4229c1',1,'LightingController']]],
